@@ -17,4 +17,9 @@ Route::get('/', function () {
     return view('dashboardView');
 });
 
+// View Route
 Route::view('/coldOrHot', 'coldOrHotView');
+Route::view('/mood', 'moodView');
+Route::view('/activity', 'activityView');
+Route::view('/milk', 'withMilk');
+Route::view('/sugar', 'withSugar');
