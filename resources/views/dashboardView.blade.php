@@ -18,7 +18,11 @@
         <h1>Landing Page</h1>
         <h3>This is the landing page of Coffee Recommender System using Collaborative Filtering</h3>
 
-        <button type="button" class="btn btn-primary">Click Here to Start</button>
+        {{-- <button type="button" class="btn btn-primary" onclick="window.location='{{ URL::route('coldOrHot') }}'">Click Here to Start</button> --}}
+
+        {{-- <a href="{{  }}">My button</a> --}}
+
+        <a href="/coldOrHot">Next Page</a>
     </div>
 
 
