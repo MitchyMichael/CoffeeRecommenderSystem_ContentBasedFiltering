@@ -21,5 +21,7 @@ Route::get('/', function () {
 Route::view('/coldOrHot', 'coldOrHotView');
 Route::view('/mood', 'moodView');
 Route::view('/activity', 'activityView');
-Route::view('/milk', 'withMilk');
-Route::view('/sugar', 'withSugar');
+Route::view('/milk', 'withMilkView');
+Route::view('/sugar', 'withSugarView');
+Route::view('/3rec', '3RecView');
+Route::view('/recChoise', 'recChoiseView');

@@ -2,9 +2,9 @@
 
 @section('main_content')
     <div class="container">
-        <h1>With Sugar Page</h1>
+        <h1>3 Recommendation Page</h1>
 
-        <a href="/3rec">Next Page</a>
+        <a href="/recChoise">Next Page</a>
     </div>
 @endsection
 
