@@ -13,15 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Landing Page Route
 Route::get('/', function () {
     return view('dashboardView');
 });
 
-// View Route
+// User Input Route
 Route::view('/coldOrHot', 'coldOrHotView');
 Route::view('/mood', 'moodView');
 Route::view('/activity', 'activityView');
 Route::view('/milk', 'withMilkView');
 Route::view('/sugar', 'withSugarView');
+
+// Recommendation Page
 Route::view('/3rec', '3RecView');
 Route::view('/recChoise', 'recChoiseView');
