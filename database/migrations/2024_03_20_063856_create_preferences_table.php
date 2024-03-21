@@ -13,6 +13,19 @@ return new class extends Migration
     {
         Schema::create('preferences', function (Blueprint $table) {
             $table->id();
+            $table->string('preferenceMood');
+            $table->string('preferenceActivity');
+            $table->string('preferenceCoffeeTemperature');
+            $table->string('preferenceCoffeeSweetness');
+            $table->string('preferenceCoffeeMilkness');
+            $table->string('preferenceCoffeePhoto')->nullable();
+            $table->integer('preferenceCoffeePrice');
+            $table->string('preferenceCoffeeBeanType');
+            $table->string('preferenceCoffeeMilkType');
+            $table->string('preferenceCoffeeProcess');
+            $table->string('preferenceCoffeeDrinkType');
+            $table->string('preferenceCoffeeAcidityLevel');
+            $table->string('preferenceCoffeeStrengthLevel');
             $table->timestamps();
         });
     }

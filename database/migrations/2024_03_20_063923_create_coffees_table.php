@@ -13,6 +13,21 @@ return new class extends Migration
     {
         Schema::create('coffees', function (Blueprint $table) {
             $table->id();
+            $table->string('coffeeName');
+            $table->string('coffeeTemperature');
+            $table->string('coffeeSweetness');
+            $table->string('coffeeMilkness');
+            $table->string('coffeePhoto')->nullable();
+            $table->integer('coffeePrice');
+            $table->string('coffeeBeanType');
+            $table->string('coffeeMilkType');
+            $table->string('coffeeProcess');
+            $table->string('coffeeDrinkType');
+            $table->string('coffeeAcidityLevel');
+            $table->string('coffeeStrengthLevel');
+            $table->boolean('coffeeIsBestSeller')->default(false);
+            $table->boolean('coffeeIsPromo')->default(false);
+            $table->double('coffeeRating', 8, 2)->default(0.0);
             $table->timestamps();
         });
     }

@@ -14,6 +14,12 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            // Migrate customers table first
+            $table->foreignId('customer_id')->constrained('customers');
+
+            // Migrate coffees table first
+            $table->foreignId('coffee_id')->constrained('coffees');
         });
     }
 

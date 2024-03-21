@@ -14,6 +14,12 @@ return new class extends Migration
         Schema::create('coffeepreference', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
+            // Migrate preference table first
+            $table->foreignId('preference_id')->constrained('preferences');
+
+            // Migrate coffees table first
+            $table->foreignId('coffee_id')->constrained('coffees');
         });
     }
 
