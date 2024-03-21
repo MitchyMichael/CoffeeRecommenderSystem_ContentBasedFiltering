@@ -13,19 +13,16 @@ return new class extends Migration
     {
         Schema::create('preferences', function (Blueprint $table) {
             $table->id();
-            $table->string('preferenceMood');
-            $table->string('preferenceActivity');
-            $table->string('preferenceCoffeeTemperature');
-            $table->string('preferenceCoffeeSweetness');
-            $table->string('preferenceCoffeeMilkness');
-            $table->string('preferenceCoffeePhoto')->nullable();
-            $table->integer('preferenceCoffeePrice');
-            $table->string('preferenceCoffeeBeanType');
-            $table->string('preferenceCoffeeMilkType');
-            $table->string('preferenceCoffeeProcess');
-            $table->string('preferenceCoffeeDrinkType');
-            $table->string('preferenceCoffeeAcidityLevel');
-            $table->string('preferenceCoffeeStrengthLevel');
+            $table->double('preferenceMood', 8, 2)->default(0.0); // 0 -> sad, 1 -> happy
+            $table->double('preferenceActivity', 8, 2)->default(0.0); // 0 -> chilling, 1 -> working
+            $table->double('preferenceCoffeeTemperature', 8, 2)->default(0.0); // 0 -> cold, 1 -> hot
+            $table->double('preferenceCoffeeSweetness', 8, 2)->default(0.0); // 0 -> not sweet, 1 -> sweet
+            $table->double('preferenceCoffeeMilkness', 8, 2)->default(0.0); // 0 -> no milk, 1 -> with milk
+            $table->double('preferenceCoffeePrice', 8, 2)->default(0.0); // 0 -> cheap, 1 -> pricy
+            $table->double('preferenceCoffeeMilkType', 8, 2)->default(0.0); // 0 -> almond milk, 1 -> cow milk
+            $table->double('preferenceCoffeeDrinkType', 8, 2)->default(0.0); // 0 -> pure coffee, 1 -> variant coffee
+            $table->double('preferenceCoffeeAcidityLevel', 8, 2)->default(0.0); // 0 -> not acid,  1 -> acid
+            $table->double('preferenceCoffeeStrengthLevel', 8, 2)->default(0.0); // 0 -> not strong, 1 -> strong
             $table->timestamps();
         });
     }

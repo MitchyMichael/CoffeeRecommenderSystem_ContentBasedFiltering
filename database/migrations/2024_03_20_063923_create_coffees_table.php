@@ -19,9 +19,7 @@ return new class extends Migration
             $table->string('coffeeMilkness');
             $table->string('coffeePhoto')->nullable();
             $table->integer('coffeePrice');
-            $table->string('coffeeBeanType');
             $table->string('coffeeMilkType');
-            $table->string('coffeeProcess');
             $table->string('coffeeDrinkType');
             $table->string('coffeeAcidityLevel');
             $table->string('coffeeStrengthLevel');
