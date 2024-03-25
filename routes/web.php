@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PreferenceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,18 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Landing Page Route
+// Landing page route
 Route::get('/', function () {
     return view('dashboardView');
 });
 
-// User Input Route
-Route::view('/coldOrHot', 'coldOrHotView');
-Route::view('/mood', 'moodView');
-Route::view('/activity', 'activityView');
-Route::view('/milk', 'withMilkView');
-Route::view('/sugar', 'withSugarView');
+// Saving preference to database route
+Route::post('/preferences', [PreferenceController::class, 'store']);
 
-// Recommendation Page
-Route::view('/3rec', '3RecView');
-Route::view('/recChoise', 'recChoiseView');
+// Recommendation page route after saving preference
+Route::view('/recommendation', 'recommendationView');

@@ -2,9 +2,10 @@
 
 @section('main_content')
     <div class="container">
-        <h1>3 Recommendation Page</h1>
 
-        <a href="/recChoise">Next Page</a>
+        <h1>Recommendation Choise Page</h1>
+
+        <a href="/">Dashboard Page</a>
+
     </div>
 @endsection
-

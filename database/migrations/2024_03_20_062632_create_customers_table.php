@@ -21,8 +21,8 @@ Logic Step
 ============================================================
 Note: Coffees data already inputted.
 
-1. Input preference
-2. Submit preference and customer ID to database -> preference + customer
+1. Input preference (Done)
+2. Submit preference and customer ID to database -> preference + customer (Done)
 3. Content-based Filtering
 4. Output 3 recommendation
 5. Choose recommendation and submit to database -> choises + coffee preference
