@@ -14,18 +14,22 @@ return new class extends Migration
         Schema::create('coffees', function (Blueprint $table) {
             $table->id();
             $table->string('coffeeName');
+            $table->string('coffeePhoto')->nullable();
+            $table->integer('coffeePrice');
+            $table->boolean('coffeeIsBestSeller')->default(false);
+            $table->boolean('coffeeIsPromo')->default(false);
+
+            // Preference
+            $table->integer('coffeePreferenceMood')->default(0);
+            $table->integer('coffeePreferenceActivity')->default(0);
             $table->string('coffeeTemperature');
             $table->string('coffeeSweetness');
             $table->string('coffeeMilkness');
-            $table->string('coffeePhoto')->nullable();
-            $table->integer('coffeePrice');
+            $table->string('coffeeCheapness');
             $table->string('coffeeMilkType');
             $table->string('coffeeDrinkType');
             $table->string('coffeeAcidityLevel');
             $table->string('coffeeStrengthLevel');
-            $table->boolean('coffeeIsBestSeller')->default(false);
-            $table->boolean('coffeeIsPromo')->default(false);
-            $table->double('coffeeRating', 8, 2)->default(0.0);
             $table->timestamps();
         });
     }

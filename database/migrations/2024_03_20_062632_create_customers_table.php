@@ -24,6 +24,12 @@ Note: Coffees data already inputted.
 1. Input preference (Done)
 2. Submit preference and customer ID to database -> preference + customer (Done)
 3. Content-based Filtering
+    3.1. Buat table antara kopi dan variabel preferensi
+    3.2. 1 kopi 1 preferensi
+    3.3. Tiap menu punya 1 array
+    3.4. Semua array akan dihitung cosinenya dengan array preferensi input user
+    3.5. Tiap menu punya cosine sendiri2 dengan user
+    3.6. Hasilnya nanti antara 0-1, 0 itu paling mirip, 1 itu paling tidak mirip
 4. Output 3 recommendation
 5. Choose recommendation and submit to database -> choises + coffee preference
 ============================================================
