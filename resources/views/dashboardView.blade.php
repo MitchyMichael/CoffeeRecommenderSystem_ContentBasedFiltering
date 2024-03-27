@@ -31,15 +31,15 @@
             <br><br>
 
             <label for="preferenceActivity">Activity:</label><br>
-            <input type="radio" id="chilling" name="preferenceActivity" value="0">
+            <input type="radio" id="chilling" name="preferenceActivity" value="1">
             <label for="chilling">Chilling</label>
-            <input type="radio" id="working" name="preferenceActivity" value="1">
+            <input type="radio" id="working" name="preferenceActivity" value="5">
             <label for="working">Working</label><br><br>
 
             <label for="preferenceCoffeeTemperature">Coffee Temperature:</label><br>
-            <input type="radio" id="cold" name="preferenceCoffeeTemperature" value="0">
+            <input type="radio" id="cold" name="preferenceCoffeeTemperature" value="1">
             <label for="cold">Cold</label>
-            <input type="radio" id="hot" name="preferenceCoffeeTemperature" value="1">
+            <input type="radio" id="hot" name="preferenceCoffeeTemperature" value="5">
             <label for="hot">Hot</label><br><br>
 
             {{-- <label for="preferenceCoffeeSweetness">Coffee Sweetness:</label><br>
@@ -62,9 +62,9 @@
             <br><br>
 
             <label for="preferenceCoffeeMilkness">Coffee Milkness:</label><br>
-            <input type="radio" id="no_milk" name="preferenceCoffeeMilkness" value="0">
+            <input type="radio" id="no_milk" name="preferenceCoffeeMilkness" value="1">
             <label for="no_milk">No Milk</label>
-            <input type="radio" id="with_milk" name="preferenceCoffeeMilkness" value="1">
+            <input type="radio" id="with_milk" name="preferenceCoffeeMilkness" value="5">
             <label for="with_milk">With Milk</label><br><br>
 
             {{-- <label for="preferenceMood">Coffee Milkness:</label><br>
@@ -81,21 +81,21 @@
                 <br><br> --}}
 
             <label for="preferenceCoffeeMilkType">Coffee Milk Type:</label><br>
-            <input type="radio" id="almond_milk" name="preferenceCoffeeMilkType" value="0">
+            <input type="radio" id="almond_milk" name="preferenceCoffeeMilkType" value="1">
             <label for="almond_milk">Almond Milk</label>
-            <input type="radio" id="regular_milk" name="preferenceCoffeeMilkType" value="1">
+            <input type="radio" id="regular_milk" name="preferenceCoffeeMilkType" value="5">
             <label for="regular_milk">Regular Milk</label><br><br>
 
             <label for="preferenceCoffeePrice">Coffee Price:</label><br>
-            <input type="radio" id="cheap" name="preferenceCoffeePrice" value="0">
+            <input type="radio" id="cheap" name="preferenceCoffeePrice" value="1">
             <label for="cheap">Cheap</label>
-            <input type="radio" id="pricy" name="preferenceCoffeePrice" value="1">
+            <input type="radio" id="pricy" name="preferenceCoffeePrice" value="5">
             <label for="pricy">Pricy</label><br><br>
 
             <label for="preferenceCoffeeDrinkType">Coffee Drink Type:</label><br>
-            <input type="radio" id="pure_coffee" name="preferenceCoffeeDrinkType" value="0">
+            <input type="radio" id="pure_coffee" name="preferenceCoffeeDrinkType" value="1">
             <label for="pure_coffee">Pure Coffee</label>
-            <input type="radio" id="variant_coffee" name="preferenceCoffeeDrinkType" value="1">
+            <input type="radio" id="variant_coffee" name="preferenceCoffeeDrinkType" value="5">
             <label for="variant_coffee">Variant Coffee</label><br><br>
 
             {{-- <label for="preferenceCoffeeAcidityLevel">Coffee Acidity Level:</label><br>
