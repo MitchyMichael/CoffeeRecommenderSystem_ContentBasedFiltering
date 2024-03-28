@@ -80,11 +80,11 @@
                 <label for="mood5">5 (With Milk)</label>
                 <br><br> --}}
 
-            <label for="preferenceCoffeeMilkType">Coffee Milk Type:</label><br>
+            {{-- <label for="preferenceCoffeeMilkType">Coffee Milk Type:</label><br>
             <input type="radio" id="almond_milk" name="preferenceCoffeeMilkType" value="1">
             <label for="almond_milk">Almond Milk</label>
             <input type="radio" id="regular_milk" name="preferenceCoffeeMilkType" value="5">
-            <label for="regular_milk">Regular Milk</label><br><br>
+            <label for="regular_milk">Regular Milk</label><br><br> --}}
 
             <label for="preferenceCoffeePrice">Coffee Price:</label><br>
             <input type="radio" id="cheap" name="preferenceCoffeePrice" value="1">

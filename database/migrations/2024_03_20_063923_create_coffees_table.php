@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -14,22 +13,24 @@ return new class extends Migration
         Schema::create('coffees', function (Blueprint $table) {
             $table->id();
             $table->string('coffeeName');
+            $table->text('coffeeDescription');
             $table->string('coffeePhoto')->nullable();
             $table->integer('coffeePrice');
             $table->boolean('coffeeIsBestSeller')->default(false);
             $table->boolean('coffeeIsPromo')->default(false);
+            $table->integer('numberChosen')->default(0);
 
             // Preference
             $table->integer('coffeePreferenceMood')->default(0);
             $table->integer('coffeePreferenceActivity')->default(0);
-            $table->string('coffeeTemperature');
-            $table->string('coffeeSweetness');
-            $table->string('coffeeMilkness');
-            $table->string('coffeeCheapness');
-            $table->string('coffeeMilkType');
-            $table->string('coffeeDrinkType');
-            $table->string('coffeeAcidityLevel');
-            $table->string('coffeeStrengthLevel');
+            $table->integer('coffeeTemperature')->default(0);
+            $table->integer('coffeeSweetness')->default(0);
+            $table->integer('coffeeMilkness')->default(0);
+            $table->integer('coffeeCheapness')->default(0);
+            $table->integer('coffeeDrinkType')->default(0);
+            $table->integer('coffeeAcidityLevel')->default(0);
+            $table->integer('coffeeStrengthLevel')->default(0);
+
             $table->timestamps();
         });
     }
