@@ -13,7 +13,6 @@ class Preference extends Model
         'coffee_temperature',
         'coffee_sweetness',
         'coffee_milkness',
-        'coffee_milk_type',
         'coffee_price',
         'coffee_drink_type',
         'coffee_acidity_level',

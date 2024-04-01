@@ -138,7 +138,5 @@
 
             <input type="submit" value="Submit Preferences">
         </form>
-
-        {{-- <a href="/coldOrHot">Next Page</a> --}}
     </div>
 @endsection

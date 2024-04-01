@@ -4,10 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Preference;
-use App\Models\Customer;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\ContentBasedFiltering;
 
 class PreferenceController extends Controller
 {
+    protected $customerController;
+    protected $contentBasedFiltering;
+
+    public function __construct1(CustomerController $customerController)
+    {
+        $this->customerController = $customerController;
+    }
+
+    public function __construct2(ContentBasedFiltering $contentBasedFiltering)
+    {
+        $this->contentBasedFiltering = $contentBasedFiltering;
+    }
+
     public function store(Request $request)
     {
         // Make new preference from form
@@ -17,7 +31,6 @@ class PreferenceController extends Controller
         $preference->preferenceCoffeeTemperature = $request->input('preferenceCoffeeTemperature');
         $preference->preferenceCoffeeSweetness = $request->input('preferenceCoffeeSweetness');
         $preference->preferenceCoffeeMilkness = $request->input('preferenceCoffeeMilkness');
-        $preference->preferenceCoffeeMilkType = $request->input('preferenceCoffeeMilkType');
         $preference->preferenceCoffeePrice = $request->input('preferenceCoffeePrice');
         $preference->preferenceCoffeeDrinkType = $request->input('preferenceCoffeeDrinkType');
         $preference->preferenceCoffeeAcidityLevel = $request->input('preferenceCoffeeAcidityLevel');
@@ -28,13 +41,29 @@ class PreferenceController extends Controller
         $preferenceId = $preference->id;
 
         // Make new customer
-        $customer = new Customer();
-        $customer->preference_id = $preferenceId;
-        $customer->save();
+        $this->customerController->createCustomer($preferenceId);
 
-        // return "Preferences saved successfully!";
+        // Content-based filtering
+        $this->contentBasedFiltering->contentBasedFiltering($preferenceId);
 
+        // Go to next page
         $script = "<script>window.location.href='/recommendation';</script>";
         return response($script);
+    }
+
+    function getPreferencesById($preferenceId) {
+        $userPreferences = Preference::find($preferenceId);
+
+        if ($userPreferences) {
+            // Convert user preferences object to an associative array
+            $userPreferencesArray = $userPreferences->toArray();
+
+            // Remove 'id' field
+            unset($userPreferencesArray['id']);
+            return $userPreferencesArray;
+
+        } else {
+            return null;
+        }
     }
 }
