@@ -9,18 +9,18 @@ use App\Http\Controllers\ContentBasedFiltering;
 
 class PreferenceController extends Controller
 {
-    protected $customerController;
-    protected $contentBasedFiltering;
+    // protected $customerController;
+    // protected $contentBasedFiltering;
 
-    public function __construct1(CustomerController $customerController)
-    {
-        $this->customerController = $customerController;
-    }
+    // public function __construct1(CustomerController $customerController)
+    // {
+    //     $this->customerController = $customerController;
+    // }
 
-    public function __construct2(ContentBasedFiltering $contentBasedFiltering)
-    {
-        $this->contentBasedFiltering = $contentBasedFiltering;
-    }
+    // public function __construct2(ContentBasedFiltering $contentBasedFiltering)
+    // {
+    //     $this->contentBasedFiltering = $contentBasedFiltering;
+    // }
 
     public function store(Request $request)
     {
@@ -41,10 +41,16 @@ class PreferenceController extends Controller
         $preferenceId = $preference->id;
 
         // Make new customer
-        $this->customerController->createCustomer($preferenceId);
+        $customerController = new CustomerController();
+        $customerController->createCustomer($preferenceId);
+
+        // $this->customerController->createCustomer($preferenceId);
 
         // Content-based filtering
-        $this->contentBasedFiltering->contentBasedFiltering($preferenceId);
+        $contentBasedFiltering = new ContentBasedFiltering();
+        $contentBasedFiltering->contentBasedFiltering($preferenceId);
+        
+        // $this->contentBasedFiltering->contentBasedFiltering($preferenceId);
 
         // Go to next page
         $script = "<script>window.location.href='/recommendation';</script>";
