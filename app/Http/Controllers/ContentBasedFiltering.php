@@ -6,6 +6,7 @@ use App\Models\Coffee;
 
 class ContentBasedFiltering extends Controller
 {
+    public $finalTopRecommendation = [];
     public function contentBasedFiltering($preferenceId)
     {
         // Get user preference
@@ -16,13 +17,6 @@ class ContentBasedFiltering extends Controller
         $coffees = Coffee::all();
         $menuItems = $coffees->map(function ($coffee) {
             return [
-                // 'name' => $coffee->coffeeName,
-                // 'description' => $coffee->coffeeDescription,
-                // 'photo' => $coffee->coffeePhoto,
-                // 'price' => $coffee->coffeePrice,
-                // 'best_seller' => $coffee->coffeeIsBestSeller,
-                // 'promo' => $coffee->coffeeIsPromo,
-                // 'number_chosen' => $coffee->numberChosen,
                 'mood' => $coffee->coffeePreferenceMood,
                 'activity' => $coffee->coffeePreferenceActivity,
                 'temperature' => $coffee->coffeeTemperature,
@@ -35,67 +29,57 @@ class ContentBasedFiltering extends Controller
             ];
         });
 
-        // dd($menuItems);
-        // dd($userPreferences);
-
         // Calculate cosine similarity for each menu item
         $recommendations = [];
         foreach ($menuItems as $menuItem) {
             // Calculate cosine similarity between user preferences and menu item
-            // dd($userPreferences, $menuItem);
-            $similarity = $this->calculateCosineSimilarity($userPreferences, $menuItem);
+            $valuesArray1 = array_values($userPreferences);
+            $valuesArray2 = array_values($menuItem);
+            $similarity = $this->cosine_similarity($valuesArray1, $valuesArray2);
+
             // Store menu item name and similarity score
             $recommendations[] = $similarity;
         }
-
-        dd($recommendations);
 
         // Sort recommendations by similarity score (higher scores first)
         arsort($recommendations);
 
         // Recommend top items to the user
-        $topRecommendations = array_slice($recommendations, 0, 3, true); // Get top 3 recommendations
-
-        // Output recommendations
-        foreach ($topRecommendations as $itemName => $similarity) {
-            // echo "Recommended: $itemName (Similarity: $similarity)\n";
-            dd("Recommended: $itemName (Similarity: $similarity)\n");
+        $topRecommendations = array_slice($recommendations, 0, 3, true);
+        foreach($topRecommendations as $key => $value) {
+            // Get top 3 recommendations
+            $thisTopRecommendations[] = $key + 1;
         }
+
+        $finalTopRecommendation = $thisTopRecommendations;
+        return $finalTopRecommendation;
+
+        
     }
 
     // Function to calculate cosine similarity
-    public function calculateCosineSimilarity($vectorA, $vectorB)
-    {
+    public function cosine_similarity($array1, $array2) {
         $dotProduct = 0;
-        $magnitudeA = 0;
-        $magnitudeB = 0;
+        $magnitude1 = 0;
+        $magnitude2 = 0;
 
-        // dd($vectorA, $vectorB);
-
-        foreach ($vectorA as $key => $value) {
-            // dd($vectorA);
-            if (isset ($vectorB[$key])) {
-                dd($vectorB[$key]);
-                $dotProduct += $value * $vectorB[$key];
-                // dd($dotProduct);
-            }
-            $newValue = (double)$value * (double)$value;
-            $magnitudeA += (double)$newValue;
-            // dd($magnitudeA);
-        }
-        foreach ($vectorB as $value) {
-            $newValue2 = (double)$value * (double)$value;
-            $magnitudeB += (double)$newValue2;
-            // dd($magnitudeB);
-        }
-        $magnitudeA = sqrt($magnitudeA);
-        $magnitudeB = sqrt($magnitudeB);
-        if ($magnitudeA == 0 || $magnitudeB == 0) {
-            return 0; // Prevent division by zero
+        // Calculate dot product
+        for ($i = 0; $i < count($array1); $i++) {
+            $dotProduct += $array1[$i] * $array2[$i];
+            $magnitude1 += $array1[$i] * $array1[$i];
+            $magnitude2 += $array2[$i] * $array2[$i];
         }
 
-        $thisResult = $dotProduct / ($magnitudeA * $magnitudeB);
-        return $thisResult;
+        $magnitude1 = sqrt($magnitude1);
+        $magnitude2 = sqrt($magnitude2);
+
+        // Calculate cosine similarity
+        if ($magnitude1 != 0 && $magnitude2 != 0) {
+            $cosineSimilarity = $dotProduct / ($magnitude1 * $magnitude2);
+            return $cosineSimilarity;
+        } else {
+            return 0; // If one of the magnitudes is zero, similarity is zero
+        }
     }
 
 }

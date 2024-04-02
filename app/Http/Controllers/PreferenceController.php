@@ -33,11 +33,10 @@ class PreferenceController extends Controller
 
         // Content-based filtering
         $contentBasedFiltering = new ContentBasedFiltering();
-        $contentBasedFiltering->contentBasedFiltering($preferenceId);
+        $topRec = $contentBasedFiltering->contentBasedFiltering($preferenceId);
 
         // Go to next page
-        $script = "<script>window.location.href='/recommendation';</script>";
-        return response($script);
+        return view('recommendationView', compact('topRec'));
     }
 
     function getPreferencesById($preferenceId) {
