@@ -21,8 +21,6 @@ class CoffeePreferenceSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-
-            // Add more data as needed
         ]);
     }
 }

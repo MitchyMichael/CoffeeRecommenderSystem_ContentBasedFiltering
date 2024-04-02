@@ -9,19 +9,6 @@ use App\Http\Controllers\ContentBasedFiltering;
 
 class PreferenceController extends Controller
 {
-    // protected $customerController;
-    // protected $contentBasedFiltering;
-
-    // public function __construct1(CustomerController $customerController)
-    // {
-    //     $this->customerController = $customerController;
-    // }
-
-    // public function __construct2(ContentBasedFiltering $contentBasedFiltering)
-    // {
-    //     $this->contentBasedFiltering = $contentBasedFiltering;
-    // }
-
     public function store(Request $request)
     {
         // Make new preference from form
@@ -44,13 +31,9 @@ class PreferenceController extends Controller
         $customerController = new CustomerController();
         $customerController->createCustomer($preferenceId);
 
-        // $this->customerController->createCustomer($preferenceId);
-
         // Content-based filtering
         $contentBasedFiltering = new ContentBasedFiltering();
         $contentBasedFiltering->contentBasedFiltering($preferenceId);
-        
-        // $this->contentBasedFiltering->contentBasedFiltering($preferenceId);
 
         // Go to next page
         $script = "<script>window.location.href='/recommendation';</script>";
@@ -66,6 +49,8 @@ class PreferenceController extends Controller
 
             // Remove 'id' field
             unset($userPreferencesArray['id']);
+            unset($userPreferencesArray['created_at']);
+            unset($userPreferencesArray['updated_at']);
             return $userPreferencesArray;
 
         } else {

@@ -22,7 +22,6 @@ class PreferenceSeeder extends Seeder
                 'preferenceCoffeeSweetness' => rand(0, 1),
                 'preferenceCoffeeMilkness' => rand(0, 1),
                 'preferenceCoffeePrice' => rand(0, 1),
-                // 'preferenceCoffeeMilkType' => rand(0, 1),
                 'preferenceCoffeeDrinkType' => rand(0, 1),
                 'preferenceCoffeeAcidityLevel' => rand(0, 1),
                 'preferenceCoffeeStrengthLevel' => rand(0, 1),

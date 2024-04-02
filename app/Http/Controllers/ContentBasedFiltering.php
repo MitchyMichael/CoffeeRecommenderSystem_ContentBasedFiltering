@@ -6,14 +6,6 @@ use App\Models\Coffee;
 
 class ContentBasedFiltering extends Controller
 {
-    // protected $preferenceController;
-
-
-    // public function __construct1(PreferenceController $preferenceController)
-    // {
-    //     $this->preferenceController = $preferenceController;
-    // }
-
     public function contentBasedFiltering($preferenceId)
     {
         // Get user preference
@@ -24,13 +16,13 @@ class ContentBasedFiltering extends Controller
         $coffees = Coffee::all();
         $menuItems = $coffees->map(function ($coffee) {
             return [
-                'name' => $coffee->coffeeName,
-                'description' => $coffee->coffeeDescription,
-                'photo' => $coffee->coffeePhoto,
-                'price' => $coffee->coffeePrice,
-                'best_seller' => $coffee->coffeeIsBestSeller,
-                'promo' => $coffee->coffeeIsPromo,
-                'number_chosen' => $coffee->numberChosen,
+                // 'name' => $coffee->coffeeName,
+                // 'description' => $coffee->coffeeDescription,
+                // 'photo' => $coffee->coffeePhoto,
+                // 'price' => $coffee->coffeePrice,
+                // 'best_seller' => $coffee->coffeeIsBestSeller,
+                // 'promo' => $coffee->coffeeIsPromo,
+                // 'number_chosen' => $coffee->numberChosen,
                 'mood' => $coffee->coffeePreferenceMood,
                 'activity' => $coffee->coffeePreferenceActivity,
                 'temperature' => $coffee->coffeeTemperature,
@@ -43,14 +35,20 @@ class ContentBasedFiltering extends Controller
             ];
         });
 
+        // dd($menuItems);
+        // dd($userPreferences);
+
         // Calculate cosine similarity for each menu item
         $recommendations = [];
         foreach ($menuItems as $menuItem) {
             // Calculate cosine similarity between user preferences and menu item
+            // dd($userPreferences, $menuItem);
             $similarity = $this->calculateCosineSimilarity($userPreferences, $menuItem);
             // Store menu item name and similarity score
-            $recommendations[$menuItem['name']] = $similarity;
+            $recommendations[] = $similarity;
         }
+
+        dd($recommendations);
 
         // Sort recommendations by similarity score (higher scores first)
         arsort($recommendations);
@@ -60,7 +58,8 @@ class ContentBasedFiltering extends Controller
 
         // Output recommendations
         foreach ($topRecommendations as $itemName => $similarity) {
-            echo "Recommended: $itemName (Similarity: $similarity)\n";
+            // echo "Recommended: $itemName (Similarity: $similarity)\n";
+            dd("Recommended: $itemName (Similarity: $similarity)\n");
         }
     }
 
@@ -70,21 +69,33 @@ class ContentBasedFiltering extends Controller
         $dotProduct = 0;
         $magnitudeA = 0;
         $magnitudeB = 0;
+
+        // dd($vectorA, $vectorB);
+
         foreach ($vectorA as $key => $value) {
+            // dd($vectorA);
             if (isset ($vectorB[$key])) {
+                dd($vectorB[$key]);
                 $dotProduct += $value * $vectorB[$key];
+                // dd($dotProduct);
             }
-            $magnitudeA += $value ** 2;
+            $newValue = (double)$value * (double)$value;
+            $magnitudeA += (double)$newValue;
+            // dd($magnitudeA);
         }
         foreach ($vectorB as $value) {
-            $magnitudeB += $value ** 2;
+            $newValue2 = (double)$value * (double)$value;
+            $magnitudeB += (double)$newValue2;
+            // dd($magnitudeB);
         }
         $magnitudeA = sqrt($magnitudeA);
         $magnitudeB = sqrt($magnitudeB);
         if ($magnitudeA == 0 || $magnitudeB == 0) {
             return 0; // Prevent division by zero
         }
-        return $dotProduct / ($magnitudeA * $magnitudeB);
+
+        $thisResult = $dotProduct / ($magnitudeA * $magnitudeB);
+        return $thisResult;
     }
 
 }
