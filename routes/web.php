@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PreferenceController;
+use App\Http\Controllers\ChoiseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +18,13 @@ use App\Http\Controllers\PreferenceController;
 // Landing page route
 Route::get('/', function () {
     return view('dashboardView');
-});
+})->name('root');
 
 // Saving preference to database route
 Route::post('/preferences', [PreferenceController::class, 'store']);
 
 // Recommendation page route after saving preference
 Route::view('/recommendation', 'recommendationView');
+
+// Saving coffee recommendation choise
+Route::post('/save-coffee', [ChoiseController::class, 'saveCoffee']);

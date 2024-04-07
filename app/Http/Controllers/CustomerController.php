@@ -13,6 +13,8 @@ class CustomerController extends Controller
         $customer = new Customer();
         $customer->preference_id = $preferenceId;
         $customer->save();
+
+        return $customer->id;
     }
 }
 

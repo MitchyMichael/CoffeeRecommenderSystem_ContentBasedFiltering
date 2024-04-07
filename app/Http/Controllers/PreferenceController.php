@@ -29,14 +29,14 @@ class PreferenceController extends Controller
 
         // Make new customer
         $customerController = new CustomerController();
-        $customerController->createCustomer($preferenceId);
+        $thisCustomerID = $customerController->createCustomer($preferenceId);
 
         // Content-based filtering
         $contentBasedFiltering = new ContentBasedFiltering();
         $topRec = $contentBasedFiltering->contentBasedFiltering($preferenceId);
 
         // Go to next page
-        return view('recommendationView', compact('topRec'));
+        return view('recommendationView', compact('topRec', 'thisCustomerID'));
     }
 
     function getPreferencesById($preferenceId) {
