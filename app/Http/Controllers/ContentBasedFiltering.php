@@ -45,7 +45,7 @@ class ContentBasedFiltering extends Controller
         arsort($recommendations);
 
         // Recommend top items to the user
-        $topRecommendations = array_slice($recommendations, 0, 3, true);
+        $topRecommendations = array_slice($recommendations, 0, 4, true);
         foreach($topRecommendations as $key => $value) {
             // Get top 3 recommendations
             $thisTopRecommendations[] = $key + 1;
@@ -53,8 +53,6 @@ class ContentBasedFiltering extends Controller
 
         $finalTopRecommendation = $thisTopRecommendations;
         return $finalTopRecommendation;
-
-        
     }
 
     // Function to calculate cosine similarity

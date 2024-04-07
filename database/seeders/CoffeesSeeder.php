@@ -54,7 +54,7 @@ class CoffeesSeeder extends Seeder
                 'coffeeCheapness' => 1, // 1 (cheap), 5 (pricy)
                 'coffeeDrinkType' => 5, // 1 (pure coffee), 5 (variant coffee)
                 'coffeeAcidityLevel' => 1, // 1 (not acid) - 5 (acid)
-                'coffeeStrengthLevel' => 3, // 1 (not strong) - 5 (strong)
+                'coffeeStrengthLevel' => 1, // 1 (not strong) - 5 (strong)
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -76,7 +76,7 @@ class CoffeesSeeder extends Seeder
                 'coffeeCheapness' => 1, // 1 (cheap), 5 (pricy)
                 'coffeeDrinkType' => 5, // 1 (pure coffee), 5 (variant coffee)
                 'coffeeAcidityLevel' => 1, // 1 (not acid) - 5 (acid)
-                'coffeeStrengthLevel' => 3, // 1 (not strong) - 5 (strong)
+                'coffeeStrengthLevel' => 1, // 1 (not strong) - 5 (strong)
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -252,7 +252,7 @@ class CoffeesSeeder extends Seeder
                 'coffeeCheapness' => 1, // 1 (cheap), 5 (pricy)
                 'coffeeDrinkType' => 5, // 1 (pure coffee), 5 (variant coffee)
                 'coffeeAcidityLevel' => 1, // 1 (not acid) - 5 (acid)
-                'coffeeStrengthLevel' => 3, // 1 (not strong) - 5 (strong)
+                'coffeeStrengthLevel' => 2, // 1 (not strong) - 5 (strong)
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
