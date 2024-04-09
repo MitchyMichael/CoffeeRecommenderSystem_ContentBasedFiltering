@@ -1,3 +1,150 @@
-h1{
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
     color: cyan;
+}
+
+.navbar {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #fffcf6;
+}
+
+.title {
+    width: fit-content;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d88b43;
+    padding-top: 2px;
+}
+
+.navbar {
+    justify-content: space-between;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+}
+
+.nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #d88b43;
+    padding: 30px;
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fffcf6;
+    background-color: #d88b43;
+    padding-bottom: 27px;
+}
+
+.header {
+    height: 650px;
+    background-image: url("/img/coffeeMainNew.png");
+    background-position: center left;
+    background-size: cover;
+}
+
+.heroContainer {
+    padding-top: 250px;
+}
+
+.heroTitle1 {
+    color: #fffcf6;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.tagline {
+    color: #fffcf6;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fffcf6;
+    background-color: #d88b43;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fffcf6;
+    color: #d88b43;
+}
+
+.how_it_works {
+    height: 1000px;
+    background-color: #fffcf6;
+}
+
+.how_it_works_title {
+    color: #d88b43;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+}
+
+.thiscard {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
 }

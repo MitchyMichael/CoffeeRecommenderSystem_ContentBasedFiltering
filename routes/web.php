@@ -17,8 +17,12 @@ use App\Http\Controllers\ChoiseController;
 
 // Landing page route
 Route::get('/', function () {
-    return view('dashboardView');
+    return view('landingPageView');
 })->name('root');
+
+Route::get('/dashboard', function () {
+    return view('dashboardView');
+});
 
 // Saving preference to database route
 Route::post('/preferences', [PreferenceController::class, 'store']);
