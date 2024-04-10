@@ -13,6 +13,8 @@
     {{-- Main Stylesheet --}}
     <link rel="stylesheet" href="{{ URL::asset('css/main.css') }}">
 
+    {{-- LottieFiles --}}
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <title>BrewMaster's Recommendation</title>
 </head>
 <body>
