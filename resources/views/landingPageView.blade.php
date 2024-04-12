@@ -5,15 +5,17 @@
 
         {{-- Navigation Bar --}}
         <header class="navbar">
-            <div class="title-list">
-
-                <h3 class="title">BrewMaster's</h3>
+            <div class="container">
+                <div class="title-list">
+                    <h3 class="title">BrewMaster's</h3>
+                </div>
+                <nav class="nav-list">
+                    <ul>
+                        <li><a href="#howItWorks">How It Works</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav-list">
-                <ul>
-                    <li><a href="#howItWorks">How It Works</a></li>
-                </ul>
-            </nav>
         </header>
 
         <div class="container">
@@ -70,14 +72,15 @@
             </div>
         </div>
     </div>
-{{--
-    <div class="animatedLine">
-        <dotlottie-player src="https://lottie.host/9062900f-b3dd-4d80-9a96-91481535a433/c37BZrW7EQ.json"
-            background="transparent" speed="1" loop autoplay></dotlottie-player>
-    </div> --}}
 
-    {{-- <div class="CBFSection">
-        <dotlottie-player src="https://lottie.host/094935cf-cc8c-41ad-ab03-a168c2c7fa09/7hMrHPeFuF.json"
-            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
-    </div> --}}
+
+    <div class="container">
+        <div class="about">
+            <h1 class="aboutTitle" id="about">About This Site</h1><br>
+            <p class="aboutText">At BrewMaster's, we're passionate about coffee and dedicated to enhancing your coffee experience through
+                <strong>content-based filtering</strong>. By analyzing factors like flavor profiles, we personalize recommendations to match
+                your unique tastes. Our platform offers <strong>personalized suggestions and interactive tools</strong> to elevate your
+                coffee journey. Let's explore the world of coffee together. Cheers!</p>
+        </div>
+    </div>
 @endsection
