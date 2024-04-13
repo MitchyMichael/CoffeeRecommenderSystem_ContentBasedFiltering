@@ -4,7 +4,7 @@
     <div class="container">
         <div class="inputForm">
             <h1>
-                Tell us about your preference!
+                Tell us your preference!
             </h1>
             <form action="{{ url('/preferences') }}" method="POST">
                 @csrf
@@ -12,7 +12,7 @@
                 <div class="preferenceForm">
                     {{-- Mood Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Mood Preference</legend>
+                        <legend>How are you today?</legend>
                         <label for="mood1">
                             <input type="radio" id="mood1" name="preferenceMood" value="1">
                             <span>1 (Sad)</span>
@@ -38,7 +38,7 @@
 
                     {{-- Activity Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Activity Preference</legend>
+                        <legend>What will you do after this?</legend>
                         <label for="chilling">
                             <input type="radio" id="chilling" name="preferenceActivity" value="1">
                             <span>Chilling</span>
@@ -52,7 +52,7 @@
 
                     {{-- Coffee Temperature Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Coffee Temperature Preference</legend>
+                        <legend>Ice coffee or hot coffee?</legend>
                         <label for="cold">
                             <input type="radio" id="cold" name="preferenceCoffeeTemperature" value="1">
                             <span>Cold</span>
@@ -66,7 +66,7 @@
 
                     {{-- Coffee Sweetness Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Coffee Sweetness Preference</legend>
+                        <legend>Sweet or not sweet?</legend>
                         <label for="sweetness1">
                             <input type="radio" id="sweetness1" name="preferenceCoffeeSweetness" value="1">
                             <span>1 (Not sweet)</span>
@@ -92,7 +92,7 @@
 
                     {{-- Coffee Milkness Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Coffee Milkness Preference</legend>
+                        <legend>Do you want some milk?</legend>
                         <label for="no_milk">
                             <input type="radio" id="no_milk" name="preferenceCoffeeMilkness" value="1">
                             <span>No Milk</span>
@@ -106,7 +106,7 @@
 
                     {{-- Coffee Price Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Coffee Price Preference</legend>
+                        <legend>Do you prefer the cheap one or the pricy one?</legend>
                         <label for="cheap">
                             <input type="radio" id="cheap" name="preferenceCoffeePrice" value="1">
                             <span>Cheap</span>
@@ -120,7 +120,7 @@
 
                     {{-- Coffee Drink Type Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Coffee Drink Type Preference</legend>
+                        <legend>Do you prefer pure coffee or variant coffee?</legend>
                         <label for="pure_coffee">
                             <input type="radio" id="pure_coffee" name="preferenceCoffeeDrinkType" value="1">
                             <span>Pure Coffee</span>
@@ -134,7 +134,7 @@
 
                     {{-- Coffee Acidity Level Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Coffee Acidity Level Preference</legend>
+                        <legend>Do you prefer the more acid one or not?</legend>
                         <label for="acidity1">
                             <input type="radio" id="acidity1" name="preferenceCoffeeAcidityLevel" value="1">
                             <span>1 (Not acid)</span>
@@ -160,7 +160,7 @@
 
                     {{-- Coffee Strength Level Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Coffee Strength Level Preference</legend>
+                        <legend>Do you prefer a strong coffee or not?</legend>
                         <label for="strength1">
                             <input type="radio" id="strength1" name="preferenceCoffeeStrengthLevel" value="1">
                             <span>1 (Not strong)</span>
