@@ -184,7 +184,7 @@
                 <br>
 
                 {{-- Submit Button --}}
-                <input type="button" id="nextBtn" value="Next">
+                <input type="button" id="nextBtn" value="Next" style="display: none;">
                 <input type="submit" id="submitBtn" value="Submit Preferences" style="display: none;">
             </form>
 
