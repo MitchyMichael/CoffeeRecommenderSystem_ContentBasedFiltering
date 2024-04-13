@@ -38,7 +38,9 @@ body {
 }
 
 h1 {
-    color: cyan;
+    color: #d88b43;
+    font-weight: bold;
+    font-size: 36px;
 }
 
 .navbar {
@@ -51,7 +53,7 @@ h1 {
     -webkit-backdrop-filter: blur(8px);
 }
 
-.title-list{
+.title-list {
     display: flex;
 }
 
@@ -94,7 +96,7 @@ h1 {
 
 .header {
     height: 650px;
-    background-image: url("/img/coffeeMainNew.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/coffeeMainNew.png");
     background-position: center left;
     background-size: cover;
 }
@@ -161,12 +163,12 @@ h1 {
     border-radius: 30px;
 }
 
-.lottieFile{
+.lottieFile {
     width: 150px;
     margin: auto;
 }
 
-.cardTitle{
+.cardTitle {
     font-size: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -174,11 +176,11 @@ h1 {
     color: #d88b43;
 }
 
-.lottieContainer{
+.lottieContainer {
     height: 150px;
 }
 
-.CTAButton{
+.CTAButton {
     padding-top: 10px;
     align-items: center;
     justify-content: center;
@@ -207,27 +209,66 @@ h1 {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-.CBFSection{
+.CBFSection {
     height: fit-content;
     background-color: orangered;
 
 }
 
-.aboutTitle{
+.aboutTitle {
     color: #fffcf6;
     font-weight: bold;
     font-size: 36px;
 }
 
-.about{
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("/img/coffeeAbout.png");
+.about {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/coffeeAbout2.jpg");
     background-position: center left;
     background-size: cover;
     padding: 50px;
     border-radius: 30px;
     margin-bottom: 100px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.aboutText{
+.aboutText {
     color: #fffcf6;
 }
+
+.aboutLeft {
+    width: 60%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.aboutRight {
+    width: 40%;
+}
+
+.inputForm {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+span {
+    color: #00f;
+    background-color: #d88b43;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slide-group {
+    background-color: #d88b43;
+    width: fit-content;
+    margin: auto;
+}
+
+

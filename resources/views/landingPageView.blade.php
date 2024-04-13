@@ -76,11 +76,25 @@
 
     <div class="container">
         <div class="about">
-            <h1 class="aboutTitle" id="about">About This Site</h1><br>
-            <p class="aboutText">At BrewMaster's, we're passionate about coffee and dedicated to enhancing your coffee experience through
-                <strong>content-based filtering</strong>. By analyzing factors like flavor profiles, we personalize recommendations to match
-                your unique tastes. Our platform offers <strong>personalized suggestions and interactive tools</strong> to elevate your
-                coffee journey. Let's explore the world of coffee together. Cheers!</p>
+            <div class="aboutLeft">
+                <h1 class="aboutTitle" id="about">About This Site</h1><br>
+                <p class="aboutText">At BrewMaster's, we're passionate about coffee and dedicated to enhancing your coffee
+                    experience through
+                    <strong>content-based filtering</strong>. By analyzing factors like flavor profiles, we personalize
+                    recommendations to match
+                    your unique tastes. Our platform offers <strong>personalized suggestions and interactive tools</strong>
+                    to
+                    elevate your
+                    coffee journey. Let's explore the world of coffee together. Cheers!
+                </p>
+            </div>
+
+            <div class="aboutRight">
+                <dotlottie-player src="https://lottie.host/800f3610-0a1c-475d-881f-a26bffc9d5bb/1Tc7yqJEZz.json"
+                    background="transparent" speed="1" loop
+                    autoplay></dotlottie-player>
+            </div>
+
         </div>
     </div>
 @endsection
