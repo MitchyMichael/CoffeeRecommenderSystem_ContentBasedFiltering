@@ -73,7 +73,6 @@
         </div>
     </div>
 
-
     <div class="container">
         <div class="about">
             <div class="aboutLeft">
