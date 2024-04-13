@@ -212,7 +212,6 @@ h1 {
 .CBFSection {
     height: fit-content;
     background-color: orangered;
-
 }
 
 .aboutTitle {
@@ -268,6 +267,36 @@ input[type="radio"] {
 .slide-group {
     width: fit-content;
     margin: auto;
+    /* background-color: aqua; */
+}
+
+.preferenceForm{
+    /* background-color: #00f; */
+    display: flex;
+    height: 300px;
+}
+
+.formButton2 {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fffcf6;
+    background-color: #d88b43;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.formButton2:hover {
+    background-color: #fffcf6;
+    color: #d88b43;
+    border: 2px solid #d88b43;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 
