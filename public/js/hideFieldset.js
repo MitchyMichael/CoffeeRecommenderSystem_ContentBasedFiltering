@@ -17,13 +17,27 @@ document.addEventListener("DOMContentLoaded", function () {
             fieldsets[currentFieldsetIndex].style.display = "block"; // Show next fieldset
             if (currentFieldsetIndex === fieldsets.length - 1) {
                 nextBtn.style.display = "none"; // Hide next button on the last fieldset
-                submitBtn.style.display = "inline-block"; // Show submit button on the last fieldset
+                addChangeEventListenersLast(); // Show submit button on the last fieldset
             } else {
                 nextBtn.style.display = "none"; // Hide next button on other fieldsets
                 // Add event listener for the new current fieldset
                 addChangeEventListeners();
             }
         }
+    }
+
+    // Function to add event listeners for radio buttons in the last fieldset
+    function addChangeEventListenersLast() {
+        var radios = fieldsets[currentFieldsetIndex].querySelectorAll('input[type="radio"]');
+        radios.forEach(function (radio) {
+            radio.addEventListener("change", function () {
+                if (isRadioSelected()) {
+                    submitBtn.style.display = "inline-block";
+                } else {
+                    submitBtn.style.display = "none";
+                }
+            });
+        });
     }
 
     // Function to add event listeners for radio buttons in the current fieldset
