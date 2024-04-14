@@ -4,7 +4,7 @@
     <div class="container">
         <div class="inputForm">
             <h1>
-                Tell us your preference!
+                Tell us your coffee preference!
             </h1>
             <form action="{{ url('/preferences') }}" method="POST">
                 @csrf
@@ -32,9 +32,9 @@
                             <span>
                                 <div class="inSpan">
                                     <dotlottie-player
-                                    src="https://lottie.host/91c766f6-85ef-4061-921e-c1e781c2d94f/2d1IMO75io.json"
-                                    background="transparent" speed="1" loop autoplay
-                                    class="inputChoise"></dotlottie-player>
+                                        src="https://lottie.host/91c766f6-85ef-4061-921e-c1e781c2d94f/2d1IMO75io.json"
+                                        background="transparent" speed="1" loop autoplay
+                                        class="inputChoise"></dotlottie-player>
                                     <p>Happy</p>
                                 </div>
 
@@ -51,9 +51,9 @@
                             <span>
                                 <div class="inSpan">
                                     <dotlottie-player
-                                    src="https://lottie.host/87839366-0ff1-4e00-94cf-902fc3df322a/XRYeBmKow5.json"
-                                    background="transparent" speed="1" loop autoplay
-                                    class="inputChoise"></dotlottie-player>
+                                        src="https://lottie.host/87839366-0ff1-4e00-94cf-902fc3df322a/XRYeBmKow5.json"
+                                        background="transparent" speed="1" loop autoplay
+                                        class="inputChoise"></dotlottie-player>
                                     <p>Chilling</p>
                                 </div>
 
@@ -64,9 +64,9 @@
                             <span>
                                 <div class="inSpan">
                                     <dotlottie-player
-                                    src="https://lottie.host/64f5027f-8ca3-483f-9492-a3e529538a1e/Kb3SQCSrh6.json"
-                                    background="transparent" speed="1" loop autoplay
-                                    class="inputChoise"></dotlottie-player>
+                                        src="https://lottie.host/64f5027f-8ca3-483f-9492-a3e529538a1e/Kb3SQCSrh6.json"
+                                        background="transparent" speed="1" loop autoplay
+                                        class="inputChoise"></dotlottie-player>
                                     <p>Working</p>
                                 </div>
 
@@ -77,14 +77,30 @@
 
                     {{-- Coffee Temperature Preference --}}
                     <fieldset class="slide-group">
-                        <legend class="slideTitle">Ice coffee or hot coffee?</legend>
+                        <legend class="slideTitle">Do you prefer ice coffee or hot coffee?</legend>
                         <label for="cold">
                             <input type="radio" id="cold" name="preferenceCoffeeTemperature" value="1">
-                            <span>Cold</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/d62d4b75-1a4c-45ec-84d0-220b69c453a1/rVVlyTVZAc.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Ice Coffee</p>
+                                </div>
+                            </span>
                         </label>
                         <label for="hot">
                             <input type="radio" id="hot" name="preferenceCoffeeTemperature" value="5">
-                            <span>Hot</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/63975f44-f744-4030-8187-5c6e0c256be4/aoLBi1kSAA.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Hot Coffee</p>
+                                </div>
+                            </span>
                         </label>
                     </fieldset>
                     <br>
@@ -94,23 +110,28 @@
                         <legend class="slideTitle">Sweet or not sweet?</legend>
                         <label for="sweetness1">
                             <input type="radio" id="sweetness1" name="preferenceCoffeeSweetness" value="1">
-                            <span>1 (Not sweet)</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/a9fdeac8-08a4-4874-a293-90508ddbe07c/01P1wg7ES2.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                        <p>Not Sweet</p>
+                                </div>
+                            </span>
                         </label>
-                        <label for="sweetness2">
-                            <input type="radio" id="sweetness2" name="preferenceCoffeeSweetness" value="2">
-                            <span>2</span>
-                        </label>
-                        <label for="sweetness3">
-                            <input type="radio" id="sweetness3" name="preferenceCoffeeSweetness" value="3">
-                            <span>3</span>
-                        </label>
-                        <label for="sweetness4">
-                            <input type="radio" id="sweetness4" name="preferenceCoffeeSweetness" value="4">
-                            <span>4</span>
-                        </label>
+
                         <label for="sweetness5">
                             <input type="radio" id="sweetness5" name="preferenceCoffeeSweetness" value="5">
-                            <span>5 (Sweet)</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/627f4811-2452-4b3e-a644-a205512ab875/P3AHoWu8TU.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Sweet</p>
+                                </div>
+                            </span>
                         </label>
                     </fieldset>
                     <br>
