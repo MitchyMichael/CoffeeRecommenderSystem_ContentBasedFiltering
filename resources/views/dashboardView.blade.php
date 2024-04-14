@@ -15,23 +15,22 @@
                         <legend>How are you today?</legend>
                         <label for="mood1">
                             <input type="radio" id="mood1" name="preferenceMood" value="1">
-                            <span>1 (Sad)</span>
+                            <span>
+                                <dotlottie-player
+                                    src="https://lottie.host/156c8a97-758f-4006-a14f-e88189c8cb9f/pRvyMkbq4Y.json"
+                                    background="transparent" speed="1" loop
+                                    autoplay class="inputChoise"></dotlottie-player>
+                            </span>
                         </label>
-                        <label for="mood2">
-                            <input type="radio" id="mood2" name="preferenceMood" value="2">
-                            <span>2</span>
-                        </label>
-                        <label for="mood3">
-                            <input type="radio" id="mood3" name="preferenceMood" value="3">
-                            <span>3</span>
-                        </label>
-                        <label for="mood4">
-                            <input type="radio" id="mood4" name="preferenceMood" value="4">
-                            <span>4</span>
-                        </label>
+
                         <label for="mood5">
                             <input type="radio" id="mood5" name="preferenceMood" value="5">
-                            <span>5 (Happy)</span>
+                            <span>
+                                <dotlottie-player
+                                    src="https://lottie.host/91c766f6-85ef-4061-921e-c1e781c2d94f/2d1IMO75io.json"
+                                    background="transparent" speed="1" loop autoplay
+                                    class="inputChoise"></dotlottie-player>
+                            </span>
                         </label>
                     </fieldset>
                     <br>
@@ -187,7 +186,8 @@
 
                 {{-- Submit Button --}}
                 <input class="formButton2" type="button" id="nextBtn" value="Next" style="display: none;">
-                <input class="formButton2" type="submit" id="submitBtn" value="Submit Preferences" style="display: none;">
+                <input class="formButton2" type="submit" id="submitBtn" value="Submit Preferences"
+                    style="display: none;">
             </form>
 
             <script src="/js/hideFieldset.js"></script>

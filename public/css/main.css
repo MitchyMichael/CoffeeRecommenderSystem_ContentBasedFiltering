@@ -255,7 +255,7 @@ label {
     cursor: pointer;
 }
 
-input[type="radio"]:checked+span {
+input[type="radio"]:checked+span >  dotlottie-player{
     color: #00f;
     background-color: #d88b43;
 }
@@ -267,13 +267,11 @@ input[type="radio"] {
 .slide-group {
     width: fit-content;
     margin: auto;
-    /* background-color: aqua; */
 }
 
-.preferenceForm{
-    /* background-color: #00f; */
+.preferenceForm {
     display: flex;
-    height: 300px;
+    height: 400px;
 }
 
 .formButton2 {
@@ -299,6 +297,8 @@ input[type="radio"] {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
+.inputChoise {
+    height: 200px;
+    width: 200px;
+}
 
