@@ -12,14 +12,14 @@
                 <div class="preferenceForm">
                     {{-- Mood Preference --}}
                     <fieldset class="slide-group">
-                        <legend>How are you today?</legend>
+                        <legend class="slideTitle">How are you today?</legend>
                         <label for="mood1">
                             <input type="radio" id="mood1" name="preferenceMood" value="1">
                             <span>
                                 <dotlottie-player
                                     src="https://lottie.host/156c8a97-758f-4006-a14f-e88189c8cb9f/pRvyMkbq4Y.json"
-                                    background="transparent" speed="1" loop
-                                    autoplay class="inputChoise"></dotlottie-player>
+                                    background="transparent" speed="1" loop autoplay class="inputChoise">
+                                </dotlottie-player>
                             </span>
                         </label>
 
@@ -37,21 +37,31 @@
 
                     {{-- Activity Preference --}}
                     <fieldset class="slide-group">
-                        <legend>What will you do after this?</legend>
+                        <legend class="slideTitle">What will you do after this?</legend>
                         <label for="chilling">
                             <input type="radio" id="chilling" name="preferenceActivity" value="1">
-                            <span>Chilling</span>
+                            <span>
+                                <dotlottie-player
+                                    src="https://lottie.host/87839366-0ff1-4e00-94cf-902fc3df322a/XRYeBmKow5.json"
+                                    background="transparent" speed="1" loop autoplay
+                                    class="inputChoise"></dotlottie-player>
+                            </span>
                         </label>
                         <label for="working">
                             <input type="radio" id="working" name="preferenceActivity" value="5">
-                            <span>Working</span>
+                            <span>
+                                <dotlottie-player
+                                    src="https://lottie.host/64f5027f-8ca3-483f-9492-a3e529538a1e/Kb3SQCSrh6.json"
+                                    background="transparent" speed="1" loop autoplay
+                                    class="inputChoise"></dotlottie-player>
+                            </span>
                         </label>
                     </fieldset>
                     <br>
 
                     {{-- Coffee Temperature Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Ice coffee or hot coffee?</legend>
+                        <legend class="slideTitle">Ice coffee or hot coffee?</legend>
                         <label for="cold">
                             <input type="radio" id="cold" name="preferenceCoffeeTemperature" value="1">
                             <span>Cold</span>
@@ -65,7 +75,7 @@
 
                     {{-- Coffee Sweetness Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Sweet or not sweet?</legend>
+                        <legend class="slideTitle">Sweet or not sweet?</legend>
                         <label for="sweetness1">
                             <input type="radio" id="sweetness1" name="preferenceCoffeeSweetness" value="1">
                             <span>1 (Not sweet)</span>
@@ -91,7 +101,7 @@
 
                     {{-- Coffee Milkness Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Do you want some milk?</legend>
+                        <legend class="slideTitle">Do you want some milk?</legend>
                         <label for="no_milk">
                             <input type="radio" id="no_milk" name="preferenceCoffeeMilkness" value="1">
                             <span>No Milk</span>
@@ -105,7 +115,7 @@
 
                     {{-- Coffee Price Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Do you prefer the cheap one or the pricy one?</legend>
+                        <legend class="slideTitle">Do you prefer the cheap one or the pricy one?</legend>
                         <label for="cheap">
                             <input type="radio" id="cheap" name="preferenceCoffeePrice" value="1">
                             <span>Cheap</span>
@@ -119,7 +129,7 @@
 
                     {{-- Coffee Drink Type Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Do you prefer pure coffee or variant coffee?</legend>
+                        <legend class="slideTitle">Do you prefer pure coffee or variant coffee?</legend>
                         <label for="pure_coffee">
                             <input type="radio" id="pure_coffee" name="preferenceCoffeeDrinkType" value="1">
                             <span>Pure Coffee</span>
@@ -133,7 +143,7 @@
 
                     {{-- Coffee Acidity Level Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Do you prefer the more acid one or not?</legend>
+                        <legend class="slideTitle">Do you prefer the more acid one or not?</legend>
                         <label for="acidity1">
                             <input type="radio" id="acidity1" name="preferenceCoffeeAcidityLevel" value="1">
                             <span>1 (Not acid)</span>
@@ -159,7 +169,7 @@
 
                     {{-- Coffee Strength Level Preference --}}
                     <fieldset class="slide-group">
-                        <legend>Do you prefer a strong coffee or not?</legend>
+                        <legend class="slideTitle">Do you prefer a strong coffee or not?</legend>
                         <label for="strength1">
                             <input type="radio" id="strength1" name="preferenceCoffeeStrengthLevel" value="1">
                             <span>1 (Not strong)</span>

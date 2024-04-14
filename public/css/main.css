@@ -255,8 +255,11 @@ label {
     cursor: pointer;
 }
 
-input[type="radio"]:checked+span >  dotlottie-player{
-    color: #00f;
+input[type="radio"]:checked+span>dotlottie-player {
+    background-color: #d88b43;
+}
+
+input[type="radio"]:checked+span {
     background-color: #d88b43;
 }
 
@@ -300,5 +303,10 @@ input[type="radio"] {
 .inputChoise {
     height: 200px;
     width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
+.slideTitle {
+    padding-bottom: 30px;
+}
