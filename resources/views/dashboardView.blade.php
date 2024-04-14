@@ -16,20 +16,28 @@
                         <label for="mood1">
                             <input type="radio" id="mood1" name="preferenceMood" value="1">
                             <span>
-                                <dotlottie-player
-                                    src="https://lottie.host/156c8a97-758f-4006-a14f-e88189c8cb9f/pRvyMkbq4Y.json"
-                                    background="transparent" speed="1" loop autoplay class="inputChoise">
-                                </dotlottie-player>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/156c8a97-758f-4006-a14f-e88189c8cb9f/pRvyMkbq4Y.json"
+                                        background="transparent" speed="1" loop autoplay class="inputChoise">
+                                    </dotlottie-player>
+                                    <p>Sad</p>
+                                </div>
+
                             </span>
                         </label>
 
                         <label for="mood5">
                             <input type="radio" id="mood5" name="preferenceMood" value="5">
                             <span>
-                                <dotlottie-player
+                                <div class="inSpan">
+                                    <dotlottie-player
                                     src="https://lottie.host/91c766f6-85ef-4061-921e-c1e781c2d94f/2d1IMO75io.json"
                                     background="transparent" speed="1" loop autoplay
                                     class="inputChoise"></dotlottie-player>
+                                    <p>Happy</p>
+                                </div>
+
                             </span>
                         </label>
                     </fieldset>
@@ -41,19 +49,27 @@
                         <label for="chilling">
                             <input type="radio" id="chilling" name="preferenceActivity" value="1">
                             <span>
-                                <dotlottie-player
+                                <div class="inSpan">
+                                    <dotlottie-player
                                     src="https://lottie.host/87839366-0ff1-4e00-94cf-902fc3df322a/XRYeBmKow5.json"
                                     background="transparent" speed="1" loop autoplay
                                     class="inputChoise"></dotlottie-player>
+                                    <p>Chilling</p>
+                                </div>
+
                             </span>
                         </label>
                         <label for="working">
                             <input type="radio" id="working" name="preferenceActivity" value="5">
                             <span>
-                                <dotlottie-player
+                                <div class="inSpan">
+                                    <dotlottie-player
                                     src="https://lottie.host/64f5027f-8ca3-483f-9492-a3e529538a1e/Kb3SQCSrh6.json"
                                     background="transparent" speed="1" loop autoplay
                                     class="inputChoise"></dotlottie-player>
+                                    <p>Working</p>
+                                </div>
+
                             </span>
                         </label>
                     </fieldset>
