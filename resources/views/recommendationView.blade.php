@@ -37,8 +37,7 @@
         </div>
 
         <div class="confirmButton">
-            <h3>Confirm</h3>
-            <h3>Cancel</h3>
+            <h3 class="confirmButton2">Confirm</h3>
         </div>
     </div>
 
@@ -48,6 +47,6 @@
         <input type="hidden" name="customer_id" id="customerIdInput" value="{{ $thisCustomerID }}">
     </form>
 
-    {{-- <script src="/js/submitCoffeeChosen.js"></script> --}}
+    <script src="/js/submitCoffeeChosen.js"></script>
     <script src="/js/coffeePopUp.js"></script>
 @endsection
