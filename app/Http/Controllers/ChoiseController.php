@@ -19,9 +19,9 @@ class ChoiseController extends Controller
         $choise = new Choise();
         $choise->customer_id = $customerId;
         $choise->coffee_id = $coffeeId;
+        // $choice->isLike = $isLike ?? null; This is to be done
+        
         $choise->save();
-
-        // dd($coffeeId, $customerId);
 
         return redirect()->route('root')->with('success', 'Coffee saved successfully.');
     }

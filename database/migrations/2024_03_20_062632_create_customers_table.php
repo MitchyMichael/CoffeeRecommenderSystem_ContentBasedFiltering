@@ -42,7 +42,7 @@ php artisan migrate:fresh
 
 php artisan migrate --path=/database/migrations/2024_03_20_063856_create_preferences_table.php \
 && php artisan migrate --path=/database/migrations/2024_03_20_063923_create_coffees_table.php \
-&& php artisan migrate --path=/database/migrations/2024_03_20_063846_create_choise_table.php 
+&& php artisan migrate --path=/database/migrations/2024_03_20_063846_create_choise_table.php
 
 php artisan db:seed --class=CoffeesSeeder
 ============================================================
@@ -68,6 +68,7 @@ return new class extends Migration {
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+
 
             // Migrate preference table first
             $table->foreignId('preference_id')->constrained('preferences');

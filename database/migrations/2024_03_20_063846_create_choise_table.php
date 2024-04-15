@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('choises', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->boolean('isLike')->nullable();
 
             // Migrate customers table first
             $table->foreignId('customer_id')->constrained('customers');
