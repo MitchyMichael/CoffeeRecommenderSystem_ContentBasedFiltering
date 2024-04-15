@@ -255,17 +255,17 @@ label {
     cursor: pointer;
 }
 
-input[type="radio"]:checked+span> div {
+input[type="radio"]:checked+span>div {
     background-color: #d88b43;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-input[type="radio"]:checked+span> div > p {
+input[type="radio"]:checked+span>div>p {
     color: #fffcf6;
 }
 
-.inSpan{
+.inSpan {
     padding-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -316,4 +316,70 @@ input[type="radio"] {
 
 .slideTitle {
     padding-bottom: 30px;
+}
+
+.coffeeRec {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: start;
+}
+
+.coffee-link {
+    text-decoration: none;
+    color: black;
+
+}
+
+.mainContentRec {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.recSubTitle {
+    font-size: 24px;
+}
+
+.recContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.recMenu {
+    padding: 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recPhoto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.item-description-popup {
+    position: absolute;
+    top: 0;
+    margin-top: 150px;
+    margin-left: 25%;
+    background-color: #d88b43;
+    padding: 50px;
+    border-radius: 50px;
+    color: #fffcf6;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 50%;
+}
+
+.confirmButton{
+    display: flex;
+    justify-content: center;
 }

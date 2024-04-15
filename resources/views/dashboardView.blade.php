@@ -23,7 +23,6 @@
                                     </dotlottie-player>
                                     <p>Sad</p>
                                 </div>
-
                             </span>
                         </label>
 

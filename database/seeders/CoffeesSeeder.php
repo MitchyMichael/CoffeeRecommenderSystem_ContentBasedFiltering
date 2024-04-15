@@ -17,8 +17,8 @@ class CoffeesSeeder extends Seeder
         DB::table('coffees')->insert([
             [
                 'coffeeName' => 'Ice Shakencano',
-                'coffeeDescription' => 'Espresso shake with homemade aren.',
-                'coffeePhoto' => '',
+                'coffeeDescription' => 'Double espresso shake with aren syrup.',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 22000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -39,7 +39,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Friendly Coffee',
                 'coffeeDescription' => 'The famous aren latte, with ice.',
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 23000,
                 'coffeeIsBestSeller' => true,
                 'coffeeIsPromo' => false,
@@ -60,7 +60,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Hot Friendly Coffee',
                 'coffeeDescription' => 'The famous aren latte, but hot.',
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 23000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -80,8 +80,8 @@ class CoffeesSeeder extends Seeder
 
             [
                 'coffeeName' => 'Ice Vanilla Latte',
-                'coffeeDescription' => 'Enjoy the delicious mix of vanilla, milk, and espresso.',
-                'coffeePhoto' => '',
+                'coffeeDescription' => 'Enjoy the delicious mix of vanilla, fresh milk, and espresso.',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 23000,
                 'coffeeIsBestSeller' => true,
                 'coffeeIsPromo' => false,
@@ -102,7 +102,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Hazelnut Latte',
                 'coffeeDescription' => 'Savor the harmonious blend of hazelnut, fresh milk, and espresso.',
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 23000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -123,7 +123,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Citrus Cafe',
                 'coffeeDescription' => 'The exciting combination of orange juice and espresso.',
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 24000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -143,8 +143,8 @@ class CoffeesSeeder extends Seeder
 
             [
                 'coffeeName' => 'Ice Butterscotch Latte',
-                'coffeeDescription' => 'A blend of espresso, fresh milk, and butterscotch syrup.',
-                'coffeePhoto' => '',
+                'coffeeDescription' => 'A blend of a single espresso, fresh milk, butterscotch syrup, and homemade cream.',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 25000,
                 'coffeeIsBestSeller' => true,
                 'coffeeIsPromo' => false,
@@ -164,8 +164,8 @@ class CoffeesSeeder extends Seeder
 
             [
                 'coffeeName' => 'Ice Candy Latte',
-                'coffeeDescription' => 'A mixture consisting of espresso, fresh milk, and caramel syrup.',
-                'coffeePhoto' => '',
+                'coffeeDescription' => 'A mixture consisting of a single espresso, fresh milk, and caramel syrup.',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 25000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -186,7 +186,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Biru',
                 'coffeeDescription' => "It's a blue cafe latte.",
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 25000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -207,7 +207,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Apple Pie Latte',
                 'coffeeDescription' => "Cafe Latte that taste like apple pie.",
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 25000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -228,7 +228,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Not Tiramisu Latte',
                 'coffeeDescription' => "It is not tiramisu but slightly taste like tiramisu.",
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 25000,
                 'coffeeIsBestSeller' => true,
                 'coffeeIsPromo' => false,
@@ -249,7 +249,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Matchapresso',
                 'coffeeDescription' => "A fusion of espresso, fresh milk, and matcha.",
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 30000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -269,8 +269,8 @@ class CoffeesSeeder extends Seeder
 
             [
                 'coffeeName' => 'Ice Happy Mocha',
-                'coffeeDescription' => "A combination of espresso, fresh milk, and chocolate.",
-                'coffeePhoto' => '',
+                'coffeeDescription' => "A combination of double espresso, steamed milk, and chocolate.",
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 30000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -290,8 +290,8 @@ class CoffeesSeeder extends Seeder
 
             [
                 'coffeeName' => 'Hot Americano',
-                'coffeeDescription' => "Espresso with water, no added sugar.",
-                'coffeePhoto' => '',
+                'coffeeDescription' => "Double espresso with water, no added sugar.",
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 20000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -311,8 +311,8 @@ class CoffeesSeeder extends Seeder
 
             [
                 'coffeeName' => 'Ice Americano',
-                'coffeeDescription' => "Espresso with water, no added sugar.",
-                'coffeePhoto' => '',
+                'coffeeDescription' => "Double espresso with water, no added sugar.",
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 20000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -333,7 +333,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Hot Cappuccino',
                 'coffeeDescription' => "Espresso with fresh milk, without any added sugar.",
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 23000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -354,7 +354,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Cappuccino',
                 'coffeeDescription' => "Espresso with fresh milk, without any added sugar.",
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 23000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -375,7 +375,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Cold Brew',
                 'coffeeDescription' => "Coffee that brewed in cold water for 12 hours.",
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 30000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
@@ -396,7 +396,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Hot Espresso Arabica',
                 'coffeeDescription' => "Just an espresso.",
-                'coffeePhoto' => '',
+                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
                 'coffeePrice' => 15000,
                 'coffeeIsBestSeller' => false,
                 'coffeeIsPromo' => false,
