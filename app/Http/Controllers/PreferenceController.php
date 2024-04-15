@@ -19,7 +19,6 @@ class PreferenceController extends Controller
         $preference->preferenceCoffeeSweetness = $request->input('preferenceCoffeeSweetness');
         $preference->preferenceCoffeeMilkness = $request->input('preferenceCoffeeMilkness');
         $preference->preferenceCoffeePrice = $request->input('preferenceCoffeePrice');
-        $preference->preferenceCoffeeDrinkType = $request->input('preferenceCoffeeDrinkType');
         $preference->preferenceCoffeeAcidityLevel = $request->input('preferenceCoffeeAcidityLevel');
         $preference->preferenceCoffeeStrengthLevel = $request->input('preferenceCoffeeStrengthLevel');
         $preference->save();

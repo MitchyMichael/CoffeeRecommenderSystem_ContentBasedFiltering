@@ -42,9 +42,7 @@ php artisan migrate:fresh
 
 php artisan migrate --path=/database/migrations/2024_03_20_063856_create_preferences_table.php \
 && php artisan migrate --path=/database/migrations/2024_03_20_063923_create_coffees_table.php \
-&& php artisan migrate --path=/database/migrations/2024_03_20_063846_create_choise_table.php \
-
-&& php artisan migrate --path=/database/migrations/2024_03_20_064140_create_coffeepreference_table.php -> Not Used
+&& php artisan migrate --path=/database/migrations/2024_03_20_063846_create_choise_table.php 
 
 php artisan db:seed --class=CoffeesSeeder
 ============================================================

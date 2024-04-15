@@ -27,7 +27,6 @@ return new class extends Migration {
             $table->integer('coffeeSweetness')->default(0);
             $table->integer('coffeeMilkness')->default(0);
             $table->integer('coffeeCheapness')->default(0);
-            $table->integer('coffeeDrinkType')->default(0);
             $table->integer('coffeeAcidityLevel')->default(0);
             $table->integer('coffeeStrengthLevel')->default(0);
 

@@ -116,7 +116,7 @@
                                         src="https://lottie.host/a9fdeac8-08a4-4874-a293-90508ddbe07c/01P1wg7ES2.json"
                                         background="transparent" speed="1" class="inputChoise" loop
                                         autoplay></dotlottie-player>
-                                        <p>Not Sweet</p>
+                                    <p>Not Sweet</p>
                                 </div>
                             </span>
                         </label>
@@ -138,14 +138,30 @@
 
                     {{-- Coffee Milkness Preference --}}
                     <fieldset class="slide-group">
-                        <legend class="slideTitle">Do you want some milk?</legend>
+                        <legend class="slideTitle">Do you want it with milk?</legend>
                         <label for="no_milk">
                             <input type="radio" id="no_milk" name="preferenceCoffeeMilkness" value="1">
-                            <span>No Milk</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/a9fdeac8-08a4-4874-a293-90508ddbe07c/01P1wg7ES2.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>No Milk</p>
+                                </div>
+                            </span>
                         </label>
                         <label for="with_milk">
                             <input type="radio" id="with_milk" name="preferenceCoffeeMilkness" value="5">
-                            <span>With Milk</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/0880cf67-500e-4b5d-887d-6b560ff28ffb/soEv6NIgHp.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>With Milk</p>
+                                </div>
+                            </span>
                         </label>
                     </fieldset>
                     <br>
@@ -155,25 +171,27 @@
                         <legend class="slideTitle">Do you prefer the cheap one or the pricy one?</legend>
                         <label for="cheap">
                             <input type="radio" id="cheap" name="preferenceCoffeePrice" value="1">
-                            <span>Cheap</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/469205c7-0948-4949-b78c-b88a92680a6c/KAFHzhUK13.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Cheap</p>
+                                </div>
+                            </span>
                         </label>
                         <label for="pricy">
                             <input type="radio" id="pricy" name="preferenceCoffeePrice" value="5">
-                            <span>Pricy</span>
-                        </label>
-                    </fieldset>
-                    <br>
-
-                    {{-- Coffee Drink Type Preference --}}
-                    <fieldset class="slide-group">
-                        <legend class="slideTitle">Do you prefer pure coffee or variant coffee?</legend>
-                        <label for="pure_coffee">
-                            <input type="radio" id="pure_coffee" name="preferenceCoffeeDrinkType" value="1">
-                            <span>Pure Coffee</span>
-                        </label>
-                        <label for="variant_coffee">
-                            <input type="radio" id="variant_coffee" name="preferenceCoffeeDrinkType" value="5">
-                            <span>Variant Coffee</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/c18ac307-9ecc-4f9f-b2d6-bb28603cb9ff/G6BsgUQXcg.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Pricy</p>
+                                </div>
+                            </span>
                         </label>
                     </fieldset>
                     <br>
@@ -183,23 +201,27 @@
                         <legend class="slideTitle">Do you prefer the more acid one or not?</legend>
                         <label for="acidity1">
                             <input type="radio" id="acidity1" name="preferenceCoffeeAcidityLevel" value="1">
-                            <span>1 (Not acid)</span>
-                        </label>
-                        <label for="acidity2">
-                            <input type="radio" id="acidity2" name="preferenceCoffeeAcidityLevel" value="2">
-                            <span>2</span>
-                        </label>
-                        <label for="acidity3">
-                            <input type="radio" id="acidity3" name="preferenceCoffeeAcidityLevel" value="3">
-                            <span>3</span>
-                        </label>
-                        <label for="acidity4">
-                            <input type="radio" id="acidity4" name="preferenceCoffeeAcidityLevel" value="4">
-                            <span>4</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/a9fdeac8-08a4-4874-a293-90508ddbe07c/01P1wg7ES2.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Not acid</p>
+                                </div>
+                            </span>
                         </label>
                         <label for="acidity5">
                             <input type="radio" id="acidity5" name="preferenceCoffeeAcidityLevel" value="5">
-                            <span>5 (Acid)</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/54209371-bee2-4f65-8955-b19d910b3474/KILMGaG4BC.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Acid</p>
+                                </div>
+                            </span>
                         </label>
                     </fieldset>
                     <br>
@@ -209,23 +231,27 @@
                         <legend class="slideTitle">Do you prefer a strong coffee or not?</legend>
                         <label for="strength1">
                             <input type="radio" id="strength1" name="preferenceCoffeeStrengthLevel" value="1">
-                            <span>1 (Not strong)</span>
-                        </label>
-                        <label for="strength2">
-                            <input type="radio" id="strength2" name="preferenceCoffeeStrengthLevel" value="2">
-                            <span>2</span>
-                        </label>
-                        <label for="strength3">
-                            <input type="radio" id="strength3" name="preferenceCoffeeStrengthLevel" value="3">
-                            <span>3</span>
-                        </label>
-                        <label for="strength4">
-                            <input type="radio" id="strength4" name="preferenceCoffeeStrengthLevel" value="4">
-                            <span>4</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/a9fdeac8-08a4-4874-a293-90508ddbe07c/01P1wg7ES2.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Not strong</p>
+                                </div>
+                            </span>
                         </label>
                         <label for="strength5">
                             <input type="radio" id="strength5" name="preferenceCoffeeStrengthLevel" value="5">
-                            <span>5 (Strong)</span>
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/cdb50b35-742e-4d6e-b19c-cd0f94f15e36/mlCjaXXV9e.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Strong</p>
+                                </div>
+                            </span>
                         </label>
                     </fieldset>
                     <br>
