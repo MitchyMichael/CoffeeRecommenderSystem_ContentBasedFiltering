@@ -102,7 +102,20 @@ h1 {
 }
 
 .heroContainer {
-    padding-top: 150px;
+    display: flex;
+}
+
+.heroLeft{
+    width: 50%;
+    padding-top: 12%;
+    padding-bottom: 10%;
+    height: fit-content;
+}
+
+.heroRight{
+    width: 40%;
+    margin: auto;
+    margin-right: 0;
 }
 
 .heroTitle1 {
@@ -365,15 +378,24 @@ input[type="radio"] {
 }
 
 .item-description-popup {
+    background-color: #fffcf6;
     position: absolute;
     top: 0;
-    margin-top: 5%;
-    margin-left: 35%;
-    background-color: #fffcf6;
-    padding: 50px;
-    border-radius: 50px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 30%;
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 100vh;
+}
+
+.description{
+    text-align: center;
+}
+
+.item-description-popup img {
+    height: 300px;
+    width: fit-content;
 }
 
 .confirmButton {
@@ -392,10 +414,17 @@ input[type="radio"] {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     font-size: 16px;
-    width: fit-content;
+    text-align: center;
+}
+
+.cancelButton {
+    background-color: rgb(179, 21, 21);
+    cursor: pointer;
+    width: 150px;
 }
 
 .confirmButton2 {
     background-color: rgb(21, 179, 21);
     cursor: pointer;
+    width: 150px;
 }

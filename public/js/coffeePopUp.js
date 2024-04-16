@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const coffeeLinks = document.querySelectorAll('.coffee-link');
     const descriptionPopup = document.querySelector('.item-description-popup .description');
+    const cancelButton = document.querySelector('.cancelButton'); // Add this line
 
     coffeeLinks.forEach(function (link) {
         link.addEventListener('click', function (event) {
@@ -10,11 +11,19 @@ document.addEventListener('DOMContentLoaded', function () {
             descriptionPopup.parentNode.style.display = 'block';
 
             // Hide popup when user clicks outside of it
-            document.addEventListener('click', function hidePopup(e) {
+            function hidePopup(e) {
                 if (!descriptionPopup.parentNode.contains(e.target) && !link.contains(e.target)) {
                     descriptionPopup.parentNode.style.display = 'none';
                     document.removeEventListener('click', hidePopup);
                 }
+            }
+
+            document.addEventListener('click', hidePopup);
+
+            // Add event listener for cancel button
+            cancelButton.addEventListener('click', function () {
+                descriptionPopup.parentNode.style.display = 'none';
+                document.removeEventListener('click', hidePopup);
             });
         });
     });

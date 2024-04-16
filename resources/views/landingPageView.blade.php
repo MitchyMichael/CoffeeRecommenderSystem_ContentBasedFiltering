@@ -20,13 +20,20 @@
 
         <div class="container">
             <div class="heroContainer">
-                <h1 class="heroTitle1">Find Your Ideal Coffee Match with</h1>
-                <h1 class="heroTitle1">BrewMaster's Recommendations</h1>
+                <div class="heroLeft">
+                    <h1 class="heroTitle1">Find Your Ideal Coffee Match with</h1>
+                    <h1 class="heroTitle1">BrewMaster's Recommendations</h1>
 
-                <h3 class="tagline">Personalized Coffee Selections Tailored Just for You</h3>
+                    <h3 class="tagline">Personalized Coffee Selections Tailored Just for You</h3>
 
-                <br>
-                <a href="/dashboard" class="button">Discover Your Brew</a>
+                    <br>
+                    <a href="/dashboard" class="button">Discover Your Brew</a>
+                </div>
+                <div class="heroRight">
+                    <dotlottie-player src="https://lottie.host/2e0df06b-7c5f-4a8a-9b7f-2325be1d0763/xpHiEh9MZp.json"
+                        background="transparent" speed="1" loop
+                        autoplay></dotlottie-player>
+                </div>
             </div>
         </div>
     </div>
@@ -90,8 +97,7 @@
 
             <div class="aboutRight">
                 <dotlottie-player src="https://lottie.host/800f3610-0a1c-475d-881f-a26bffc9d5bb/1Tc7yqJEZz.json"
-                    background="transparent" speed="1" loop
-                    autoplay></dotlottie-player>
+                    background="transparent" speed="1" loop autoplay></dotlottie-player>
             </div>
 
         </div>

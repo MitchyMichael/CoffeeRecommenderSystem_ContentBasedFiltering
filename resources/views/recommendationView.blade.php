@@ -32,11 +32,9 @@
     </div>
 
     <div class="item-description-popup" style="display: none;">
-        <div class="description">
-
-        </div>
-
+        <div class="description"></div>
         <div class="confirmButton">
+            <h3 class="cancelButton">Cancel</h3>
             <h3 class="confirmButton2">Confirm</h3>
         </div>
     </div>
