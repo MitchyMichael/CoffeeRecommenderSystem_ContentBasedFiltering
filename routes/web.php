@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PreferenceController;
 use App\Http\Controllers\ChoiseController;
+use App\Http\Controllers\LikeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,11 @@ Route::view('/recommendation', 'recommendationView');
 
 // Saving coffee recommendation choise
 Route::post('/save-coffee', [ChoiseController::class, 'saveCoffee']);
+
+// Thank You View
+Route::get('/thanks', function () {
+    return view('thanksView');
+})->name('thanks');
+
+// Save like
+Route::post('/save-like', [LikeController::class, 'saveLike']);

@@ -324,7 +324,6 @@ input[type="radio"] {
 .inputChoise {
     height: 200px;
     width: 200px;
-
 }
 
 .slideTitle {
@@ -341,6 +340,12 @@ input[type="radio"] {
     margin-left: 20px;
     margin-right: 20px;
     text-align: start;
+}
+
+.coffeeRec:hover{
+    background-color: #d88b43;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
 }
 
 .coffee-link {
@@ -373,8 +378,13 @@ input[type="radio"] {
     text-overflow: ellipsis;
 }
 
+.recMenu:hover{
+    color: #fffcf6;
+}
+
 .recPhoto {
     width: 100%;
+    border-radius: 10px;
 }
 
 .item-description-popup {
@@ -396,6 +406,7 @@ input[type="radio"] {
 .item-description-popup img {
     height: 300px;
     width: fit-content;
+    border-radius: 10px;
 }
 
 .confirmButton {
@@ -419,12 +430,48 @@ input[type="radio"] {
 
 .cancelButton {
     background-color: rgb(179, 21, 21);
+    border: 2px solid rgb(179, 21, 21);
     cursor: pointer;
     width: 150px;
 }
 
+.cancelButton:hover{
+    background-color: #fffcf6;
+    border: 2px solid rgb(179, 21, 21);
+    color: rgb(179, 21, 21);
+}
+
 .confirmButton2 {
     background-color: rgb(21, 179, 21);
+    border: 2px solid rgb(21, 179, 21);
     cursor: pointer;
     width: 150px;
+}
+
+.confirmButton2:hover{
+    background-color: #fffcf6;
+    border: 2px solid rgb(21, 179, 21);
+    color: rgb(21, 179, 21);
+}
+
+.thanks {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.thanksAnim{
+    display: flex;
+}
+
+.thanksAnimContent{
+    width: 50%;
+}
+
+.thanksForm{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.dislike{
+    transform: scaleY(-1);
 }
