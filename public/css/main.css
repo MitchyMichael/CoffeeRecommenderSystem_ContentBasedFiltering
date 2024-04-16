@@ -37,6 +37,10 @@ body {
     background-color: #fffcf6;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 h1 {
     color: #d88b43;
     font-weight: bold;
