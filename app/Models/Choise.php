@@ -12,6 +12,7 @@ class Choise extends Model
     protected $fillable = [
         'customer_id',
         'coffee_id',
+        'isLike'
     ];
 
     public function customer()
