@@ -16,11 +16,14 @@
                                 <a href="#" class="coffee-link" data-coffee-id="{{ $coffee->id }}">
                                     <div class="recMenu">
                                         <img src="{{ $coffee->coffeePhoto }}" class="recPhoto"> <br><br>
-                                        <strong>{{ $coffee->coffeeName }} </strong>
-                                        <br>
-                                        {{ $coffee->coffeeDescription }}
-                                        <br><br>
-                                        Rp {{ $coffee->coffeePrice }}
+                                        <div class="recPhotoDesc">
+                                            <strong>{{ $coffee->coffeeName }} </strong>
+                                            <br>
+                                            {{ $coffee->coffeeDescription }}
+                                            <br><br>
+                                            Rp {{ $coffee->coffeePrice }}
+                                        </div>
+
                                     </div>
                                 </a>
                             </div>

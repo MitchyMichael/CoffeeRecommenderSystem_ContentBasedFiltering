@@ -36,10 +36,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #fffcf6;
     -ms-overflow-style: none;
-    scrollbar-width: none; 
+    scrollbar-width: none;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -49,427 +49,1722 @@ h1 {
     font-size: 36px;
 }
 
-.navbar {
-    width: 100%;
-    margin-inline: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-}
-
-.title-list {
-    display: flex;
-}
-
-.title {
-    width: fit-content;
-    font-size: 20px;
-    font-weight: bold;
-    color: #fffcf6;
-    padding-top: 3px;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: end;
-    padding-top: 10px;
-}
-
-.nav-list ul {
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-list li {
-    list-style-type: none;
-    font-size: 16px;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #fffcf6;
-    padding: 30px;
-}
-
-.nav-list li a:hover {
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.header {
-    height: 650px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/coffeeMainNew.png");
-    background-position: center left;
-    background-size: cover;
-}
-
-.heroContainer {
-    display: flex;
-}
-
-.heroLeft{
-    width: 50%;
-    padding-top: 12%;
-    padding-bottom: 10%;
-    height: fit-content;
-}
-
-.heroRight{
-    width: 40%;
-    margin: auto;
-    margin-right: 0;
-}
-
-.heroTitle1 {
-    color: #fffcf6;
-    font-weight: bold;
-    font-size: 36px;
-}
-
-.tagline {
-    color: #fffcf6;
-    font-weight: normal;
-    font-size: 24px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    color: #fffcf6;
-    background-color: #d88b43;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.button:hover {
-    background-color: #fffcf6;
-    color: #d88b43;
-}
-
-.how_it_works {
-    height: fit-content;
-    background-color: #fffcf6;
-    padding-bottom: 100px;
-}
-
-.how_it_works_title {
-    color: #d88b43;
-    font-weight: bold;
-    font-size: 36px;
-    padding-top: 100px;
-    text-align: center;
-}
-
-.card-container {
-    display: flex;
-}
-
-.thiscard {
-    flex: 1;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    height: fit-content;
-    border-radius: 30px;
-}
-
-.lottieFile {
-    width: 150px;
-    margin: auto;
-}
-
-.cardTitle {
-    font-size: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-weight: bold;
-    color: #d88b43;
-}
-
-.lottieContainer {
-    height: 150px;
-}
-
-.CTAButton {
-    padding-top: 10px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.button2 {
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    color: #fffcf6;
-    background-color: #d88b43;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.button2:hover {
-    background-color: #fffcf6;
-    color: #d88b43;
-    border: 2px solid #d88b43;
-    transform: translateY(-10px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-.CBFSection {
-    height: fit-content;
-    background-color: orangered;
-}
-
-.aboutTitle {
-    color: #fffcf6;
-    font-weight: bold;
-    font-size: 36px;
-}
-
-.about {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/coffeeAbout2.jpg");
-    background-position: center left;
-    background-size: cover;
-    padding: 50px;
-    border-radius: 30px;
-    margin-bottom: 100px;
-    display: flex;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.aboutText {
-    color: #fffcf6;
-}
-
-.aboutLeft {
-    width: 60%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-
-.aboutRight {
-    width: 40%;
-}
-
-.inputForm {
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-label {
-    cursor: pointer;
-}
-
-input[type="radio"]:checked+span>div {
-    background-color: #d88b43;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-input[type="radio"]:checked+span>div>p {
-    color: #fffcf6;
-}
-
-.inSpan {
-    padding-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-.slide-group {
-    width: fit-content;
-    margin: auto;
-}
-
-.preferenceForm {
-    display: flex;
-    height: 400px;
-}
-
-.formButton2 {
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    color: #fffcf6;
-    background-color: #d88b43;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    border: none;
-}
-
-.formButton2:hover {
-    background-color: #fffcf6;
-    color: #d88b43;
-    border: 2px solid #d88b43;
-    transform: translateY(-10px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-.inputChoise {
-    height: 200px;
-    width: 200px;
-}
-
-.slideTitle {
-    padding-bottom: 30px;
-}
-
-.coffee-link {
-    text-decoration: none;
-    color: black;
-
-}
-
-.mainContentRec {
-    padding-top: 100px;
-    text-align: center;
-}
-
-.recSubTitle {
-    font-size: 24px;
-}
-
-.recContainer {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.recMenu {
-    padding: 20px;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    text-decoration: none;
-    width: 200px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: start;
-}
-
-.recMenu:hover{
-    color: #fffcf6;
-    background-color: #d88b43;
-    transform: translateY(-10px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
-}
-
-.recPhoto {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.item-description-popup {
-    background-color: #fffcf6;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    height: 100vh;
-}
-
-.description{
-    text-align: center;
-}
-
-.item-description-popup img {
-    height: 300px;
-    width: fit-content;
-    border-radius: 10px;
-}
-
-.confirmButton {
-    margin-top: 30px;
-}
-
-.confirmButton h3 {
-    margin: auto;
-    margin-top: 10px;
-    color: #fffcf6;
-    font-weight: bold;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    font-size: 16px;
-    text-align: center;
-}
-
-.cancelButton {
-    background-color: rgb(179, 21, 21);
-    border: 2px solid rgb(179, 21, 21);
-    cursor: pointer;
-    width: 150px;
-}
-
-.cancelButton:hover{
-    background-color: #fffcf6;
-    border: 2px solid rgb(179, 21, 21);
-    color: rgb(179, 21, 21);
-}
-
-.confirmButton2 {
-    background-color: rgb(21, 179, 21);
-    border: 2px solid rgb(21, 179, 21);
-    cursor: pointer;
-    width: 150px;
-}
-
-.confirmButton2:hover{
-    background-color: #fffcf6;
-    border: 2px solid rgb(21, 179, 21);
-    color: rgb(21, 179, 21);
-}
-
-.thanks {
-    text-align: center;
-    padding-top: 100px;
-}
-
-.thanksAnim{
-    display: flex;
-}
-
-.thanksAnimContent{
-    width: 50%;
-}
-
-.thanksForm{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.dislike{
-    transform: scaleY(-1);
+@media screen and (max-width: 514px) {
+    .navbar {
+        display: none;
+    }
+
+    .header {
+        height: 450px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/coffeeMainNew.png");
+        background-position: center left;
+        background-size: cover;
+    }
+
+    .heroLeft {
+        padding-top: 30%;
+        padding-bottom: 10%;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .heroRight {
+        display: none;
+    }
+
+    .heroTitle1 {
+        color: #fffcf6;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .tagline {
+        color: #fffcf6;
+        font-weight: normal;
+        font-size: 18px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+    }
+
+    .how_it_works {
+        height: fit-content;
+        padding-bottom: 100px;
+    }
+
+    .how_it_works_title {
+        color: #d88b43;
+        font-weight: bold;
+        font-size: 24px;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .thiscard {
+        flex: 1;
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+        height: fit-content;
+        border-radius: 30px;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .thiscard h2 {
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    .lottieFile {
+        width: 150px;
+        margin: auto;
+    }
+
+    .cardTitle {
+        font-size: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        color: #d88b43;
+    }
+
+    .lottieContainer {
+        height: 150px;
+    }
+
+    .CTAButton {
+        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .button2 {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .button2:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+        border: 2px solid #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .CBFSection {
+        height: fit-content;
+        background-color: orangered;
+    }
+
+    .aboutTitle {
+        color: #fffcf6;
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    .about {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/coffeeAbout2.jpg");
+        background-position: center left;
+        background-size: cover;
+        padding: 50px;
+        border-radius: 30px;
+        margin-bottom: 100px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .aboutText {
+        color: #fffcf6;
+    }
+
+    .aboutLeft {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+
+    .aboutTitle {
+        font-size: 24px;
+    }
+
+    .aboutText {
+        font-size: 16px;
+    }
+
+    .aboutRight {
+        display: none;
+    }
+
+    .inputForm {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .inputForm h1 {
+        font-size: 24px;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    input[type="radio"]:checked+span>div {
+        background-color: #d88b43;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    input[type="radio"]:checked+span>div>p {
+        color: #fffcf6;
+    }
+
+    .inSpan {
+        padding-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .slide-group {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .preferenceForm {
+        display: flex;
+        height: 300px;
+    }
+
+    .formButton2 {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        border: none;
+    }
+
+    .formButton2:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+        border: 2px solid #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .inputChoise {
+        height: 100px;
+        width: 100px;
+    }
+
+    .slideTitle {
+        padding-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .inSpan p {
+        font-size: 16px;
+    }
+
+    .coffee-link {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .mainContentRec {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .mainContentRec h1 {
+        font-size: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .recSubTitle {
+        font-size: 16px;
+    }
+
+    .recContainer {
+        margin: auto;
+        width: fit-content;
+        padding-bottom: 20px;
+    }
+
+    .recMenu {
+        padding: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        text-decoration: none;
+        width: 300px;
+        text-align: start;
+        font-size: 14px;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .recPhotoDesc{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: 10px;
+    }
+
+    .recMenu:hover {
+        color: #fffcf6;
+        background-color: #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .recPhoto {
+        width: 100%;
+        border-radius: 5px;
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .item-description-popup {
+        background-color: #fffcf6;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        height: 100vh;
+    }
+
+    .description > div{
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        text-overflow: clip !important;
+        overflow: visible !important;
+        white-space: normal !important;
+        margin-left: 0px;
+    }
+
+    .item-description-popup img {
+        height: 200px;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .confirmButton {
+        margin-top: 30px;
+    }
+
+    .confirmButton h3 {
+        margin: auto;
+        margin-top: 10px;
+        color: #fffcf6;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cancelButton {
+        background-color: rgb(179, 21, 21);
+        border: 2px solid rgb(179, 21, 21);
+        cursor: pointer;
+        width: 150px;
+    }
+
+    .cancelButton:hover {
+        background-color: #fffcf6;
+        border: 2px solid rgb(179, 21, 21);
+        color: rgb(179, 21, 21);
+    }
+
+    .confirmButton2 {
+        background-color: rgb(21, 179, 21);
+        border: 2px solid rgb(21, 179, 21);
+        cursor: pointer;
+        width: 150px;
+    }
+
+    .confirmButton2:hover {
+        background-color: #fffcf6;
+        border: 2px solid rgb(21, 179, 21);
+        color: rgb(21, 179, 21);
+    }
+
+    .thanks {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .thanks h1 {
+        font-size: 24px;
+    }
+
+    .thanksAnim {
+        display: flex;
+    }
+
+    .thanksAnimContent {
+        width: 50%;
+    }
+
+    .thanksForm {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .dislike {
+        transform: scaleY(-1);
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 515px) {
+    .navbar {
+        width: 100%;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+
+    .title-list {
+        display: flex;
+    }
+
+    .title {
+        width: fit-content;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fffcf6;
+        padding-top: 3px;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: end;
+        padding-top: 10px;
+    }
+
+    .nav-list ul {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        list-style-type: none;
+        font-size: 16px;
+    }
+
+    .nav-list li a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #fffcf6;
+        padding: 30px;
+    }
+
+    .nav-list li a:hover {
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .header {
+        height: 650px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/coffeeMainNew.png");
+        background-position: center left;
+        background-size: cover;
+    }
+
+    .heroLeft {
+        padding-top: 20%;
+        padding-bottom: 10%;
+        height: fit-content;
+    }
+
+    .heroRight {
+        display: none;
+    }
+
+    .heroTitle1 {
+        color: #fffcf6;
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    .tagline {
+        color: #fffcf6;
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+    }
+
+    .how_it_works {
+        height: fit-content;
+        background-color: #fffcf6;
+        padding-bottom: 100px;
+    }
+
+    .how_it_works_title {
+        color: #d88b43;
+        font-weight: bold;
+        font-size: 36px;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .thiscard {
+        flex: 1;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        height: fit-content;
+        border-radius: 30px;
+        display: flex;
+    }
+
+    .thiscard h2 {
+        width: 50%;
+        height: 150px;
+        padding-top: 60px;
+    }
+
+    .lottieContainer {
+        width: 50%;
+    }
+
+    .lottieFile {
+        width: 150px;
+        margin: auto;
+    }
+
+    .cardTitle {
+        font-size: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        color: #d88b43;
+    }
+
+    .lottieContainer {
+        height: 150px;
+    }
+
+    .CTAButton {
+        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .button2 {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .button2:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+        border: 2px solid #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .CBFSection {
+        height: fit-content;
+        background-color: orangered;
+    }
+
+    .aboutTitle {
+        color: #fffcf6;
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    .about {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/coffeeAbout2.jpg");
+        background-position: center left;
+        background-size: cover;
+        padding: 50px;
+        border-radius: 30px;
+        margin-bottom: 100px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .aboutText {
+        color: #fffcf6;
+    }
+
+    .aboutLeft {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .aboutRight {
+        display: none;
+    }
+
+    .inputForm {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    input[type="radio"]:checked+span>div {
+        background-color: #d88b43;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    input[type="radio"]:checked+span>div>p {
+        color: #fffcf6;
+    }
+
+    .inSpan {
+        padding-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .slide-group {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .preferenceForm {
+        display: flex;
+        height: 400px;
+    }
+
+    .formButton2 {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        border: none;
+    }
+
+    .formButton2:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+        border: 2px solid #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .inputChoise {
+        height: 200px;
+        width: 200px;
+    }
+
+    .slideTitle {
+        padding-bottom: 30px;
+    }
+
+    .coffee-link {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .mainContentRec {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .recSubTitle {
+        font-size: 24px;
+    }
+
+    .recContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        margin: auto;
+        width: fit-content;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    .recMenu {
+        padding: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        text-decoration: none;
+        width: 200px;
+        text-align: start;
+    }
+
+    .recMenu:hover {
+        color: #fffcf6;
+        background-color: #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .recPhoto {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .recPhotoDesc{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .item-description-popup {
+        background-color: #fffcf6;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        height: 130vh;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .item-description-popup img {
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .confirmButton {
+        margin-top: 30px;
+    }
+
+    .confirmButton h3 {
+        margin: auto;
+        margin-top: 10px;
+        color: #fffcf6;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cancelButton {
+        background-color: rgb(179, 21, 21);
+        border: 2px solid rgb(179, 21, 21);
+        cursor: pointer;
+        width: 150px;
+    }
+
+    .cancelButton:hover {
+        background-color: #fffcf6;
+        border: 2px solid rgb(179, 21, 21);
+        color: rgb(179, 21, 21);
+    }
+
+    .confirmButton2 {
+        background-color: rgb(21, 179, 21);
+        border: 2px solid rgb(21, 179, 21);
+        cursor: pointer;
+        width: 150px;
+    }
+
+    .confirmButton2:hover {
+        background-color: #fffcf6;
+        border: 2px solid rgb(21, 179, 21);
+        color: rgb(21, 179, 21);
+    }
+
+    .thanks {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .thanksAnim {
+        display: flex;
+    }
+
+    .thanksAnimContent {
+        width: 50%;
+    }
+
+    .thanksForm {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .dislike {
+        transform: scaleY(-1);
+    }
+}
+
+@media screen and (max-width: 1010px) and (min-width: 768px) {
+    .navbar {
+        width: 100%;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+
+    .title-list {
+        display: flex;
+    }
+
+    .title {
+        width: fit-content;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fffcf6;
+        padding-top: 3px;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: end;
+        padding-top: 10px;
+    }
+
+    .nav-list ul {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        list-style-type: none;
+        font-size: 16px;
+    }
+
+    .nav-list li a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #fffcf6;
+        padding: 30px;
+    }
+
+    .nav-list li a:hover {
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .header {
+        height: 650px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/coffeeMainNew.png");
+        background-position: center left;
+        background-size: cover;
+    }
+
+    .heroContainer {
+        display: flex;
+    }
+
+    .heroLeft {
+        width: 50%;
+        padding-top: 12%;
+        padding-bottom: 10%;
+        height: fit-content;
+    }
+
+    .heroRight {
+        width: 40%;
+        margin: auto;
+        margin-right: 0;
+    }
+
+    .heroTitle1 {
+        color: #fffcf6;
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    .tagline {
+        color: #fffcf6;
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+    }
+
+    .how_it_works {
+        height: fit-content;
+        background-color: #fffcf6;
+        padding-bottom: 100px;
+    }
+
+    .how_it_works_title {
+        color: #d88b43;
+        font-weight: bold;
+        font-size: 36px;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .card-container {
+        display: flex;
+    }
+
+    .thiscard {
+        flex: 1;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        height: fit-content;
+        border-radius: 30px;
+    }
+
+    .lottieFile {
+        width: 150px;
+        margin: auto;
+    }
+
+    .cardTitle {
+        font-size: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        color: #d88b43;
+    }
+
+    .lottieContainer {
+        height: 150px;
+    }
+
+    .CTAButton {
+        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .button2 {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .button2:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+        border: 2px solid #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .CBFSection {
+        height: fit-content;
+        background-color: orangered;
+    }
+
+    .aboutTitle {
+        color: #fffcf6;
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    .about {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/coffeeAbout2.jpg");
+        background-position: center left;
+        background-size: cover;
+        padding: 50px;
+        border-radius: 30px;
+        margin-bottom: 100px;
+        display: flex;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .aboutText {
+        color: #fffcf6;
+    }
+
+    .aboutLeft {
+        width: 60%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .aboutRight {
+        width: 40%;
+    }
+
+    .inputForm {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    input[type="radio"]:checked+span>div {
+        background-color: #d88b43;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    input[type="radio"]:checked+span>div>p {
+        color: #fffcf6;
+    }
+
+    .inSpan {
+        padding-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .slide-group {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .preferenceForm {
+        display: flex;
+        height: 400px;
+    }
+
+    .formButton2 {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        border: none;
+    }
+
+    .formButton2:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+        border: 2px solid #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .inputChoise {
+        height: 200px;
+        width: 200px;
+    }
+
+    .slideTitle {
+        padding-bottom: 30px;
+    }
+
+    .coffee-link {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .mainContentRec {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .recSubTitle {
+        font-size: 24px;
+    }
+
+    .recContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        margin: auto;
+        width: fit-content;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    .recPhotoDesc{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .recMenu {
+        padding: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        text-decoration: none;
+        width: 200px;
+        text-align: start;
+    }
+
+    .recMenu:hover {
+        color: #fffcf6;
+        background-color: #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .recPhoto {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .item-description-popup {
+        background-color: #fffcf6;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        height: 130vh;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .item-description-popup img {
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .confirmButton {
+        margin-top: 30px;
+    }
+
+    .confirmButton h3 {
+        margin: auto;
+        margin-top: 10px;
+        color: #fffcf6;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cancelButton {
+        background-color: rgb(179, 21, 21);
+        border: 2px solid rgb(179, 21, 21);
+        cursor: pointer;
+        width: 150px;
+    }
+
+    .cancelButton:hover {
+        background-color: #fffcf6;
+        border: 2px solid rgb(179, 21, 21);
+        color: rgb(179, 21, 21);
+    }
+
+    .confirmButton2 {
+        background-color: rgb(21, 179, 21);
+        border: 2px solid rgb(21, 179, 21);
+        cursor: pointer;
+        width: 150px;
+    }
+
+    .confirmButton2:hover {
+        background-color: #fffcf6;
+        border: 2px solid rgb(21, 179, 21);
+        color: rgb(21, 179, 21);
+    }
+
+    .thanks {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .thanksAnim {
+        display: flex;
+    }
+
+    .thanksAnimContent {
+        width: 50%;
+    }
+
+    .thanksForm {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .dislike {
+        transform: scaleY(-1);
+    }
+}
+
+@media screen and (min-width: 1011px) {
+    .navbar {
+        width: 100%;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+
+    .title-list {
+        display: flex;
+    }
+
+    .title {
+        width: fit-content;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fffcf6;
+        padding-top: 3px;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: end;
+        padding-top: 10px;
+    }
+
+    .nav-list ul {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        list-style-type: none;
+        font-size: 16px;
+    }
+
+    .nav-list li a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #fffcf6;
+        padding: 30px;
+    }
+
+    .nav-list li a:hover {
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .header {
+        height: 650px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/coffeeMainNew.png");
+        background-position: center left;
+        background-size: cover;
+    }
+
+    .heroContainer {
+        display: flex;
+    }
+
+    .heroLeft {
+        width: 50%;
+        padding-top: 12%;
+        padding-bottom: 10%;
+        height: fit-content;
+    }
+
+    .heroRight {
+        width: 40%;
+        margin: auto;
+        margin-right: 0;
+    }
+
+    .heroTitle1 {
+        color: #fffcf6;
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    .tagline {
+        color: #fffcf6;
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+    }
+
+    .how_it_works {
+        height: fit-content;
+        background-color: #fffcf6;
+        padding-bottom: 100px;
+    }
+
+    .how_it_works_title {
+        color: #d88b43;
+        font-weight: bold;
+        font-size: 36px;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .card-container {
+        display: flex;
+    }
+
+    .thiscard {
+        flex: 1;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        height: fit-content;
+        border-radius: 30px;
+    }
+
+    .lottieFile {
+        width: 150px;
+        margin: auto;
+    }
+
+    .cardTitle {
+        font-size: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        color: #d88b43;
+    }
+
+    .lottieContainer {
+        height: 150px;
+    }
+
+    .CTAButton {
+        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .button2 {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .button2:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+        border: 2px solid #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .CBFSection {
+        height: fit-content;
+        background-color: orangered;
+    }
+
+    .aboutTitle {
+        color: #fffcf6;
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    .about {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/coffeeAbout2.jpg");
+        background-position: center left;
+        background-size: cover;
+        padding: 50px;
+        border-radius: 30px;
+        margin-bottom: 100px;
+        display: flex;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .aboutText {
+        color: #fffcf6;
+    }
+
+    .aboutLeft {
+        width: 60%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .aboutRight {
+        width: 40%;
+    }
+
+    .inputForm {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    input[type="radio"]:checked+span>div {
+        background-color: #d88b43;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    input[type="radio"]:checked+span>div>p {
+        color: #fffcf6;
+    }
+
+    .inSpan {
+        padding-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .slide-group {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .preferenceForm {
+        display: flex;
+        height: 400px;
+    }
+
+    .formButton2 {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        border: none;
+    }
+
+    .formButton2:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+        border: 2px solid #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .inputChoise {
+        height: 200px;
+        width: 200px;
+    }
+
+    .slideTitle {
+        padding-bottom: 30px;
+    }
+
+    .coffee-link {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .mainContentRec {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .recSubTitle {
+        font-size: 24px;
+    }
+
+    .recContainer {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .recMenu {
+        padding: 20px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        text-decoration: none;
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: start;
+    }
+
+    .recMenu:hover {
+        color: #fffcf6;
+        background-color: #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .recPhoto {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .recPhotoDesc{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .item-description-popup {
+        background-color: #fffcf6;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        height: 100vh;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .item-description-popup img {
+        height: 300px;
+        width: fit-content;
+        border-radius: 10px;
+    }
+
+    .confirmButton {
+        margin-top: 30px;
+    }
+
+    .confirmButton h3 {
+        margin: auto;
+        margin-top: 10px;
+        color: #fffcf6;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cancelButton {
+        background-color: rgb(179, 21, 21);
+        border: 2px solid rgb(179, 21, 21);
+        cursor: pointer;
+        width: 150px;
+    }
+
+    .cancelButton:hover {
+        background-color: #fffcf6;
+        border: 2px solid rgb(179, 21, 21);
+        color: rgb(179, 21, 21);
+    }
+
+    .confirmButton2 {
+        background-color: rgb(21, 179, 21);
+        border: 2px solid rgb(21, 179, 21);
+        cursor: pointer;
+        width: 150px;
+    }
+
+    .confirmButton2:hover {
+        background-color: #fffcf6;
+        border: 2px solid rgb(21, 179, 21);
+        color: rgb(21, 179, 21);
+    }
+
+    .thanks {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .thanksAnim {
+        display: flex;
+    }
+
+    .thanksAnimContent {
+        width: 50%;
+    }
+
+    .thanksForm {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .dislike {
+        transform: scaleY(-1);
+    }
 }

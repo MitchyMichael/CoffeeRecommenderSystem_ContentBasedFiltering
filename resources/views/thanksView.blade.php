@@ -5,7 +5,7 @@
         <div class="thanks">
             <h1>Thank you</h1>
             <p class="recSubTitle">
-                Are you satisfied with this site?
+                How would you rate this site?
             </p>
 
             <form id="feedbackForm" action={{ url('/save-like') }} method="POST">
@@ -20,10 +20,10 @@
                                     <div class="thanksAnimContent">
                                         <dotlottie-player
                                             src="https://lottie.host/fea7e118-c9d4-47b9-88e1-586f186babd2/4LD5juYuE4.json"
-                                            background="transparent" speed="1" style="width: 200px; height: 200px;"
+                                            background="transparent" speed="1" style="width: 100px; height: 100px;"
                                             loop autoplay class="dislike"></dotlottie-player>
                                     </div>
-                                    <p>Dislike</p>
+                                    <p>Bad</p>
                                 </div>
                             </span>
                         </label>
@@ -35,10 +35,10 @@
                                     <div class="thanksAnimContent">
                                         <dotlottie-player
                                             src="https://lottie.host/a7c399fc-683d-429c-a8da-2f5de9a0e62c/bdSr0c6rTU.json"
-                                            background="transparent" speed="1" style="width: 200px; height: 200px;"
+                                            background="transparent" speed="1" style="width: 100px; height: 100px;"
                                             loop autoplay></dotlottie-player>
                                     </div>
-                                    <p>Like</p>
+                                    <p>Good</p>
                                 </div>
                             </span>
                         </label>
