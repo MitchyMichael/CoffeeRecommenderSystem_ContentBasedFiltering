@@ -8,12 +8,14 @@
             <br>
 
             <div class="recContainer">
+                <?php $coffeeCount = 0; ?>
                 @foreach ($topRec as $recommendation)
                     <?php $coffee = \App\Models\Coffee::find($recommendation); ?>
                     @if ($coffee)
+                    <?php $coffeeCount++; ?>
                         <div class="coffeeRec">
                             <div class="container">
-                                <a href="#" class="coffee-link" data-coffee-id="{{ $coffee->id }}">
+                                <a href="#" class="coffee-link" data-coffee-id="{{ $coffee->id }}" coffee-sort-id="{{ $coffeeCount }}">
                                     <div class="recMenu">
                                         <img src="{{ $coffee->coffeePhoto }}" class="recPhoto"> <br><br>
                                         <div class="recPhotoDesc">
@@ -23,13 +25,15 @@
                                             <br><br>
                                             Rp {{ $coffee->coffeePrice }}
                                         </div>
-
                                     </div>
                                 </a>
                             </div>
                         </div>
                     @endif
                 @endforeach
+
+                {{-- Tambah jika select others --}}
+                {{-- Tambah simpan urutan kopi yang dipilih --}}
             </div>
         </div>
     </div>
@@ -46,6 +50,7 @@
         @csrf
         <input type="hidden" name="coffee_id" id="coffeeIdInput">
         <input type="hidden" name="customer_id" id="customerIdInput" value="{{ $thisCustomerID }}">
+        <input type="hidden" name="sort_id" id="sortId">
     </form>
 
     <script src="/js/submitCoffeeChosen.js"></script>

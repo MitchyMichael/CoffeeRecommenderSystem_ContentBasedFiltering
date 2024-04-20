@@ -15,10 +15,14 @@ class ChoiseController extends Controller
         // Get current customer ID
         $customerId = $request->input('customer_id');
 
+        // Get sort ID
+        $sortId = $request->input('sort_id');
+
         // Make new choise to save to database
         $choise = new Choise();
         $choise->customer_id = $customerId;
         $choise->coffee_id = $coffeeId;
+        $choise->sortId = $sortId;
 
         $choise->save();
 

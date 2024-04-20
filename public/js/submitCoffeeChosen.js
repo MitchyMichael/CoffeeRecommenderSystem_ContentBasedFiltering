@@ -5,9 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('click', function (event) {
             event.preventDefault();
             const coffeeId = this.getAttribute('data-coffee-id');
+            const sortId = this.getAttribute('coffee-sort-id');
+
+            console.log('Coffee ID:', coffeeId);
+            console.log('Sort ID:', sortId);
+
             // Store the coffee ID in a variable accessible to the Confirm button click event handler
             document.getElementById('coffeeIdInput').value = coffeeId;
-            // Display the pop-up here (if applicable)
+            document.getElementById('sortId').value = sortId;
         });
     });
 
@@ -17,7 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
         // Retrieve the coffee ID from the stored variable and submit the form
         const coffeeId = document.getElementById('coffeeIdInput').value;
+        const sortId = document.getElementById('sortId').value;
+
         document.getElementById('coffeeIdInput').value = coffeeId;
+        document.getElementById('sortId').value = sortId;
         document.getElementById('saveCoffeeForm').submit();
     });
 });

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->integer('isLike')->nullable();
+            $table->integer('sortId')->nullable();
 
             // Migrate customers table first
             $table->foreignId('customer_id')->constrained('customers');

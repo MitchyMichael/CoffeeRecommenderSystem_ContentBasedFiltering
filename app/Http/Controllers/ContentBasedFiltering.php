@@ -43,20 +43,31 @@ class ContentBasedFiltering extends Controller
 
         // Sort recommendations by similarity score (higher scores first)
         arsort($recommendations);
+        $sortRecommendations = $recommendations;
+
+        foreach ($sortRecommendations as $key => $value) {
+            // Get all recommendations
+            $thisSortRecommendations[] = $key + 1;
+        }
+
+        $finalSortRecommendation = $thisSortRecommendations;
 
         // Recommend top items to the user
-        $topRecommendations = array_slice($recommendations, 0, 4, true);
-        foreach($topRecommendations as $key => $value) {
+        $topRecommendations = array_slice($recommendations, 0, 3, true);
+        foreach ($topRecommendations as $key => $value) {
             // Get top 3 recommendations
             $thisTopRecommendations[] = $key + 1;
         }
 
         $finalTopRecommendation = $thisTopRecommendations;
-        return $finalTopRecommendation;
+
+        // Return both $thisSortRecommendations and $finalTopRecommendation
+        return array($finalSortRecommendation, $finalTopRecommendation);
     }
 
     // Function to calculate cosine similarity
-    public function cosine_similarity($array1, $array2) {
+    public function cosine_similarity($array1, $array2)
+    {
         $dotProduct = 0;
         $magnitude1 = 0;
         $magnitude2 = 0;

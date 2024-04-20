@@ -32,10 +32,12 @@ class PreferenceController extends Controller
 
         // Content-based filtering
         $contentBasedFiltering = new ContentBasedFiltering();
-        $topRec = $contentBasedFiltering->contentBasedFiltering($preferenceId);
+        $result = $contentBasedFiltering->contentBasedFiltering($preferenceId);
+        $sortRec = $result[0]; // All sorted recommendations
+        $topRec = $result[1]; // Top 3 recommendations
 
         // Go to next page
-        return view('recommendationView', compact('topRec', 'thisCustomerID'));
+        return view('recommendationView', compact('topRec', 'sortRec', 'thisCustomerID'));
     }
 
     function getPreferencesById($preferenceId) {
