@@ -17,8 +17,6 @@ return new class extends Migration {
             $table->string('coffeePhoto')->nullable();
             $table->string('coffeePrice');
             $table->boolean('coffeeIsBestSeller')->default(false);
-            $table->boolean('coffeeIsPromo')->default(false);
-            $table->integer('numberChosen')->default(0);
 
             // Preference
             $table->integer('coffeePreferenceMood')->default(0);

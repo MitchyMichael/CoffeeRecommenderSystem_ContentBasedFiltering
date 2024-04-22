@@ -20,7 +20,7 @@
                                     <div class="thanksAnimContent">
                                         <dotlottie-player
                                             src="https://lottie.host/fea7e118-c9d4-47b9-88e1-586f186babd2/4LD5juYuE4.json"
-                                            background="transparent" speed="1" style="width: 100px; height: 100px;"
+                                            background="transparent" speed="1" class="thanksLottie"
                                             loop autoplay class="dislike"></dotlottie-player>
                                     </div>
                                     <p>Bad</p>
@@ -35,7 +35,7 @@
                                     <div class="thanksAnimContent">
                                         <dotlottie-player
                                             src="https://lottie.host/a7c399fc-683d-429c-a8da-2f5de9a0e62c/bdSr0c6rTU.json"
-                                            background="transparent" speed="1" style="width: 100px; height: 100px;"
+                                            background="transparent" speed="1" class="thanksLottie"
                                             loop autoplay></dotlottie-player>
                                     </div>
                                     <p>Good</p>

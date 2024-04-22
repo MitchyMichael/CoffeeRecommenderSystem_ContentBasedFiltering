@@ -1,8 +1,9 @@
 @extends('layout.layout')
 
 @section('main_content')
+    {{-- 3 Main Recommendation --}}
     <div class="container">
-        <div class="mainContentRec">
+        <div class="mainContentRec" style="display: none">
             <h1>We recommend these coffee for you!</h1>
             <h2 class="recSubTitle">Please select one menu.</h2>
             <br>
@@ -17,7 +18,6 @@
                             <div class="container">
                                 <a href="#" class="coffee-link" data-coffee-id="{{ $coffee->id }}"
                                     coffee-sort-id="{{ $coffeeCount }}">
-                                    {{-- If coffeeCount = 1, top recommendation -> bigger card and other design --}}
                                     @if ($coffeeCount == 1)
                                         <div class="recMenuFirst">
                                             <p class="topRecTitle">Top Recommendation</p>
@@ -54,6 +54,38 @@
                 <div class="buttonOthers">
                     Select others
                 </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- Other Recommendation --}}
+    <div class="container">
+        <div class="mainContentRec">
+            <h1>Other coffee for you!</h1>
+            <h2 class="recSubTitle">Please select one menu.</h2>
+            <br>
+
+            <div class="otherRecContainer">
+                <?php $coffeeCount = 0; ?>
+                @foreach ($sortRec as $recommendation)
+                    <?php $coffee = \App\Models\Coffee::find($recommendation); ?>
+                    @if ($coffee)
+                        <?php $coffeeCount++; ?>
+                        <a href="#" class="coffee-link" data-coffee-id="{{ $coffee->id }}"
+                            coffee-sort-id="{{ $coffeeCount }}">
+                            <div class="otherRecMenu">
+                                <img src="{{ $coffee->coffeePhoto }}" class="otherRecPhoto"> <br><br>
+                                <div class="otherRecPhotoDesc">
+                                    <strong>{{ $coffee->coffeeName }} </strong>
+                                    <br>
+                                    {{ $coffee->coffeeDescription }}
+                                    <br><br>
+                                    Rp {{ $coffee->coffeePrice }}
+                                </div>
+                            </div>
+                        </a>
+                    @endif
+                @endforeach
             </div>
         </div>
     </div>

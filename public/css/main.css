@@ -1579,6 +1579,28 @@ h1 {
         margin-right: 20px;
     }
 
+    .inSpanSugar {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        border-radius: 20px;
+        width: 100px;
+    }
+
+    .inSpanAcid {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        border-radius: 20px;
+        width: 150px;
+    }
+
     input[type="radio"] {
         display: none;
     }
@@ -1650,7 +1672,6 @@ h1 {
 
     .coffeeRec {
         margin-top: auto;
-        /* background-color: aqua; */
     }
 
     .recMenu {
@@ -1813,6 +1834,37 @@ h1 {
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     }
 
+    .otherRecContainer {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+    }
+
+    .otherRecMenu {
+        display: flex;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .otherRecPhoto {
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .otherRecPhotoDesc {
+        margin-left: 20px;
+        text-align: start;
+        width: 60%;
+    }
+
+    .otherRecPhotoDesc strong {
+        font-size: 24px;
+    }
+
     /* ==== Thanks View ==== */
     .thanks {
         text-align: center;
@@ -1834,5 +1886,10 @@ h1 {
 
     .dislike {
         transform: scaleY(-1);
+    }
+
+    .thanksLottie {
+        width: 200px;
+        height: 200px;
     }
 }
