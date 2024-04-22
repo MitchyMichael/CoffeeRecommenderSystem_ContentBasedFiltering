@@ -12,28 +12,48 @@
                 @foreach ($topRec as $recommendation)
                     <?php $coffee = \App\Models\Coffee::find($recommendation); ?>
                     @if ($coffee)
-                    <?php $coffeeCount++; ?>
+                        <?php $coffeeCount++; ?>
                         <div class="coffeeRec">
                             <div class="container">
-                                <a href="#" class="coffee-link" data-coffee-id="{{ $coffee->id }}" coffee-sort-id="{{ $coffeeCount }}">
-                                    <div class="recMenu">
-                                        <img src="{{ $coffee->coffeePhoto }}" class="recPhoto"> <br><br>
-                                        <div class="recPhotoDesc">
-                                            <strong>{{ $coffee->coffeeName }} </strong>
-                                            <br>
-                                            {{ $coffee->coffeeDescription }}
-                                            <br><br>
-                                            Rp {{ $coffee->coffeePrice }}
+                                <a href="#" class="coffee-link" data-coffee-id="{{ $coffee->id }}"
+                                    coffee-sort-id="{{ $coffeeCount }}">
+                                    {{-- If coffeeCount = 1, top recommendation -> bigger card and other design --}}
+                                    @if ($coffeeCount == 1)
+                                        <div class="recMenuFirst">
+                                            <p class="topRecTitle">Top Recommendation</p>
+                                            <img src="{{ $coffee->coffeePhoto }}" class="recPhoto">
+                                            <br> <br>
+                                            <div class="recPhotoDesc">
+                                                <strong>{{ $coffee->coffeeName }} </strong>
+                                                <br>
+                                                {{ $coffee->coffeeDescription }}
+                                                <br><br>
+                                                Rp {{ $coffee->coffeePrice }}
+                                            </div>
                                         </div>
-                                    </div>
+                                    @else
+                                        <div class="recMenu">
+                                            <img src="{{ $coffee->coffeePhoto }}" class="recPhoto"> <br><br>
+                                            <div class="recPhotoDesc">
+                                                <strong>{{ $coffee->coffeeName }} </strong>
+                                                <br>
+                                                {{ $coffee->coffeeDescription }}
+                                                <br><br>
+                                                Rp {{ $coffee->coffeePrice }}
+                                            </div>
+                                        </div>
+                                    @endif
                                 </a>
                             </div>
                         </div>
                     @endif
                 @endforeach
+            </div>
 
-                {{-- Tambah jika select others --}}
-                {{-- Tambah simpan urutan kopi yang dipilih --}}
+            <div class="recContainerOthers">
+                <div class="buttonOthers">
+                    Select others
+                </div>
             </div>
         </div>
     </div>

@@ -341,7 +341,7 @@ h1 {
         margin-bottom: 20px;
     }
 
-    .recPhotoDesc{
+    .recPhotoDesc {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -376,7 +376,7 @@ h1 {
         height: 100vh;
     }
 
-    .description > div{
+    .description>div {
         text-align: center;
         width: 100%;
         font-size: 16px;
@@ -802,7 +802,7 @@ h1 {
         border-radius: 10px;
     }
 
-    .recPhotoDesc{
+    .recPhotoDesc {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -1214,7 +1214,7 @@ h1 {
         padding-bottom: 100px;
     }
 
-    .recPhotoDesc{
+    .recPhotoDesc {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -1427,7 +1427,7 @@ h1 {
     .button {
         display: inline-block;
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
@@ -1552,6 +1552,7 @@ h1 {
         width: 40%;
     }
 
+    /* ==== Dashboard View ==== */
     .inputForm {
         text-align: center;
         padding-top: 100px;
@@ -1630,6 +1631,7 @@ h1 {
 
     }
 
+    /* ==== Recommendation View ==== */
     .mainContentRec {
         padding-top: 100px;
         text-align: center;
@@ -1642,8 +1644,13 @@ h1 {
     .recContainer {
         display: flex;
         justify-content: center;
-        padding-top: 50px;
+        padding-top: 10px;
         padding-bottom: 50px;
+    }
+
+    .coffeeRec {
+        margin-top: auto;
+        /* background-color: aqua; */
     }
 
     .recMenu {
@@ -1659,6 +1666,7 @@ h1 {
         margin-left: 10px;
         margin-right: 10px;
         text-align: start;
+        transition: all 0.3s ease;
     }
 
     .recMenu:hover {
@@ -1668,12 +1676,41 @@ h1 {
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
     }
 
+    .topRecTitle {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .recMenuFirst {
+        padding: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        text-decoration: none;
+        width: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: start;
+        transition: all 0.3s ease;
+        background-color: #d88b43;
+        color: #fffcf6;
+    }
+
+    .recMenuFirst:hover {
+        color: black;
+        background-color: #fffcf6;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    }
+
     .recPhoto {
         width: 100%;
         border-radius: 10px;
     }
 
-    .recPhotoDesc{
+    .recPhotoDesc {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -1699,6 +1736,14 @@ h1 {
         height: 300px;
         width: fit-content;
         border-radius: 10px;
+    }
+
+    .item-description-popup .topRecTitle {
+        font-size: 24px;
+    }
+
+    .item-description-popup strong {
+        font-size: 20px;
     }
 
     .confirmButton {
@@ -1746,6 +1791,29 @@ h1 {
         color: rgb(21, 179, 21);
     }
 
+    .buttonOthers {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .buttonOthers:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+        border: 2px solid #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ==== Thanks View ==== */
     .thanks {
         text-align: center;
         padding-top: 100px;
