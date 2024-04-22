@@ -1659,6 +1659,11 @@ h1 {
         text-align: center;
     }
 
+    .mainContentRecOther {
+        padding-top: 100px;
+        text-align: center;
+    }
+
     .recSubTitle {
         font-size: 24px;
     }
@@ -1827,6 +1832,30 @@ h1 {
     }
 
     .buttonOthers:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+        border: 2px solid #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .buttonOthers2 {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .buttonOthers2:hover {
         background-color: #fffcf6;
         color: #d88b43;
         border: 2px solid #d88b43;

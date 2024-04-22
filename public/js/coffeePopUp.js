@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const coffeeLinks = document.querySelectorAll('.coffee-link');
     const descriptionPopup = document.querySelector('.item-description-popup .description');
-    const cancelButton = document.querySelector('.cancelButton'); // Add this line
+    const cancelButton = document.querySelector('.cancelButton'); 
 
     coffeeLinks.forEach(function (link) {
         link.addEventListener('click', function (event) {

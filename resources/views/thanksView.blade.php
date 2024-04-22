@@ -21,7 +21,7 @@
                                         <dotlottie-player
                                             src="https://lottie.host/fea7e118-c9d4-47b9-88e1-586f186babd2/4LD5juYuE4.json"
                                             background="transparent" speed="1" class="thanksLottie"
-                                            loop autoplay class="dislike"></dotlottie-player>
+                                            loop autoplay class="dislike" ></dotlottie-player>
                                     </div>
                                     <p>Bad</p>
                                 </div>

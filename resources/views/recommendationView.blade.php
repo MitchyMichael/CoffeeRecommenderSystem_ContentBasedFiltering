@@ -3,7 +3,7 @@
 @section('main_content')
     {{-- 3 Main Recommendation --}}
     <div class="container">
-        <div class="mainContentRec" style="display: none">
+        <div class="mainContentRec">
             <h1>We recommend these coffee for you!</h1>
             <h2 class="recSubTitle">Please select one menu.</h2>
             <br>
@@ -60,7 +60,7 @@
 
     {{-- Other Recommendation --}}
     <div class="container">
-        <div class="mainContentRec">
+        <div class="mainContentRecOther" style="display: none">
             <h1>Other coffee for you!</h1>
             <h2 class="recSubTitle">Please select one menu.</h2>
             <br>
@@ -87,6 +87,12 @@
                     @endif
                 @endforeach
             </div>
+
+            <div class="backTo3Rec">
+                <div class="buttonOthers2">
+                    Back
+                </div>
+            </div>
         </div>
     </div>
 
@@ -105,6 +111,7 @@
         <input type="hidden" name="sort_id" id="sortId">
     </form>
 
+    <script src="/js/otherRecommendation.js"></script>
     <script src="/js/submitCoffeeChosen.js"></script>
     <script src="/js/coffeePopUp.js"></script>
 @endsection
