@@ -8,13 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
     otherButton.addEventListener('click', function () {
         // Toggle visibility of mainRecContainer and otherMainRecContainer
         mainRecContainer.style.display = 'none';
-        otherMainRecContainer.style.display = 'block'; // or 'flex', 'grid', etc. depending on your layout
-    });
-
-    // Add click event listener to the button
-    backButton.addEventListener('click', function () {
-        // Toggle visibility of mainRecContainer and otherMainRecContainer
-        mainRecContainer.style.display = 'block';
-        otherMainRecContainer.style.display = 'none'; // or 'flex', 'grid', etc. depending on your layout
+        otherMainRecContainer.style.display = 'block'; 
     });
 });

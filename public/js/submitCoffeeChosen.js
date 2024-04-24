@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
     const coffeeLinks = document.querySelectorAll('.coffee-link');
+    const coffeeLinks2 = document.querySelectorAll('.coffee-link2');
+
+    coffeeLinks2.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const coffeeId = this.getAttribute('data-coffee-id');
+            const sortId = this.getAttribute('coffee-sort-id');
+
+            console.log('Coffee ID:', coffeeId);
+            console.log('Sort ID:', sortId);
+
+            // Store the coffee ID in a variable accessible to the Confirm button click event handler
+            document.getElementById('coffeeIdInput').value = coffeeId;
+            document.getElementById('sortId').value = sortId;
+        });
+    });
 
     coffeeLinks.forEach(link => {
         link.addEventListener('click', function (event) {

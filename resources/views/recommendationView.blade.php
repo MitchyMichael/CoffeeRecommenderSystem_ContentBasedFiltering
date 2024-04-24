@@ -71,7 +71,7 @@
                     <?php $coffee = \App\Models\Coffee::find($recommendation); ?>
                     @if ($coffee)
                         <?php $coffeeCount++; ?>
-                        <a href="#" class="coffee-link" data-coffee-id="{{ $coffee->id }}"
+                        <a href="#" class="coffee-link2" data-coffee-id="{{ $coffee->id }}"
                             coffee-sort-id="{{ $coffeeCount }}">
                             <div class="otherRecMenu">
                                 <img src="{{ $coffee->coffeePhoto }}" class="otherRecPhoto"> <br><br>
@@ -86,12 +86,6 @@
                         </a>
                     @endif
                 @endforeach
-            </div>
-
-            <div class="backTo3Rec">
-                <div class="buttonOthers2">
-                    Back
-                </div>
             </div>
         </div>
     </div>

@@ -1650,7 +1650,11 @@ h1 {
     .coffee-link {
         text-decoration: none;
         color: black;
+    }
 
+    .coffee-link2 {
+        text-decoration: none;
+        color: black;
     }
 
     /* ==== Recommendation View ==== */
@@ -1742,6 +1746,7 @@ h1 {
         text-overflow: ellipsis;
     }
 
+    /* Pop Up */
     .item-description-popup {
         background-color: #fffcf6;
         position: absolute;
@@ -1770,6 +1775,12 @@ h1 {
 
     .item-description-popup strong {
         font-size: 20px;
+    }
+
+    .item-description-popup .otherRecPhotoDesc {
+        margin: auto;
+        text-align: center;
+        width: 100%;
     }
 
     .confirmButton {
@@ -1851,8 +1862,11 @@ h1 {
         background-color: #d88b43;
         border-radius: 10px;
         transition: all 0.3s ease;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 100px;
+        margin-left: 150px;
     }
 
     .buttonOthers2:hover {
@@ -1867,13 +1881,14 @@ h1 {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 100px;
         padding-top: 20px;
     }
 
     .otherRecMenu {
         display: flex;
         border-radius: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         align-items: center;
     }
 
