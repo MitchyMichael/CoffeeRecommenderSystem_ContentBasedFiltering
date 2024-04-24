@@ -18,7 +18,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Basic Latte',
                 'coffeeDescription' => 'Single or double espresso plus fresh milk.',
-                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
+                'coffeePhoto' => '/img/cafeLatte.jpg',
                 'coffeePrice' => "23.000,-",
                 'coffeeIsBestSeller' => true,
 
@@ -56,7 +56,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Friendly Coffee',
                 'coffeeDescription' => 'Classic "Kopi Susu". Espresso, homemade aren syrup, and fresh milk.',
-                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
+                'coffeePhoto' => '/img/friendlyHazelnutVanilla.jpg',
                 'coffeePrice' => "23.000,-",
                 'coffeeIsBestSeller' => true,
 
@@ -94,7 +94,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Vanilla Latte',
                 'coffeeDescription' => 'Single shot espresso, vanilla syrup, fresh milk.',
-                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
+                'coffeePhoto' => '/img/friendlyHazelnutVanilla.jpg',
                 'coffeePrice' => "23.000,-",
                 'coffeeIsBestSeller' => true,
 
@@ -113,7 +113,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Hazelnut Latte',
                 'coffeeDescription' => 'Single shot espresso, hazelnut syrup, fresh milk.',
-                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
+                'coffeePhoto' => '/img/friendlyHazelnutVanilla.jpg',
                 'coffeePrice' => "23.000,-",
                 'coffeeIsBestSeller' => false,
 
@@ -132,7 +132,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Sitrus Cafe',
                 'coffeeDescription' => 'Fresh orange juice with single / double espresso.',
-                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
+                'coffeePhoto' => '/img/sitrusCafe.jpg',
                 'coffeePrice' => "24.000,-",
                 'coffeeIsBestSeller' => true,
 
@@ -151,7 +151,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Candy Latte',
                 'coffeeDescription' => 'Single shot espresso, salted caramel, fresh milk.',
-                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
+                'coffeePhoto' => '/img/candyLatte.jpg',
                 'coffeePrice' => "25.000,-",
                 'coffeeIsBestSeller' => false,
 
@@ -170,7 +170,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Butterscotch Latte',
                 'coffeeDescription' => 'It has a flavor similar to caramel latte but lighter and more savory, with homemade cream on top of the coffee.',
-                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
+                'coffeePhoto' => '/img/butterscotch.jpg',
                 'coffeePrice' => "25.000,-",
                 'coffeeIsBestSeller' => true,
 
@@ -189,7 +189,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Biru',
                 'coffeeDescription' => "A light caramel latte but blue.",
-                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
+                'coffeePhoto' => '/img/biru.jpg',
                 'coffeePrice' => "25.000,-",
                 'coffeeIsBestSeller' => false,
 
@@ -208,7 +208,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Not Tiramisu Latte',
                 'coffeeDescription' => "It tastes similar to tiramisu but it isn't tiramisu, with a sprinkle of cocoa powder on top of the coffee.",
-                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
+                'coffeePhoto' => '/img/notTiramisu.jpg',
                 'coffeePrice' => "25.000,-",
                 'coffeeIsBestSeller' => true,
 
@@ -227,7 +227,7 @@ class CoffeesSeeder extends Seeder
             [
                 'coffeeName' => 'Ice Matchapresso',
                 'coffeeDescription' => "Matcha latte with pure matcha and fresh single shot espresso.",
-                'coffeePhoto' => '/img/coffeeRecImg.jpeg',
+                'coffeePhoto' => '/img/matchapresso.jpg',
                 'coffeePrice' => "30.000,-",
                 'coffeeIsBestSeller' => false,
 
