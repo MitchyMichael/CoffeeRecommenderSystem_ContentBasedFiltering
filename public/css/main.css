@@ -1918,28 +1918,36 @@ h1 {
     /* ==== Thanks View ==== */
     .thanks {
         text-align: center;
-        padding-top: 100px;
+        padding-top: 50px;
     }
 
-    .thanksAnim {
-        display: flex;
-    }
-
-    .thanksAnimContent {
-        width: 50%;
+    .thanks .recSubTitle {
+        margin-bottom: 0;
     }
 
     .thanksForm {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
+        padding-top: 0;
     }
 
-    .dislike {
-        transform: scaleY(-1);
+    .thanksTitle {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
 
-    .thanksLottie {
-        width: 200px;
-        height: 200px;
+    .thanksGroup {
+        padding-bottom: 0;
+    }
+
+    .thanksGroup .inSpan {
+        padding: 0;
+        padding-top: 15px;
+        padding-bottom: 0px;
+        width: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 2px solid #d88b43;
+        border-radius: 20px;
     }
 }

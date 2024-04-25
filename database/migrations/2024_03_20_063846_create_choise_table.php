@@ -14,8 +14,13 @@ return new class extends Migration
         Schema::create('choises', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('isLike')->nullable();
             $table->integer('sortId')->nullable();
+
+            // To save feedback
+            $table->integer('question1')->nullable();
+            $table->integer('question2')->nullable();
+            $table->integer('question3')->nullable();
+            $table->integer('question4')->nullable();
 
             // Migrate customers table first
             $table->foreignId('customer_id')->constrained('customers');

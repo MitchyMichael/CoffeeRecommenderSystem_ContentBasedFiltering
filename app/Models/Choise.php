@@ -12,7 +12,10 @@ class Choise extends Model
     protected $fillable = [
         'customer_id',
         'coffee_id',
-        'isLike',
+        'question1',
+        'question2',
+        'question3',
+        'question4',
         'sortId'
     ];
 
