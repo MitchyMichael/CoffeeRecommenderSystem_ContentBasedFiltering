@@ -1950,4 +1950,34 @@ h1 {
         border: 2px solid #d88b43;
         border-radius: 20px;
     }
+
+    /* End View */
+    .endMain {
+        text-align: center;
+    }
+
+    .endMenu {
+        margin-top: 50px;
+    }
+
+    .endMenu h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .endMenu img {
+        width: 70%;
+        height: 200px;
+        object-fit: cover;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+
+    .thisContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 }
