@@ -41,3 +41,7 @@ Route::get('/thanks', function () {
 
 // Save like
 Route::post('/save-like', [LikeController::class, 'saveLike']);
+
+Route::get('/end', function () {
+    return view('endView');
+})->name('end');

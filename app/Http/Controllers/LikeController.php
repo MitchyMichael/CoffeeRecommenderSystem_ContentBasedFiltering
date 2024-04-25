@@ -23,6 +23,6 @@ class LikeController extends Controller
 
         $choise->save();
 
-        return redirect()->route('root');
+        return view('endView', compact('customerId'));
     }
 }

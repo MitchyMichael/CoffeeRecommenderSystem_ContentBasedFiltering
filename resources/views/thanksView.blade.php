@@ -3,7 +3,7 @@
 @section('main_content')
     <div class="container">
         <div class="thanks">
-            <h1>Thank you</h1>
+            <h1>Feedback</h1>
             <p class="recSubTitle">
                 Please submit your feedback!
             </p>
