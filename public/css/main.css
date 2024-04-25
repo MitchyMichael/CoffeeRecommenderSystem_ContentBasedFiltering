@@ -1931,9 +1931,13 @@ h1 {
     }
 
     .thanksTitle {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 10px;
         margin-top: 20px;
+    }
+
+    .inSpan p {
+        font-size: 14px;
     }
 
     .thanksGroup {
