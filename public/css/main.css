@@ -967,18 +967,21 @@ h1 {
     }
 
     .inSpan {
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-left: 20px;
         margin-right: 20px;
     }
 
     .inSpanSugar {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom: 10px;
-        padding-top: 20px;
+        padding-bottom: 3px;
+        padding-top: 15px;
         border-radius: 20px;
         width: 100px;
     }
@@ -988,8 +991,8 @@ h1 {
         margin-right: 20px;
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom: 10px;
-        padding-top: 20px;
+        padding-bottom: 3px;
+        padding-top: 15px;
         border-radius: 20px;
         width: 150px;
     }
@@ -1032,8 +1035,7 @@ h1 {
     }
 
     .inputChoise {
-        height: 200px;
-        width: 200px;
+        display: none;
     }
 
     .slideTitle {
@@ -1078,14 +1080,13 @@ h1 {
 
     .recMenu {
         padding: 20px;
-        width: 100%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         text-decoration: none;
-        width: 200px;
+        width: 150px;
         margin-left: 10px;
         margin-right: 10px;
         text-align: start;
@@ -1106,13 +1107,10 @@ h1 {
 
     .recMenuFirst {
         padding: 20px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         text-decoration: none;
-        width: 300px;
+        width: 200px;
         margin-left: 10px;
         margin-right: 10px;
         text-align: start;
@@ -1131,7 +1129,7 @@ h1 {
     .recPhoto {
         width: 100%;
         border-radius: 10px;
-        height: 150px;
+        height: 100px;
         object-fit: cover;
     }
 
@@ -1156,10 +1154,11 @@ h1 {
 
     .description {
         text-align: center;
+        margin-top: 100px;
     }
 
     .item-description-popup img {
-        height: 300px;
+        height: 200px;
         width: fit-content;
         border-radius: 10px;
     }
