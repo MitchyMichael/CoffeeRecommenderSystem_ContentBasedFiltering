@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('main_content')
-    <div class="container">
+    <div class="container" id="thanksContainer">
         <div class="thanks">
             <h1>Feedback</h1>
             <p class="recSubTitle">
@@ -13,7 +13,7 @@
                 <div class="thanksForm">
                     {{-- Pertanyaan 1 --}}
                     <fieldset class="thanksGroup">
-                        <legend class="thanksTitle">Pertanyaan 1</legend>
+                        <legend class="thanksTitle">How easy is it to get around our website?</legend>
                         <label for="pertanyaan1_jawaban1">
                             <input type="radio" id="pertanyaan1_jawaban1" name="pertanyaan1" value="1">
                             <span>
@@ -77,7 +77,7 @@
 
                     {{-- Pertanyaan 2 --}}
                     <fieldset class="thanksGroup">
-                        <legend class="thanksTitle">Pertanyaan 2</legend>
+                        <legend class="thanksTitle">Are you happy with the coffee suggestions we give?</legend>
                         <label for="pertanyaan2_jawaban1">
                             <input type="radio" id="pertanyaan2_jawaban1" name="pertanyaan2" value="1">
                             <span>
@@ -141,7 +141,7 @@
 
                     {{-- Pertanyaan 3 --}}
                     <fieldset class="thanksGroup">
-                        <legend class="thanksTitle">Pertanyaan 3</legend>
+                        <legend class="thanksTitle">Would you recommend our website to your friends?</legend>
                         <label for="pertanyaan3_jawaban1">
                             <input type="radio" id="pertanyaan3_jawaban1" name="pertanyaan3" value="1">
                             <span>
@@ -202,70 +202,6 @@
                             </span>
                         </label>
                     </fieldset>
-
-                    {{-- Pertanyaan 4 --}}
-                    <fieldset class="thanksGroup">
-                        <legend class="thanksTitle">Pertanyaan 4</legend>
-                        <label for="pertanyaan4_jawaban1">
-                            <input type="radio" id="pertanyaan4_jawaban1" name="pertanyaan4" value="1">
-                            <span>
-                                <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
-                                    <p>1</p>
-                                </div>
-                            </span>
-                        </label>
-
-                        <label for="pertanyaan4_jawaban2">
-                            <input type="radio" id="pertanyaan4_jawaban2" name="pertanyaan4" value="2">
-                            <span>
-                                <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
-                                    <p>2</p>
-                                </div>
-                            </span>
-                        </label>
-
-                        <label for="pertanyaan4_jawaban3">
-                            <input type="radio" id="pertanyaan4_jawaban3" name="pertanyaan4" value="3">
-                            <span>
-                                <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
-                                    <p>3</p>
-                                </div>
-                            </span>
-                        </label>
-
-                        <label for="pertanyaan4_jawaban4">
-                            <input type="radio" id="pertanyaan4_jawaban4" name="pertanyaan4" value="4">
-                            <span>
-                                <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
-                                    <p>4</p>
-                                </div>
-                            </span>
-                        </label>
-
-                        <label for="pertanyaan4_jawaban5">
-                            <input type="radio" id="pertanyaan4_jawaban5" name="pertanyaan4" value="5">
-                            <span>
-                                <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
-                                    <p>5</p>
-                                </div>
-                            </span>
-                        </label>
-                    </fieldset>
                 </div>
             </form>
             <input class="formButton2" type="button" id="nextBtn" value="Submit" style="display: none">
@@ -277,7 +213,6 @@
         <input type="hidden" name="question1" id="question1Input">
         <input type="hidden" name="question2" id="question2Input">
         <input type="hidden" name="question3" id="question3Input">
-        <input type="hidden" name="question4" id="question4Input">
 
         <input type="hidden" name="customer_id" id="customerIdInput" value="{{ $customerId }}">
     </form>

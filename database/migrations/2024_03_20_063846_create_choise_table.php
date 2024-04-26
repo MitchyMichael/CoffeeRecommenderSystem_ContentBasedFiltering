@@ -20,7 +20,6 @@ return new class extends Migration
             $table->integer('question1')->nullable();
             $table->integer('question2')->nullable();
             $table->integer('question3')->nullable();
-            $table->integer('question4')->nullable();
 
             // Migrate customers table first
             $table->foreignId('customer_id')->constrained('customers');

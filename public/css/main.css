@@ -1918,7 +1918,6 @@ h1 {
     /* ==== Thanks View ==== */
     .thanks {
         text-align: center;
-        padding-top: 50px;
     }
 
     .thanks .recSubTitle {
@@ -1942,6 +1941,8 @@ h1 {
 
     .thanksGroup {
         padding-bottom: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     .thanksGroup .inSpan {
@@ -1953,6 +1954,13 @@ h1 {
         margin-right: 10px;
         border: 2px solid #d88b43;
         border-radius: 20px;
+    }
+
+    #thanksContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
     }
 
     /* End View */
@@ -1983,5 +1991,27 @@ h1 {
         justify-content: center;
         align-items: center;
         height: 100vh;
+    }
+
+    .homeButton {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fffcf6;
+        background-color: #d88b43;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .homeButton:hover {
+        background-color: #fffcf6;
+        color: #d88b43;
+        border: 2px solid #d88b43;
+        transform: translateY(-10px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     }
 }

@@ -24,6 +24,9 @@
                     <img src="{{ $coffee->coffeePhoto }}">
                     <p>{{ $coffee->coffeeDescription }}</p>
                     <p><strong>Rp {{ $coffee->coffeePrice }}</strong></p>
+
+                    <br>
+                    <a href="/" class="homeButton">Home</a>
                 </div>
             </div>
         </div>
