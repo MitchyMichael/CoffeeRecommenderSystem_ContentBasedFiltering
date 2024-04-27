@@ -121,6 +121,7 @@
                             <input type="radio" id="sweetness1" name="preferenceCoffeeSweetness" value="1">
                             <span>
                                 <div class="inSpanSugar">
+                                    <img src="/svg/sugar/noSugar.svg">
                                     <p>No Sugar</p>
                                 </div>
                             </span>
@@ -130,6 +131,7 @@
                             <input type="radio" id="sweetness2" name="preferenceCoffeeSweetness" value="2">
                             <span>
                                 <div class="inSpanSugar">
+                                    <img src="/svg/sugar/lessSugar.svg">
                                     <p>Less Sugar</p>
                                 </div>
                             </span>
@@ -139,6 +141,7 @@
                             <input type="radio" id="sweetness3" name="preferenceCoffeeSweetness" value="3">
                             <span>
                                 <div class="inSpanSugar">
+                                    <img src="/svg/sugar/normalSugar.svg">
                                     <p>Normal Sugar</p>
                                 </div>
                             </span>
@@ -148,6 +151,7 @@
                             <input type="radio" id="sweetness4" name="preferenceCoffeeSweetness" value="4">
                             <span>
                                 <div class="inSpanSugar">
+                                    <img src="/svg/sugar/moreSugar.svg">
                                     <p>More Sugar</p>
                                 </div>
                             </span>
@@ -157,6 +161,7 @@
                             <input type="radio" id="sweetness5" name="preferenceCoffeeSweetness" value="5">
                             <span>
                                 <div class="inSpanSugar">
+                                    <img src="/svg/sugar/extraSugar.svg">
                                     <p>Extra Sugar</p>
                                 </div>
                             </span>

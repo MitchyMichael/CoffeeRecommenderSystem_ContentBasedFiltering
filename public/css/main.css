@@ -2331,14 +2331,20 @@ h1 {
     }
 
     .inSpanSugar {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 10px;
-        padding-top: 20px;
+        padding-top: 10px;
         border-radius: 20px;
-        width: 100px;
+        width: 110px;
+    }
+
+    .inSpanSugar img {
+        height: 80px;
+        width: 100%;
+        object-fit: cover;
     }
 
     .inSpanAcid {
