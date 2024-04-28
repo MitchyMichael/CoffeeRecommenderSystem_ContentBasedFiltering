@@ -175,11 +175,8 @@
                         <label for="no_milk">
                             <input type="radio" id="no_milk" name="preferenceCoffeeMilkness" value="1">
                             <span>
-                                <div class="inSpan">
-                                    <dotlottie-player
-                                        src="https://lottie.host/a9fdeac8-08a4-4874-a293-90508ddbe07c/01P1wg7ES2.json"
-                                        background="transparent" speed="1" class="inputChoise" loop
-                                        autoplay></dotlottie-player>
+                                <div class="inSpanMilk">
+                                    <img src="/svg/milk/withoutMilk.svg">
                                     <p>No Milk</p>
                                 </div>
                             </span>
@@ -187,45 +184,9 @@
                         <label for="with_milk">
                             <input type="radio" id="with_milk" name="preferenceCoffeeMilkness" value="5">
                             <span>
-                                <div class="inSpan">
-                                    <dotlottie-player
-                                        src="https://lottie.host/0880cf67-500e-4b5d-887d-6b560ff28ffb/soEv6NIgHp.json"
-                                        background="transparent" speed="1" class="inputChoise" loop
-                                        autoplay></dotlottie-player>
+                                <div class="inSpanMilk">
+                                    <img src="/svg/milk/withMilk.svg">
                                     <p>With Milk</p>
-                                </div>
-                            </span>
-                        </label>
-                    </fieldset>
-                    <br>
-
-                    {{-- Coffee Price Preference --}}
-                    <fieldset class="slide-group">
-                        <legend class="slideTitle">Does price influence your choice?</legend>
-
-                        <label for="yes">
-                            <input type="radio" id="yes" name="preferenceCoffeePrice" value="1">
-                            <span>
-                                <div class="inSpanSugar">
-                                    <p>Yes</p>
-                                </div>
-                            </span>
-                        </label>
-
-                        <label for="IDC">
-                            <input type="radio" id="IDC" name="preferenceCoffeePrice" value="3">
-                            <span>
-                                <div class="inSpanSugar">
-                                    <p>Netral</p>
-                                </div>
-                            </span>
-                        </label>
-
-                        <label for="no">
-                            <input type="radio" id="no" name="preferenceCoffeePrice" value="5">
-                            <span>
-                                <div class="inSpanSugar">
-                                    <p>No</p>
                                 </div>
                             </span>
                         </label>
@@ -269,6 +230,7 @@
                             <input type="radio" id="strength1" name="preferenceCoffeeStrengthLevel" value="1">
                             <span>
                                 <div class="inSpanAcid">
+                                    <img src="/svg/strength/notStrong.svg">
                                     <p>Not strong</p>
                                 </div>
                             </span>
@@ -277,7 +239,8 @@
                             <input type="radio" id="strength3" name="preferenceCoffeeStrengthLevel" value="3">
                             <span>
                                 <div class="inSpanAcid">
-                                    <p>Netral</p>
+                                    <img src="/svg/strength/normal.svg">
+                                    <p>Normal</p>
                                 </div>
                             </span>
                         </label>
@@ -285,7 +248,41 @@
                             <input type="radio" id="strength5" name="preferenceCoffeeStrengthLevel" value="5">
                             <span>
                                 <div class="inSpanAcid">
+                                    <img src="/svg/strength/strong.svg">
                                     <p>Strong</p>
+                                </div>
+                            </span>
+                        </label>
+                    </fieldset>
+                    <br>
+
+                    {{-- Coffee Price Preference --}}
+                    <fieldset class="slide-group">
+                        <legend class="slideTitle">Does price influence your choice?</legend>
+
+                        <label for="no">
+                            <input type="radio" id="no" name="preferenceCoffeePrice" value="5">
+                            <span>
+                                <div class="inSpanAcid">
+                                    <p>No</p>
+                                </div>
+                            </span>
+                        </label>
+
+                        <label for="IDC">
+                            <input type="radio" id="IDC" name="preferenceCoffeePrice" value="3">
+                            <span>
+                                <div class="inSpanAcid">
+                                    <p>Netral</p>
+                                </div>
+                            </span>
+                        </label>
+
+                        <label for="yes">
+                            <input type="radio" id="yes" name="preferenceCoffeePrice" value="1">
+                            <span>
+                                <div class="inSpanAcid">
+                                    <p>Yes</p>
                                 </div>
                             </span>
                         </label>

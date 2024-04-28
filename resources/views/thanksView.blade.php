@@ -77,7 +77,7 @@
 
                     {{-- Pertanyaan 2 --}}
                     <fieldset class="thanksGroup">
-                        <legend class="thanksTitle">Are you happy with the coffee suggestions we give?</legend>
+                        <legend class="thanksTitle">Is the coffee recommendation according to your preference?</legend>
                         <label for="pertanyaan2_jawaban1">
                             <input type="radio" id="pertanyaan2_jawaban1" name="pertanyaan2" value="1">
                             <span>

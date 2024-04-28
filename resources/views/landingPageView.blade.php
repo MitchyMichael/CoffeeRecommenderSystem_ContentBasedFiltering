@@ -2,7 +2,6 @@
 @section('main_content')
     {{-- Top Section --}}
     <div class="header">
-
         {{-- Navigation Bar --}}
         <header class="navbar">
             <div class="container">
