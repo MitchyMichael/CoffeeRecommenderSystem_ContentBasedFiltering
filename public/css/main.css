@@ -978,23 +978,57 @@ h1 {
     .inSpanSugar {
         margin-left: 10px;
         margin-right: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 3px;
         padding-top: 15px;
-        border-radius: 20px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
         width: 100px;
     }
 
-    .inSpanAcid {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 3px;
+    .inSpanSugar img {
+        display: none;
+    }
+
+    .inSpanMilk {
+        margin-left: 10px;
+        margin-right: 10px;
         padding-top: 15px;
-        border-radius: 20px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
         width: 150px;
+    }
+
+    .inSpanMilk img {
+        display: none;
+    }
+
+    .inSpanAcid {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 150px;
+    }
+
+    .inSpanAcid img {
+        display: none;
+    }
+
+    .inSpanPrice {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 150px;
+    }
+
+    .inSpanPrice img {
+        display: none;
     }
 
     input[type="radio"] {
@@ -1107,6 +1141,9 @@ h1 {
 
     .recMenuFirst {
         padding: 20px;
+        /* white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; */
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         text-decoration: none;
@@ -1129,7 +1166,7 @@ h1 {
     .recPhoto {
         width: 100%;
         border-radius: 10px;
-        height: 100px;
+        height: 120px;
         object-fit: cover;
     }
 
@@ -1154,13 +1191,13 @@ h1 {
 
     .description {
         text-align: center;
-        margin-top: 100px;
     }
 
     .item-description-popup img {
-        height: 200px;
-        width: fit-content;
+        height: 300px;
+        width: 350px;
         border-radius: 10px;
+        margin-top: 20px;
     }
 
     .item-description-popup .topRecTitle {
@@ -1657,23 +1694,57 @@ h1 {
     .inSpanSugar {
         margin-left: 10px;
         margin-right: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 3px;
         padding-top: 15px;
-        border-radius: 20px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
         width: 100px;
     }
 
-    .inSpanAcid {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 3px;
+    .inSpanSugar img {
+        display: none;
+    }
+
+    .inSpanMilk {
+        margin-left: 10px;
+        margin-right: 10px;
         padding-top: 15px;
-        border-radius: 20px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
         width: 150px;
+    }
+
+    .inSpanMilk img {
+        display: none;
+    }
+
+    .inSpanAcid {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 150px;
+    }
+
+    .inSpanAcid img {
+        display: none;
+    }
+
+    .inSpanPrice {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 150px;
+    }
+
+    .inSpanPrice img {
+        display: none;
     }
 
     input[type="radio"] {
@@ -1786,6 +1857,9 @@ h1 {
 
     .recMenuFirst {
         padding: 20px;
+        /* white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; */
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         text-decoration: none;
@@ -1808,7 +1882,7 @@ h1 {
     .recPhoto {
         width: 100%;
         border-radius: 10px;
-        height: 100px;
+        height: 120px;
         object-fit: cover;
     }
 
@@ -1833,13 +1907,13 @@ h1 {
 
     .description {
         text-align: center;
-        margin-top: 100px;
     }
 
     .item-description-popup img {
-        height: 200px;
-        width: fit-content;
+        height: 300px;
+        width: 350px;
         border-radius: 10px;
+        margin-top: 20px;
     }
 
     .item-description-popup .topRecTitle {
@@ -2375,6 +2449,24 @@ h1 {
         padding-top: 20px;
         border-radius: 20px;
         width: 150px;
+    }
+
+    .inSpanPrice {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        border-radius: 20px;
+        width: 150px;
+    }
+
+    .inSpanPrice img {
+        height: 150px;
+        width: 100%;
+        object-fit: contain;
+        padding: 10px;
     }
 
     input[type="radio"] {

@@ -200,6 +200,7 @@
                             <input type="radio" id="acidity1" name="preferenceCoffeeAcidityLevel" value="1">
                             <span>
                                 <div class="inSpanAcid">
+                                    <img src="/svg/acidity/notAcid.svg">
                                     <p>Not acid</p>
                                 </div>
                             </span>
@@ -208,7 +209,8 @@
                             <input type="radio" id="acidity3" name="preferenceCoffeeAcidityLevel" value="3">
                             <span>
                                 <div class="inSpanAcid">
-                                    <p>Netral</p>
+                                    <img src="/svg/acidity/normal.svg">
+                                    <p>Normal</p>
                                 </div>
                             </span>
                         </label>
@@ -216,6 +218,7 @@
                             <input type="radio" id="acidity5" name="preferenceCoffeeAcidityLevel" value="5">
                             <span>
                                 <div class="inSpanAcid">
+                                    <img src="/svg/acidity/acid.svg">
                                     <p>Acid</p>
                                 </div>
                             </span>
@@ -263,7 +266,8 @@
                         <label for="no">
                             <input type="radio" id="no" name="preferenceCoffeePrice" value="5">
                             <span>
-                                <div class="inSpanAcid">
+                                <div class="inSpanPrice">
+                                    <img src="/svg/price/no.svg">
                                     <p>No</p>
                                 </div>
                             </span>
@@ -272,8 +276,9 @@
                         <label for="IDC">
                             <input type="radio" id="IDC" name="preferenceCoffeePrice" value="3">
                             <span>
-                                <div class="inSpanAcid">
-                                    <p>Netral</p>
+                                <div class="inSpanPrice">
+                                    <img src="/svg/price/neutral.svg">
+                                    <p>Neutral</p>
                                 </div>
                             </span>
                         </label>
@@ -281,7 +286,8 @@
                         <label for="yes">
                             <input type="radio" id="yes" name="preferenceCoffeePrice" value="1">
                             <span>
-                                <div class="inSpanAcid">
+                                <div class="inSpanPrice">
+                                    <img src="/svg/price/yes.svg">
                                     <p>Yes</p>
                                 </div>
                             </span>
