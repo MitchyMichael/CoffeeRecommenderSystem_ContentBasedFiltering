@@ -51,58 +51,15 @@ h1 {
 
 @media screen and (max-width: 514px) {
     .navbar {
-        width: 100%;
-        margin-inline: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+        display: none;
     }
 
-    .title-list {
-        display: flex;
-    }
-
-    .title {
-        width: fit-content;
-        font-size: 20px;
-        font-weight: bold;
-        color: #fffcf6;
-        padding-top: 3px;
-    }
-
-    .nav-list {
-        display: flex;
-        justify-content: end;
-        padding-top: 10px;
-    }
-
-    .nav-list ul {
-        padding-left: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .nav-list li {
-        list-style-type: none;
-        font-size: 16px;
-    }
-
-    .nav-list li a {
-        text-decoration: none;
-        font-weight: 500;
-        color: #fffcf6;
-        padding: 30px;
-    }
-
-    .nav-list li a:hover {
-        text-decoration: none;
-        font-weight: 500;
+    h1 {
+        font-size: 28px;
     }
 
     .header {
-        height: 650px;
+        height: 400px;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/coffeeMainNew.png");
         background-position: center left;
         background-size: cover;
@@ -113,34 +70,33 @@ h1 {
     }
 
     .heroLeft {
-        width: 50%;
-        padding-top: 12%;
+        width: 100%;
+        padding-top: 22%;
         padding-bottom: 10%;
         height: fit-content;
+        text-align: center;
     }
 
     .heroRight {
-        width: 40%;
-        margin: auto;
-        margin-right: 0;
+        display: none;
     }
 
     .heroTitle1 {
         color: #fffcf6;
         font-weight: bold;
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .tagline {
         color: #fffcf6;
         font-weight: normal;
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .button {
         display: inline-block;
         padding: 10px 20px;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
@@ -165,13 +121,9 @@ h1 {
     .how_it_works_title {
         color: #d88b43;
         font-weight: bold;
-        font-size: 36px;
+        font-size: 24px;
         padding-top: 100px;
         text-align: center;
-    }
-
-    .card-container {
-        display: flex;
     }
 
     .thiscard {
@@ -184,12 +136,12 @@ h1 {
     }
 
     .lottieFile {
-        width: 150px;
+        width: 100px;
         margin: auto;
     }
 
     .cardTitle {
-        font-size: 24px;
+        font-size: 18px;
         padding-top: 20px;
         padding-bottom: 20px;
         font-weight: bold;
@@ -210,7 +162,7 @@ h1 {
     .button2 {
         display: inline-block;
         padding: 10px 30px;
-        font-size: 24px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
@@ -231,13 +183,12 @@ h1 {
 
     .CBFSection {
         height: fit-content;
-        background-color: orangered;
     }
 
     .aboutTitle {
         color: #fffcf6;
         font-weight: bold;
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .about {
@@ -249,6 +200,7 @@ h1 {
         margin-bottom: 100px;
         display: flex;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
     }
 
     .aboutText {
@@ -256,13 +208,14 @@ h1 {
     }
 
     .aboutLeft {
-        width: 60%;
+        width: 100%;
         padding-top: 10%;
         padding-bottom: 10%;
+        text-align: center;
     }
 
     .aboutRight {
-        width: 40%;
+        display: none
     }
 
     /* ==== Dashboard View ==== */
@@ -270,6 +223,10 @@ h1 {
         text-align: center;
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    .inputForm h1 {
+        font-size: 24px;
     }
 
     label {
@@ -287,31 +244,68 @@ h1 {
     }
 
     .inSpan {
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-left: 20px;
         margin-right: 20px;
     }
 
     .inSpanSugar {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        padding-top: 20px;
-        border-radius: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
         width: 100px;
     }
 
-    .inSpanAcid {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        padding-top: 20px;
-        border-radius: 20px;
+    .inSpanSugar img {
+        display: none;
+    }
+
+    .inSpanMilk {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
         width: 150px;
+    }
+
+    .inSpanMilk img {
+        display: none;
+    }
+
+    .inSpanAcid {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 150px;
+    }
+
+    .inSpanAcid img {
+        display: none;
+    }
+
+    .inSpanPrice {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 150px;
+    }
+
+    .inSpanPrice img {
+        display: none;
     }
 
     input[type="radio"] {
@@ -325,7 +319,7 @@ h1 {
 
     .preferenceForm {
         display: flex;
-        height: 400px;
+        height: 300px;
     }
 
     .formButton2 {
@@ -352,8 +346,7 @@ h1 {
     }
 
     .inputChoise {
-        height: 200px;
-        width: 200px;
+        display: none;
     }
 
     .slideTitle {
@@ -386,8 +379,6 @@ h1 {
     }
 
     .recContainer {
-        display: flex;
-        justify-content: center;
         padding-top: 10px;
         padding-bottom: 50px;
     }
@@ -398,18 +389,18 @@ h1 {
 
     .recMenu {
         padding: 20px;
-        width: 100%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         text-decoration: none;
-        width: 200px;
+        width: 100%;
         margin-left: 10px;
         margin-right: 10px;
         text-align: start;
         transition: all 0.3s ease;
+        margin-bottom: 20px;
     }
 
     .recMenu:hover {
@@ -426,19 +417,17 @@ h1 {
 
     .recMenuFirst {
         padding: 20px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         text-decoration: none;
-        width: 300px;
+        width: 100%;
         margin-left: 10px;
         margin-right: 10px;
         text-align: start;
         transition: all 0.3s ease;
         background-color: #d88b43;
         color: #fffcf6;
+        margin-bottom: 20px;
     }
 
     .recMenuFirst:hover {
@@ -451,7 +440,7 @@ h1 {
     .recPhoto {
         width: 100%;
         border-radius: 10px;
-        height: 150px;
+        height: 120px;
         object-fit: cover;
     }
 
@@ -479,13 +468,14 @@ h1 {
     }
 
     .item-description-popup img {
-        height: 300px;
-        width: fit-content;
+        height: 100px;
+        width: 100%;
         border-radius: 10px;
+        margin-top: 20px;
     }
 
     .item-description-popup .topRecTitle {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .item-description-popup strong {
@@ -610,6 +600,25 @@ h1 {
         padding: 10px;
     }
 
+    .otherRecMenu img {
+        display: none;
+    }
+
+    .otherRecMenuFirst {
+        display: flex;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        background-color: #d88b43;
+        color: #fffcf6;
+    }
+
+    .otherRecMenuFirst img {
+        display: none;
+    }
+
     .otherRecPhoto {
         width: 30%;
         height: 150px;
@@ -631,6 +640,8 @@ h1 {
     /* ==== Thanks View ==== */
     .thanks {
         text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .thanks .recSubTitle {
@@ -652,6 +663,10 @@ h1 {
         font-size: 14px;
     }
 
+    .recContainerOthers {
+        margin-bottom: 30px;
+    }
+
     .thanksGroup {
         padding-bottom: 0;
         margin-top: 20px;
@@ -663,17 +678,10 @@ h1 {
         padding-top: 15px;
         padding-bottom: 0px;
         width: 50px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 1px;
+        margin-right: 1px;
         border: 2px solid #d88b43;
         border-radius: 20px;
-    }
-
-    #thanksContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
     }
 
     /* End View */
@@ -1051,8 +1059,6 @@ h1 {
     }
 
     .recContainer {
-        display: flex;
-        justify-content: center;
         padding-top: 10px;
         padding-bottom: 50px;
     }
@@ -1069,11 +1075,12 @@ h1 {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         text-decoration: none;
-        width: 150px;
+        width: 100%;
         margin-left: 10px;
         margin-right: 10px;
         text-align: start;
         transition: all 0.3s ease;
+        margin-bottom: 20px;
     }
 
     .recMenu:hover {
@@ -1090,19 +1097,17 @@ h1 {
 
     .recMenuFirst {
         padding: 20px;
-        /* white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; */
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         text-decoration: none;
-        width: 200px;
+        width: 100%;
         margin-left: 10px;
         margin-right: 10px;
         text-align: start;
         transition: all 0.3s ease;
         background-color: #d88b43;
         color: #fffcf6;
+        margin-bottom: 20px;
     }
 
     .recMenuFirst:hover {
@@ -1144,7 +1149,7 @@ h1 {
 
     .item-description-popup img {
         height: 300px;
-        width: 350px;
+        width: 100%;
         border-radius: 10px;
         margin-top: 20px;
     }
@@ -1275,6 +1280,17 @@ h1 {
         padding: 10px;
     }
 
+    .otherRecMenuFirst {
+        display: flex;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        background-color: #d88b43;
+        color: #fffcf6;
+    }
+
     .otherRecPhoto {
         width: 30%;
         height: 150px;
@@ -1315,6 +1331,10 @@ h1 {
 
     .inSpan p {
         font-size: 14px;
+    }
+
+    .recContainerOthers {
+        margin-bottom: 30px;
     }
 
     .thanksGroup {
@@ -1983,6 +2003,17 @@ h1 {
     }
 
     .otherRecMenu {
+        display: flex;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+    }
+
+    .otherRecMenuFirst {
+        background-color: #d88b43;
+        color: #fffcf6;
         display: flex;
         border-radius: 10px;
         margin-bottom: 20px;
