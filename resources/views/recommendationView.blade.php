@@ -73,16 +73,30 @@
                         <?php $coffeeCount++; ?>
                         <a href="#" class="coffee-link2" data-coffee-id="{{ $coffee->id }}"
                             coffee-sort-id="{{ $coffeeCount }}">
-                            <div class="otherRecMenu">
-                                <img src="{{ $coffee->coffeePhoto }}" class="otherRecPhoto"> <br><br>
-                                <div class="otherRecPhotoDesc">
-                                    <strong>{{ $coffee->coffeeName }} </strong>
-                                    <br>
-                                    {{ $coffee->coffeeDescription }}
-                                    <br><br>
-                                    Rp {{ $coffee->coffeePrice }}
+                            @if ($coffeeCount == 1)
+                                <div class="otherRecMenuFirst">
+                                    <img src="{{ $coffee->coffeePhoto }}" class="otherRecPhoto"> <br><br>
+                                    <div class="otherRecPhotoDesc">
+                                        <i>Top Recommendation</i><br>
+                                        <strong>{{ $coffee->coffeeName }} </strong>
+                                        <br>
+                                        {{ $coffee->coffeeDescription }}
+                                        <br><br>
+                                        Rp {{ $coffee->coffeePrice }}
+                                    </div>
                                 </div>
-                            </div>
+                            @else
+                                <div class="otherRecMenu">
+                                    <img src="{{ $coffee->coffeePhoto }}" class="otherRecPhoto"> <br><br>
+                                    <div class="otherRecPhotoDesc">
+                                        <strong>{{ $coffee->coffeeName }} </strong>
+                                        <br>
+                                        {{ $coffee->coffeeDescription }}
+                                        <br><br>
+                                        Rp {{ $coffee->coffeePrice }}
+                                    </div>
+                                </div>
+                            @endif
                         </a>
                     @endif
                 @endforeach

@@ -18,9 +18,6 @@
                             <input type="radio" id="pertanyaan1_jawaban1" name="pertanyaan1" value="1">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>1</p>
                                 </div>
                             </span>
@@ -30,9 +27,6 @@
                             <input type="radio" id="pertanyaan1_jawaban2" name="pertanyaan1" value="2">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>2</p>
                                 </div>
                             </span>
@@ -42,9 +36,6 @@
                             <input type="radio" id="pertanyaan1_jawaban3" name="pertanyaan1" value="3">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>3</p>
                                 </div>
                             </span>
@@ -54,9 +45,6 @@
                             <input type="radio" id="pertanyaan1_jawaban4" name="pertanyaan1" value="4">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>4</p>
                                 </div>
                             </span>
@@ -66,14 +54,11 @@
                             <input type="radio" id="pertanyaan1_jawaban5" name="pertanyaan1" value="5">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>5</p>
                                 </div>
                             </span>
                         </label>
-                    </fieldset>
+                    </fieldset><br><hr>
 
                     {{-- Pertanyaan 2 --}}
                     <fieldset class="thanksGroup">
@@ -82,9 +67,6 @@
                             <input type="radio" id="pertanyaan2_jawaban1" name="pertanyaan2" value="1">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>1</p>
                                 </div>
                             </span>
@@ -94,9 +76,6 @@
                             <input type="radio" id="pertanyaan2_jawaban2" name="pertanyaan2" value="2">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>2</p>
                                 </div>
                             </span>
@@ -106,9 +85,6 @@
                             <input type="radio" id="pertanyaan2_jawaban3" name="pertanyaan2" value="3">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>3</p>
                                 </div>
                             </span>
@@ -118,9 +94,6 @@
                             <input type="radio" id="pertanyaan2_jawaban4" name="pertanyaan2" value="4">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>4</p>
                                 </div>
                             </span>
@@ -130,14 +103,11 @@
                             <input type="radio" id="pertanyaan2_jawaban5" name="pertanyaan2" value="5">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>5</p>
                                 </div>
                             </span>
                         </label>
-                    </fieldset>
+                    </fieldset><br><hr>
 
                     {{-- Pertanyaan 3 --}}
                     <fieldset class="thanksGroup">
@@ -146,9 +116,6 @@
                             <input type="radio" id="pertanyaan3_jawaban1" name="pertanyaan3" value="1">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>1</p>
                                 </div>
                             </span>
@@ -158,9 +125,6 @@
                             <input type="radio" id="pertanyaan3_jawaban2" name="pertanyaan3" value="2">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>2</p>
                                 </div>
                             </span>
@@ -170,9 +134,6 @@
                             <input type="radio" id="pertanyaan3_jawaban3" name="pertanyaan3" value="3">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>3</p>
                                 </div>
                             </span>
@@ -182,9 +143,6 @@
                             <input type="radio" id="pertanyaan3_jawaban4" name="pertanyaan3" value="4">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>4</p>
                                 </div>
                             </span>
@@ -194,9 +152,6 @@
                             <input type="radio" id="pertanyaan3_jawaban5" name="pertanyaan3" value="5">
                             <span>
                                 <div class="inSpan">
-                                    <div class="thanksAnimContent">
-                                        {{-- Gambar --}}
-                                    </div>
                                     <p>5</p>
                                 </div>
                             </span>

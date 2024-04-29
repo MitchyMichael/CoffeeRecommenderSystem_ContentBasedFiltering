@@ -22,6 +22,23 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    coffeeLinks2.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const coffeeDescription = this.querySelector('.otherRecMenuFirst').innerHTML.trim();
+            descriptionPopup.innerHTML = coffeeDescription;
+            descriptionPopup.parentNode.style.display = 'block';
+            otherRecMenu.style.display = 'none';
+
+            // Add event listener for cancel button
+            cancelButton.addEventListener('click', function () {
+                descriptionPopup.parentNode.style.display = 'none';
+                otherRecMenu.style.display = 'block';
+                document.removeEventListener('click', hidePopup);
+            });
+        });
+    });
+
     coffeeLinks.forEach(function (link) {
         link.addEventListener('click', function (event) {
             event.preventDefault();

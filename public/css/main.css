@@ -731,58 +731,11 @@ h1 {
 
 @media screen and (max-width: 767px) and (min-width: 515px) {
     .navbar {
-        width: 100%;
-        margin-inline: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-    }
-
-    .title-list {
-        display: flex;
-    }
-
-    .title {
-        width: fit-content;
-        font-size: 20px;
-        font-weight: bold;
-        color: #fffcf6;
-        padding-top: 3px;
-    }
-
-    .nav-list {
-        display: flex;
-        justify-content: end;
-        padding-top: 10px;
-    }
-
-    .nav-list ul {
-        padding-left: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .nav-list li {
-        list-style-type: none;
-        font-size: 16px;
-    }
-
-    .nav-list li a {
-        text-decoration: none;
-        font-weight: 500;
-        color: #fffcf6;
-        padding: 30px;
-    }
-
-    .nav-list li a:hover {
-        text-decoration: none;
-        font-weight: 500;
+        display: none;
     }
 
     .header {
-        height: 650px;
+        height: 400px;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/coffeeMainNew.png");
         background-position: center left;
         background-size: cover;
@@ -793,34 +746,33 @@ h1 {
     }
 
     .heroLeft {
-        width: 50%;
-        padding-top: 12%;
+        width: 100%;
+        padding-top: 22%;
         padding-bottom: 10%;
         height: fit-content;
+        text-align: center;
     }
 
     .heroRight {
-        width: 40%;
-        margin: auto;
-        margin-right: 0;
+        display: none;
     }
 
     .heroTitle1 {
         color: #fffcf6;
         font-weight: bold;
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .tagline {
         color: #fffcf6;
         font-weight: normal;
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .button {
         display: inline-block;
         padding: 10px 20px;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
@@ -845,13 +797,9 @@ h1 {
     .how_it_works_title {
         color: #d88b43;
         font-weight: bold;
-        font-size: 36px;
+        font-size: 24px;
         padding-top: 100px;
         text-align: center;
-    }
-
-    .card-container {
-        display: flex;
     }
 
     .thiscard {
@@ -864,12 +812,12 @@ h1 {
     }
 
     .lottieFile {
-        width: 150px;
+        width: 100px;
         margin: auto;
     }
 
     .cardTitle {
-        font-size: 24px;
+        font-size: 18px;
         padding-top: 20px;
         padding-bottom: 20px;
         font-weight: bold;
@@ -890,7 +838,7 @@ h1 {
     .button2 {
         display: inline-block;
         padding: 10px 30px;
-        font-size: 24px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
@@ -911,13 +859,12 @@ h1 {
 
     .CBFSection {
         height: fit-content;
-        background-color: orangered;
     }
 
     .aboutTitle {
         color: #fffcf6;
         font-weight: bold;
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .about {
@@ -929,6 +876,7 @@ h1 {
         margin-bottom: 100px;
         display: flex;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
     }
 
     .aboutText {
@@ -936,13 +884,14 @@ h1 {
     }
 
     .aboutLeft {
-        width: 60%;
+        width: 100%;
         padding-top: 10%;
         padding-bottom: 10%;
+        text-align: center;
     }
 
     .aboutRight {
-        width: 40%;
+        display: none
     }
 
     /* ==== Dashboard View ==== */
@@ -2748,6 +2697,17 @@ h1 {
     }
 
     /* Other menu */
+    .otherRecMenuFirst {
+        background-color: #d88b43;
+        color: #fffcf6;
+        display: flex;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+    }
+
     .otherRecContainer {
         width: 80%;
         margin-left: auto;
