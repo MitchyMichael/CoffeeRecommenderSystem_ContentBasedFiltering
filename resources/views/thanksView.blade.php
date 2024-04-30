@@ -169,7 +169,7 @@
         <input type="hidden" name="question2" id="question2Input">
         <input type="hidden" name="question3" id="question3Input">
 
-        <input type="hidden" name="customer_id" id="customerIdInput" value="{{ $customerId }}">
+        <input type="hidden" name="customer_id" id="customerIdInput" value="{{ $choise_id }}">
     </form>
 
     <script src="/js/submitFeedback.js"></script>

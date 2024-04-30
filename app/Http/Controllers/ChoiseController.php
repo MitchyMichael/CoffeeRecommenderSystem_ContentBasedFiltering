@@ -26,6 +26,8 @@ class ChoiseController extends Controller
 
         $choise->save();
 
-        return view('thanksView', compact('customerId', 'coffeeId'));
+        $choise_id = $choise->id;
+
+        return view('thanksView', compact('choise_id', 'coffeeId'));
     }
 }
