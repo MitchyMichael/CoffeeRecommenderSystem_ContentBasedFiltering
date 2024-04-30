@@ -2633,7 +2633,7 @@ h1 {
 
     .item-description-popup img {
         height: 300px;
-        width: fit-content;
+        width: auto;
         border-radius: 10px;
     }
 
