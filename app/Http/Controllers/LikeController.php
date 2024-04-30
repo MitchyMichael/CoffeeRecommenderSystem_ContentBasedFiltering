@@ -15,7 +15,7 @@ class LikeController extends Controller
         $question2 = $request->input('question2');
         $question3 = $request->input('question3');
 
-        dd($question1, $question2, $question3);
+
 
         $choise = Choise::findOrFail($customerId);
         $choise->question1 = $question1;
@@ -23,6 +23,7 @@ class LikeController extends Controller
         $choise->question3 = $question3;
 
         $choise->save();
+        dd($question1, $question2, $question3);
 
         return view('endView', compact('customerId'));
     }
