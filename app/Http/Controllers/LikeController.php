@@ -9,6 +9,7 @@ class LikeController extends Controller
 {
     public function saveLike(Request $request){
         $customerId = $request->input('customer_id');
+        dd($customerId);
 
         $question1 = $request->input('question1');
         $question2 = $request->input('question2');
