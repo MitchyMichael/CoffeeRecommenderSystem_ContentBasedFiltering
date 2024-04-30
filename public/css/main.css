@@ -702,6 +702,10 @@ h1 {
         text-align: center;
     }
 
+    .endMain .recSubTitle {
+        font-size: 18px;
+    }
+
     .endMenu {
         margin-top: 50px;
     }
