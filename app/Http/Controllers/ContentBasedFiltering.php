@@ -51,7 +51,6 @@ class ContentBasedFiltering extends Controller
         }
 
         $finalSortRecommendation = $thisSortRecommendations;
-        dd($finalSortRecommendation);
 
         // Recommend top items to the user
         $topRecommendations = array_slice($recommendations, 0, 3, true);
