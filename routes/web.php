@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CafeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PreferenceController;
 use App\Http\Controllers\ChoiseController;
@@ -45,3 +46,9 @@ Route::post('/save-like', [LikeController::class, 'saveLike']);
 Route::get('/end', function () {
     return view('endView');
 })->name('end');
+
+// Super admin to add new cafe
+Route::view('/superadmin', 'superAdminView');
+
+// Cafe Controller
+Route::post('/submit-cafe', [CafeController::class, 'addCafe']);

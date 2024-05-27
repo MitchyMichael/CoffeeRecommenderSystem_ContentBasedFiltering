@@ -12,6 +12,7 @@ return new class extends Migration {
     {
         Schema::create('coffees', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('cafeId')->constrained('cafes')->nullable();
             $table->string('coffeeName');
             $table->text('coffeeDescription');
             $table->string('coffeePhoto')->nullable();
