@@ -50,5 +50,11 @@ Route::get('/end', function () {
 // Super admin to add new cafe
 Route::view('/superadmin', 'superAdminView');
 
-// Cafe Controller
+// Cafe Controller add cafe
 Route::post('/submit-cafe', [CafeController::class, 'addCafe']);
+
+// Login admin view
+Route::view('/loginAdmin', 'loginAdminView');
+
+// Cafe Controller login
+Route::post('/loginForAdmin', [CafeController::class, 'loginForAdmin']);
