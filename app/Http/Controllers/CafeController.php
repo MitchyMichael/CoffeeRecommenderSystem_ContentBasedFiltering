@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Cafe;
+use App\Models\Coffee;
+
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
+
 
 class CafeController extends Controller
 {
@@ -35,11 +40,51 @@ class CafeController extends Controller
         $cafe = Cafe::where('cafeEmail', $loginEmail)->first();
 
         if ($cafe && Hash::check($loginPassword, $cafe->cafePassword)) {
-            dd("You are in");
+            $cafeId = $cafe->id;
+            Session::put('cafeId', $cafeId);
+            return redirect()->route('adminDashboard');
         } else {
             dd("Wrong");
         }
+    }
 
+    public function submitNewCoffee(Request $request)
+    {
+        $newCoffee = new Coffee();
+        $cafeId = $request->input('cafeIdField');
 
+        $newCoffee->cafeId = $cafeId;
+        $newCoffee->coffeeName = $request->input('coffeeName');
+        $newCoffee->coffeeDescription = $request->input('coffeeDescription');
+        $newCoffee->coffeePrice = $request->input('coffeePrice');
+
+        $isBestSeller = $request->input('coffeeIsBestSeller');
+
+        if ($isBestSeller == 'true') {
+            $newCoffee->coffeeIsBestSeller = true;
+        } else {
+            $newCoffee->coffeeIsBestSeller = false;
+        }
+
+        $newCoffee->coffeePreferenceMood = $request->input('coffeePreferenceMood');
+        $newCoffee->coffeePreferenceActivity = $request->input('coffeePreferenceActivity');
+        $newCoffee->coffeeTemperature = $request->input('coffeeTemperature');
+        $newCoffee->coffeeSweetness = $request->input('coffeeSweetness');
+        $newCoffee->coffeeMilkness = $request->input('coffeeMilkness');
+        $newCoffee->coffeeCheapness = $request->input('coffeeCheapness');
+        $newCoffee->coffeeAcidityLevel = $request->input('coffeeAcidityLevel');
+        $newCoffee->coffeeStrengthLevel = $request->input('coffeeStrengthLevel');
+
+        // Save image and path
+        if ($request->hasFile('coffeePhoto')) {
+            $image = $request->file('coffeePhoto');
+            $imageName = time() . '.' . $image->getClientOriginalExtension();
+            $image->storeAs('public/img', $imageName);
+            $imagePath = asset('public/img/' . $imageName);
+            $newCoffee->coffeePhoto = $imagePath;
+        }
+
+        $newCoffee->save();
+        return redirect()->route('adminDashboard');
     }
 }

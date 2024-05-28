@@ -7,21 +7,22 @@ use Illuminate\Database\Eloquent\Model;
 
 class Coffee extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
+        'cafeId',
         'coffeeName',
         'coffeeDescription',
         'coffeePhoto',
         'coffeePrice',
         'coffeeIsBestSeller',
-        'coffeeIsPromo',
-        'numberChosen',
+
         'coffeePreferenceMood',
         'coffeePreferenceActivity',
         'coffeeTemperature',
         'coffeeSweetness',
         'coffeeMilkness',
         'coffeeCheapness',
-        'coffeeDrinkType',
         'coffeeAcidityLevel',
         'coffeeStrengthLevel',
     ];

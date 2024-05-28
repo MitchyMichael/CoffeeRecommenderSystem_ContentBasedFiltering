@@ -12,6 +12,7 @@
                     <ul>
                         <li><a href="#howItWorks">How It Works</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="/loginAdmin">Admin</a></li>
                     </ul>
                 </nav>
             </div>
@@ -26,7 +27,7 @@
                     <h3 class="tagline">Personalized Coffee Selections Tailored Just for You</h3>
 
                     <br>
-                    <a href="/dashboard" class="button">Discover Your Brew</a>
+                    <a href="/dashboard" class="button">Try It Now!</a>
                 </div>
                 <div class="heroRight">
                     <dotlottie-player src="https://lottie.host/2e0df06b-7c5f-4a8a-9b7f-2325be1d0763/xpHiEh9MZp.json"

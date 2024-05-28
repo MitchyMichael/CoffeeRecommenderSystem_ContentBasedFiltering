@@ -58,3 +58,16 @@ Route::view('/loginAdmin', 'loginAdminView');
 
 // Cafe Controller login
 Route::post('/loginForAdmin', [CafeController::class, 'loginForAdmin']);
+
+// Admin dashboard view
+Route::get('/adminDashboard', function () {
+    return view('adminDashboardView');
+})->name('adminDashboard');
+
+// Add New Coffee View
+Route::get('/addNewCoffee', function () {
+    return view('addNewCoffeeView');
+});
+
+//Submit New Coffee
+Route::post('/submitNewCoffee', [CafeController::class, 'submitNewCoffee']);
