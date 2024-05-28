@@ -80,10 +80,18 @@ class CafeController extends Controller
             $image = $request->file('coffeePhoto');
             $imageName = (string) (time() . '.' . $image->getClientOriginalExtension());
             $image->storeAs('public/img', $imageName);
-            $newCoffee->coffeePhoto = "/storage/img/".$imageName;
+
+            // Save to database
+            $newCoffee->coffeePhoto = "/storage/img/" . $imageName;
         }
 
         $newCoffee->save();
         return redirect()->route('adminDashboard');
+    }
+
+    public function logout()
+    {
+        Session::flush();
+        return redirect('/');
     }
 }

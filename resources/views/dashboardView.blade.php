@@ -1,12 +1,20 @@
 @extends('layout.layout')
-
 @section('main_content')
+    @php
+        $hasCafeId = Session::has('cafeId');
+        if ($hasCafeId) {
+            $cafeId = Session::get('cafeId');
+            $formLink = '/preferences';
+        } else {
+            $formLink = '/preferences';
+        }
+    @endphp
     <div class="container">
         <div class="inputForm">
             <h1>
                 Tell us your coffee preference!
             </h1>
-            <form action="{{ url('/preferences') }}" method="POST">
+            <form action="{{ url($formLink) }}" method="POST">
                 @csrf
 
                 <div class="preferenceForm">

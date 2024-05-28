@@ -120,10 +120,9 @@
     </form>
 
     <script>
-        // JavaScript code to redirect after 20 seconds
         setTimeout(function() {
             window.location.href = '/';
-        }, 60000); // 60 seconds in milliseconds
+        }, 120000); // 120 seconds in milliseconds
     </script>
 
     <script src="/js/otherRecommendation.js"></script>

@@ -1,18 +1,27 @@
 @extends('layout.layout')
 @section('main_content')
+    @php
+        use App\Models\Cafe;
+        use Illuminate\Support\Facades\Session;
+
+        $cafeId = Session::get('cafeId');
+        $cafe = Cafe::find($cafeId);
+        $cafeName = $cafe->cafeName;
+    @endphp
+
     {{-- Top Section --}}
     <div class="header">
         {{-- Navigation Bar --}}
         <header class="navbar">
             <div class="container">
                 <div class="title-list">
-                    <h3 class="title">BrewMaster's</h3>
+                    <h3 class="title">BrewMaster's x {{ $cafeName }}</h3>
                 </div>
                 <nav class="nav-list">
                     <ul>
                         <li><a href="#howItWorks">How It Works</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="/loginAdmin">Admin</a></li>
+                        <li><a href="/adminDashboard">Admin</a></li>
                     </ul>
                 </nav>
             </div>

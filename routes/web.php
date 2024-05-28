@@ -22,6 +22,11 @@ Route::get('/', function () {
     return view('landingPageView');
 })->name('root');
 
+// Landing page for cafe
+Route::get('/cafeLanding', function () {
+    return view('landingPageViewForCafe');
+})->name('cafeLanding');
+
 Route::get('/dashboard', function () {
     return view('dashboardView');
 });
@@ -71,3 +76,6 @@ Route::get('/addNewCoffee', function () {
 
 //Submit New Coffee
 Route::post('/submitNewCoffee', [CafeController::class, 'submitNewCoffee']);
+
+// Admin Log Out
+Route::post('/logout', [CafeController::class, 'logout']);
