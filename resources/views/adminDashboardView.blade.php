@@ -19,7 +19,8 @@
     @endphp
 
     @foreach ($coffees as $coffee)
-        <img src="{{ $coffee->coffeePhoto }}">
+        {{-- <img src="{{ asset('storage/'.$coffee->coffeePhoto) }}"> --}}
+        <img src="{{ asset('storage/'.$coffee->coffeePhoto) }}">
         {{ $coffee->coffeeName }} <br>
     @endforeach
 

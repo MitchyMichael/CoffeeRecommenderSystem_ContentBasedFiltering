@@ -12,10 +12,11 @@ class CoffeesSeeder extends Seeder
      * Run the database seeds.
      */
 
-    public function run(): void // php artisan db:seed --class=CoffeesSeeder.php
+    public function run(): void // php artisan db:seed --class=CoffeesSeeder
     {
         DB::table('coffees')->insert([
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Basic Latte',
                 'coffeeDescription' => 'Single or double espresso plus fresh milk.',
                 'coffeePhoto' => '/img/cafeLatte.jpg',
@@ -35,6 +36,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Hot Basic Latte',
                 'coffeeDescription' => 'Single or double espresso plus fresh milk.',
                 'coffeePhoto' => '/img/hotBasicLatte.jpeg',
@@ -54,6 +56,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Friendly Coffee',
                 'coffeeDescription' => 'Classic "Kopi Susu". Espresso, homemade aren syrup, and fresh milk.',
                 'coffeePhoto' => '/img/friendlyHazelnutVanilla.jpg',
@@ -73,6 +76,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Hot Friendly Coffee',
                 'coffeeDescription' => 'Classic "Kopi Susu". Espresso, homemade aren syrup, and fresh milk.',
                 'coffeePhoto' => '/img/hotFriendly.jpeg',
@@ -92,6 +96,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Vanilla Latte',
                 'coffeeDescription' => 'Single shot espresso, vanilla syrup, fresh milk.',
                 'coffeePhoto' => '/img/friendlyHazelnutVanilla.jpg',
@@ -111,6 +116,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Hazelnut Latte',
                 'coffeeDescription' => 'Single shot espresso, hazelnut syrup, fresh milk.',
                 'coffeePhoto' => '/img/friendlyHazelnutVanilla.jpg',
@@ -130,6 +136,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Sitrus Cafe',
                 'coffeeDescription' => 'Fresh orange juice with single / double espresso.',
                 'coffeePhoto' => '/img/sitrusCafe.jpg',
@@ -149,6 +156,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Candy Latte',
                 'coffeeDescription' => 'Single shot espresso, salted caramel, fresh milk.',
                 'coffeePhoto' => '/img/candyLatte.jpg',
@@ -168,6 +176,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Butterscotch Latte',
                 'coffeeDescription' => 'It has a flavor similar to caramel latte but lighter and more savory, with homemade cream on top of the coffee.',
                 'coffeePhoto' => '/img/butterscotch.jpg',
@@ -187,6 +196,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Biru',
                 'coffeeDescription' => "A light caramel latte but blue.",
                 'coffeePhoto' => '/img/biru.jpg',
@@ -206,6 +216,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Not Tiramisu Latte',
                 'coffeeDescription' => "It tastes similar to tiramisu but it isn't tiramisu, with a sprinkle of cocoa powder on top of the coffee.",
                 'coffeePhoto' => '/img/notTiramisu.jpg',
@@ -225,6 +236,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Matchapresso',
                 'coffeeDescription' => "Matcha latte with pure matcha and fresh single shot espresso.",
                 'coffeePhoto' => '/img/matchapresso.jpg',
@@ -244,6 +256,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Shakencano',
                 'coffeeDescription' => 'Double espresso shake with aren syrup.',
                 'coffeePhoto' => '/img/iceShakencano.jpeg',
@@ -263,6 +276,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Apple Pie Latte',
                 'coffeeDescription' => "Cafe Latte that taste like apple pie.",
                 'coffeePhoto' => '/img/applePie.jpg',
@@ -283,6 +297,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Happy Mocha',
                 'coffeeDescription' => "A combination of double espresso, steamed milk, and chocolate.",
                 'coffeePhoto' => '/img/happyMocha.jpeg',
@@ -302,6 +317,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Hot Americano',
                 'coffeeDescription' => "Double espresso with water, no added sugar.",
                 'coffeePhoto' => '/img/hotAmericano.jpeg',
@@ -321,6 +337,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Americano',
                 'coffeeDescription' => "Double espresso with water, no added sugar.",
                 'coffeePhoto' => '/img/iceAmericano.jpeg',
@@ -340,6 +357,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Hot Cappuccino',
                 'coffeeDescription' => "Espresso with fresh milk, without any added sugar.",
                 'coffeePhoto' => '/img/hotCappucino.webp',
@@ -359,6 +377,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Ice Cappuccino',
                 'coffeeDescription' => "Espresso with fresh milk, without any added sugar.",
                 'coffeePhoto' => '/img/iceCappucino.jpeg',
@@ -378,6 +397,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Cold Brew',
                 'coffeeDescription' => "Coffee that brewed in cold water for 12 hours.",
                 'coffeePhoto' => '/img/coldBrew.jpeg',
@@ -398,6 +418,7 @@ class CoffeesSeeder extends Seeder
             ],
 
             [
+                'cafeId' => 1,
                 'coffeeName' => 'Hot Espresso Arabica',
                 'coffeeDescription' => "Just an espresso.",
                 'coffeePhoto' => '/img/hotEspressoArabica.jpeg',
