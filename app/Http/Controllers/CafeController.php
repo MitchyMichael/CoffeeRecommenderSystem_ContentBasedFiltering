@@ -77,10 +77,10 @@ class CafeController extends Controller
 
         // Save image and path
         if ($request->hasFile('coffeePhoto')) {
-            $extension = $request->file('coffeePhoto')->getClientOriginalExtension();
-            $newName = $request->model . "-" . now()->timestamp . "." . $extension;
-            $thisImage = $request->file('coffeePhoto')->storeAs("coffee_images", $newName);
-            $newCoffee->coffeePhoto = $thisImage;
+            $image = $request->file('coffeePhoto');
+            $imageName = (string) (time() . '.' . $image->getClientOriginalExtension());
+            $image->storeAs('public/img', $imageName);
+            $newCoffee->coffeePhoto = "/storage/img/".$imageName;
         }
 
         $newCoffee->save();
