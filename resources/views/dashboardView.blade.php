@@ -4,10 +4,9 @@
         $hasCafeId = Session::has('cafeId');
         if ($hasCafeId) {
             $cafeId = Session::get('cafeId');
-            $formLink = '/preferences';
-        } else {
-            $formLink = '/preferences';
         }
+        
+        $formLink = '/preferences';
     @endphp
     <div class="container">
         <div class="inputForm">

@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\PreferenceController;
 use App\Models\Coffee;
+use Illuminate\Support\Facades\Session;
 
 class ContentBasedFiltering extends Controller
 {
@@ -14,7 +15,16 @@ class ContentBasedFiltering extends Controller
         $userPreferences = $preferenceController->getPreferencesById($preferenceId);
 
         // Get all coffees
-        $coffees = Coffee::all();
+        $hasCafeId = Session::has('cafeId');
+        if ($hasCafeId) {
+            $cafeId = Session::get('cafeId');
+            $coffees = Coffee::where('cafeId', $cafeId)->get();
+
+            $coffeeIDs = $coffees->pluck('id');
+        } else {
+            $coffees = Coffee::all();
+        }
+
         $menuItems = $coffees->map(function ($coffee) {
             return [
                 'mood' => $coffee->coffeePreferenceMood,
@@ -31,6 +41,7 @@ class ContentBasedFiltering extends Controller
 
         // Calculate cosine similarity for each menu item
         $recommendations = [];
+        $countingCount = -1;
         foreach ($menuItems as $menuItem) {
             // Calculate cosine similarity between user preferences and menu item
             $valuesArray1 = array_values($userPreferences);
@@ -38,31 +49,56 @@ class ContentBasedFiltering extends Controller
             $similarity = $this->cosine_similarity($valuesArray1, $valuesArray2);
 
             // Store menu item name and similarity score
-            $recommendations[] = $similarity;
+            if ($hasCafeId) {
+                $countingCount += 1;
+                $recommendations[] = [
+                    'coffee_id' => $coffeeIDs[$countingCount],
+                    'similarity' => $similarity,
+                ];
+            } else {
+                $recommendations[] = $similarity;
+            }
         }
 
         // Sort recommendations by similarity score (higher scores first)
-        arsort($recommendations);
-        $sortRecommendations = $recommendations;
+        if ($hasCafeId) {
+            $notSortedRecommendation = $recommendations;
+            usort($recommendations, function ($a, $b) {
+                return $b['similarity'] <=> $a['similarity'];
+            });
+            // All sorted items
+            $sortRecommendations = $recommendations;
+            $sortedCoffeeIds = array_column($sortRecommendations, 'coffee_id');
 
-        foreach ($sortRecommendations as $key => $value) {
-            // Get all recommendations
-            $thisSortRecommendations[] = $key + 1;
+            // Get the top 3 items
+            $top3Recommendations = array_slice($sortRecommendations, 0, 3);
+            $top3CoffeeIds = array_column($top3Recommendations, 'coffee_id');
+
+            dd($coffeeIDs, $sortRecommendations, $notSortedRecommendation, $top3Recommendations, $sortedCoffeeIds, $top3CoffeeIds);
+
+            return array($sortedCoffeeIds, $top3CoffeeIds);
+
+        } else {
+            arsort($recommendations);
+            $sortRecommendations = $recommendations;
+
+            foreach ($sortRecommendations as $key => $value) {
+                // Get all recommendations
+                $thisSortRecommendations[] = $key + 1;
+            }
+            $finalSortRecommendation = $thisSortRecommendations;
+
+            // Recommend top items to the user
+            $topRecommendations = array_slice($recommendations, 0, 3, true);
+            foreach ($topRecommendations as $key => $value) {
+                // Get top 3 recommendations
+                $thisTopRecommendations[] = $key + 1;
+            }
+            $finalTopRecommendation = $thisTopRecommendations;
+
+            // Return both $thisSortRecommendations and $finalTopRecommendation
+            return array($finalSortRecommendation, $finalTopRecommendation);
         }
-
-        $finalSortRecommendation = $thisSortRecommendations;
-
-        // Recommend top items to the user
-        $topRecommendations = array_slice($recommendations, 0, 3, true);
-        foreach ($topRecommendations as $key => $value) {
-            // Get top 3 recommendations
-            $thisTopRecommendations[] = $key + 1;
-        }
-
-        $finalTopRecommendation = $thisTopRecommendations;
-
-        // Return both $thisSortRecommendations and $finalTopRecommendation
-        return array($finalSortRecommendation, $finalTopRecommendation);
     }
 
     // Function to calculate cosine similarity

@@ -31,11 +31,4 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // JavaScript code to redirect after 20 seconds
-        setTimeout(function() {
-            window.location.href = '/';
-        }, 20000); // 20 seconds in milliseconds
-    </script>
 @endsection

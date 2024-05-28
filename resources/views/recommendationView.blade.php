@@ -8,6 +8,13 @@
             <h2 class="recSubTitle">Please select one menu.</h2>
             <br>
 
+            @php
+                $hasCafeId = Session::has('cafeId');
+                if ($hasCafeId) {
+                    $cafeId = Session::get('cafeId');
+                }
+            @endphp
+
             <div class="recContainer">
                 <?php $coffeeCount = 0; ?>
                 @foreach ($topRec as $recommendation)
@@ -118,12 +125,6 @@
         <input type="hidden" name="customer_id" id="customerIdInput" value="{{ $thisCustomerID }}">
         <input type="hidden" name="sort_id" id="sortId">
     </form>
-
-    <script>
-        setTimeout(function() {
-            window.location.href = '/';
-        }, 120000); // 120 seconds in milliseconds
-    </script>
 
     <script src="/js/otherRecommendation.js"></script>
     <script src="/js/submitCoffeeChosen.js"></script>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Preference;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ContentBasedFiltering;
+use Illuminate\Support\Facades\Session;
 
 class PreferenceController extends Controller
 {
@@ -32,6 +33,12 @@ class PreferenceController extends Controller
 
         // Content-based filtering
         $contentBasedFiltering = new ContentBasedFiltering();
+
+        $hasCafeId = Session::has('cafeId');
+        if ($hasCafeId) {
+            $cafeId = Session::get('cafeId');
+        }
+
         $result = $contentBasedFiltering->contentBasedFiltering($preferenceId);
         $sortRec = $result[0]; // All sorted recommendations
         $topRec = $result[1]; // Top 3 recommendations
@@ -40,7 +47,8 @@ class PreferenceController extends Controller
         return view('recommendationView', compact('topRec', 'sortRec', 'thisCustomerID'));
     }
 
-    function getPreferencesById($preferenceId) {
+    function getPreferencesById($preferenceId)
+    {
         $userPreferences = Preference::find($preferenceId);
 
         if ($userPreferences) {
