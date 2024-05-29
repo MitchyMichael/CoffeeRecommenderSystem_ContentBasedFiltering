@@ -29,6 +29,7 @@
         <div class="addCoffeeForm">
             <br><br>
             <h1>Tambah Menu Kopi</h1><br>
+            <h1 style="display:none;">Cafe ID: <span id="cafeIdDisplay"></span></h1>
             <form action="/submitNewCoffee" method="POST" enctype="multipart/form-data">
                 @csrf
                 <label for="coffeeName">Nama menu:</label> <input type="text" id="coffeeName" name="coffeeName" value="Menu Baru"><br>
