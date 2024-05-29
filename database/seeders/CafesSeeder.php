@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class CafesSeeder extends Seeder
 {
@@ -19,7 +20,7 @@ class CafesSeeder extends Seeder
             [
                 'cafeName' => "Gisoe",
                 'cafeEmail' => "gisoe@brewmaster.com",
-                'cafePassword' => "000000",
+                'cafePassword' => Hash::make('000000'),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

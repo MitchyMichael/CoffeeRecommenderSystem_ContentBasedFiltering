@@ -59,7 +59,7 @@ Route::view('/superadmin', 'superAdminView');
 Route::post('/submit-cafe', [CafeController::class, 'addCafe']);
 
 // Login admin view
-Route::view('/loginAdmin', 'loginAdminView');
+Route::view('/admin', 'loginAdminView');
 
 // Cafe Controller login
 Route::post('/loginForAdmin', [CafeController::class, 'loginForAdmin']);

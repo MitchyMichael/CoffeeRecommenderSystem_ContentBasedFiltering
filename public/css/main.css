@@ -2891,4 +2891,20 @@ h1 {
         transform: translateY(-10px);
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     }
+
+    .mainAdminLoginContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100svh;
+        text-align: center;
+    }
+
+    .superAdminMainContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100svh;
+        text-align: center;
+    }
 }
