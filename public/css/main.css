@@ -2898,6 +2898,7 @@ h1 {
         align-items: center;
         height: 100svh;
         text-align: center;
+
     }
 
     .superAdminMainContainer {
@@ -2906,5 +2907,23 @@ h1 {
         align-items: center;
         height: 100svh;
         text-align: center;
+    }
+
+    td{
+        width: fit-content;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: start;
+    }
+
+    .adminDashboardMainContainer{
+        text-align: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .functionButtonAdminAdd{
+        display: flex;
+        justify-content: center;
     }
 }

@@ -5,13 +5,13 @@
         if ($hasCafeId) {
             $cafeId = Session::get('cafeId');
         }
-        
+
         $formLink = '/preferences';
     @endphp
     <div class="container">
         <div class="inputForm">
             <h1>
-                Tell us your coffee preference!
+                Beri Tahu Preferensi Kopimu!
             </h1>
             <form action="{{ url($formLink) }}" method="POST">
                 @csrf
@@ -19,7 +19,7 @@
                 <div class="preferenceForm">
                     {{-- Mood Preference --}}
                     <fieldset class="slide-group">
-                        <legend class="slideTitle">How are you today?</legend>
+                        <legend class="slideTitle">Bagaimana kabarmu?</legend>
                         <label for="mood1">
                             <input type="radio" id="mood1" name="preferenceMood" value="1">
                             <span>
@@ -28,7 +28,7 @@
                                         src="https://lottie.host/156c8a97-758f-4006-a14f-e88189c8cb9f/pRvyMkbq4Y.json"
                                         background="transparent" speed="1" loop autoplay class="inputChoise">
                                     </dotlottie-player>
-                                    <p>Not Good</p>
+                                    <p>Kurang baik</p>
                                 </div>
                             </span>
                         </label>
@@ -41,7 +41,7 @@
                                         src="https://lottie.host/7f2c3da9-f531-4430-b3bf-3cb39d8e4268/WjCL0FLgaV.json"
                                         background="transparent" speed="1" class="inputChoise" loop
                                         autoplay></dotlottie-player>
-                                    <p>Netral</p>
+                                    <p>Biasa saja</p>
                                 </div>
                             </span>
                         </label>
@@ -54,7 +54,7 @@
                                         src="https://lottie.host/91c766f6-85ef-4061-921e-c1e781c2d94f/2d1IMO75io.json"
                                         background="transparent" speed="1" loop autoplay
                                         class="inputChoise"></dotlottie-player>
-                                    <p>Happy</p>
+                                    <p>Sangat baik</p>
                                 </div>
                             </span>
                         </label>
@@ -63,7 +63,7 @@
 
                     {{-- Activity Preference --}}
                     <fieldset class="slide-group">
-                        <legend class="slideTitle">What will you do after this?</legend>
+                        <legend class="slideTitle">Apa kegiatanmu?</legend>
                         <label for="chilling">
                             <input type="radio" id="chilling" name="preferenceActivity" value="1">
                             <span>
@@ -72,7 +72,7 @@
                                         src="https://lottie.host/87839366-0ff1-4e00-94cf-902fc3df322a/XRYeBmKow5.json"
                                         background="transparent" speed="1" loop autoplay
                                         class="inputChoise"></dotlottie-player>
-                                    <p>Chilling / Resting</p>
+                                    <p>Beristirahat / bersantai</p>
                                 </div>
                             </span>
                         </label>
@@ -84,7 +84,7 @@
                                         src="https://lottie.host/64f5027f-8ca3-483f-9492-a3e529538a1e/Kb3SQCSrh6.json"
                                         background="transparent" speed="1" loop autoplay
                                         class="inputChoise"></dotlottie-player>
-                                    <p>Doing Something</p>
+                                    <p>Melakukan sesuatu</p>
                                 </div>
                             </span>
                         </label>
@@ -93,7 +93,7 @@
 
                     {{-- Coffee Temperature Preference --}}
                     <fieldset class="slide-group">
-                        <legend class="slideTitle">Do you prefer ice coffee or hot coffee?</legend>
+                        <legend class="slideTitle">Kamu lebih pilih minuman dingin atau panas?</legend>
                         <label for="cold">
                             <input type="radio" id="cold" name="preferenceCoffeeTemperature" value="1">
                             <span>
@@ -102,7 +102,7 @@
                                         src="https://lottie.host/d62d4b75-1a4c-45ec-84d0-220b69c453a1/rVVlyTVZAc.json"
                                         background="transparent" speed="1" class="inputChoise" loop
                                         autoplay></dotlottie-player>
-                                    <p>Ice Coffee</p>
+                                    <p>Dingin</p>
                                 </div>
                             </span>
                         </label>
@@ -114,7 +114,7 @@
                                         src="https://lottie.host/63975f44-f744-4030-8187-5c6e0c256be4/aoLBi1kSAA.json"
                                         background="transparent" speed="1" class="inputChoise" loop
                                         autoplay></dotlottie-player>
-                                    <p>Hot Coffee</p>
+                                    <p>Panas</p>
                                 </div>
                             </span>
                         </label>
@@ -123,13 +123,13 @@
 
                     {{-- Coffee Sweetness Preference --}}
                     <fieldset class="slide-group">
-                        <legend class="slideTitle">Desired sugar level</legend>
+                        <legend class="slideTitle">Jumlah gula yang diinginkan</legend>
                         <label for="sweetness1">
                             <input type="radio" id="sweetness1" name="preferenceCoffeeSweetness" value="1">
                             <span>
                                 <div class="inSpanSugar">
                                     <img src="/svg/sugar/noSugar.svg">
-                                    <p>No Sugar</p>
+                                    <p>Tanpa gula</p>
                                 </div>
                             </span>
                         </label>
@@ -139,7 +139,7 @@
                             <span>
                                 <div class="inSpanSugar">
                                     <img src="/svg/sugar/lessSugar.svg">
-                                    <p>Less Sugar</p>
+                                    <p>Gula dikurang</p>
                                 </div>
                             </span>
                         </label>
@@ -149,7 +149,7 @@
                             <span>
                                 <div class="inSpanSugar">
                                     <img src="/svg/sugar/normalSugar.svg">
-                                    <p>Normal Sugar</p>
+                                    <p>Takaran normal</p>
                                 </div>
                             </span>
                         </label>
@@ -159,7 +159,7 @@
                             <span>
                                 <div class="inSpanSugar">
                                     <img src="/svg/sugar/moreSugar.svg">
-                                    <p>More Sugar</p>
+                                    <p>Gula ditambah</p>
                                 </div>
                             </span>
                         </label>
@@ -169,7 +169,7 @@
                             <span>
                                 <div class="inSpanSugar">
                                     <img src="/svg/sugar/extraSugar.svg">
-                                    <p>Extra Sugar</p>
+                                    <p>Banyak gula</p>
                                 </div>
                             </span>
                         </label>
@@ -178,13 +178,13 @@
 
                     {{-- Coffee Milkness Preference --}}
                     <fieldset class="slide-group">
-                        <legend class="slideTitle">Do you want it with milk?</legend>
+                        <legend class="slideTitle">Apakah mau menggunakan susu?</legend>
                         <label for="no_milk">
                             <input type="radio" id="no_milk" name="preferenceCoffeeMilkness" value="1">
                             <span>
                                 <div class="inSpanMilk">
                                     <img src="/svg/milk/withoutMilk.svg">
-                                    <p>No Milk</p>
+                                    <p>Tanpa susu</p>
                                 </div>
                             </span>
                         </label>
@@ -193,7 +193,7 @@
                             <span>
                                 <div class="inSpanMilk">
                                     <img src="/svg/milk/withMilk.svg">
-                                    <p>With Milk</p>
+                                    <p>Dengan susu</p>
                                 </div>
                             </span>
                         </label>
@@ -202,13 +202,13 @@
 
                     {{-- Coffee Acidity Level Preference --}}
                     <fieldset class="slide-group">
-                        <legend class="slideTitle">Desired acidity level</legend>
+                        <legend class="slideTitle">Tingkat keasaman minuman</legend>
                         <label for="acidity1">
                             <input type="radio" id="acidity1" name="preferenceCoffeeAcidityLevel" value="1">
                             <span>
                                 <div class="inSpanAcid">
                                     <img src="/svg/acidity/notAcid.svg">
-                                    <p>Not acid</p>
+                                    <p>Tidak asam</p>
                                 </div>
                             </span>
                         </label>
@@ -217,7 +217,7 @@
                             <span>
                                 <div class="inSpanAcid">
                                     <img src="/svg/acidity/normal.svg">
-                                    <p>Normal</p>
+                                    <p>Sedang</p>
                                 </div>
                             </span>
                         </label>
@@ -226,7 +226,7 @@
                             <span>
                                 <div class="inSpanAcid">
                                     <img src="/svg/acidity/acid.svg">
-                                    <p>Acid</p>
+                                    <p>Asam</p>
                                 </div>
                             </span>
                         </label>
@@ -235,13 +235,13 @@
 
                     {{-- Coffee Strength Level Preference --}}
                     <fieldset class="slide-group">
-                        <legend class="slideTitle">Do you prefer a strong coffee or not?</legend>
+                        <legend class="slideTitle">Kamu lebih pilih kopi yang kuat atau tidak?</legend>
                         <label for="strength1">
                             <input type="radio" id="strength1" name="preferenceCoffeeStrengthLevel" value="1">
                             <span>
                                 <div class="inSpanAcid">
                                     <img src="/svg/strength/notStrong.svg">
-                                    <p>Not strong</p>
+                                    <p>Tidak</p>
                                 </div>
                             </span>
                         </label>
@@ -259,7 +259,7 @@
                             <span>
                                 <div class="inSpanAcid">
                                     <img src="/svg/strength/strong.svg">
-                                    <p>Strong</p>
+                                    <p>Kuat</p>
                                 </div>
                             </span>
                         </label>
@@ -268,24 +268,14 @@
 
                     {{-- Coffee Price Preference --}}
                     <fieldset class="slide-group">
-                        <legend class="slideTitle">Does price influence your choice?</legend>
+                        <legend class="slideTitle">Apakah harga mempengaruhi pilihanmu?</legend>
 
                         <label for="no">
                             <input type="radio" id="no" name="preferenceCoffeePrice" value="5">
                             <span>
                                 <div class="inSpanPrice">
                                     <img src="/svg/price/no.svg">
-                                    <p>No</p>
-                                </div>
-                            </span>
-                        </label>
-
-                        <label for="IDC">
-                            <input type="radio" id="IDC" name="preferenceCoffeePrice" value="3">
-                            <span>
-                                <div class="inSpanPrice">
-                                    <img src="/svg/price/neutral.svg">
-                                    <p>Neutral</p>
+                                    <p>Tidak</p>
                                 </div>
                             </span>
                         </label>
@@ -295,17 +285,29 @@
                             <span>
                                 <div class="inSpanPrice">
                                     <img src="/svg/price/yes.svg">
-                                    <p>Yes</p>
+                                    <p>Ya</p>
                                 </div>
                             </span>
                         </label>
+
+                        <label for="IDC">
+                            <input type="radio" id="IDC" name="preferenceCoffeePrice" value="3">
+                            <span>
+                                <div class="inSpanPrice">
+                                    <img src="/svg/price/neutral.svg">
+                                    <p>Tidak tahu</p>
+                                </div>
+                            </span>
+                        </label>
+
+
                     </fieldset>
                     <br>
                 </div>
 
                 {{-- Submit Button --}}
-                <input class="formButton2" type="button" id="nextBtn" value="Next" style="display: none;">
-                <input class="formButton2" type="submit" id="submitBtn" value="Submit Preferences"
+                <input class="formButton2" type="button" id="nextBtn" value="Lanjut" style="display: none;">
+                <input class="formButton2" type="submit" id="submitBtn" value="Simpan Preferensi"
                     style="display: none;">
             </form>
 

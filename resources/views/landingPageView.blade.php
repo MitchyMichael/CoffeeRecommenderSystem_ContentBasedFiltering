@@ -10,7 +10,7 @@
             $cafe = Cafe::find($cafeId);
             $cafeName = $cafe->cafeName;
 
-            $webTitle = "BrewMaster's x $cafeName";
+            $webTitle = "BrewMaster's ft. $cafeName";
         } else {
             $webTitle = "BrewMaster's";
         }
@@ -26,8 +26,8 @@
                 </div>
                 <nav class="nav-list">
                     <ul>
-                        <li><a href="#howItWorks">How It Works</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#howItWorks">Cara Kerja</a></li>
+                        <li><a href="#about">Tentang</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,21 +36,21 @@
         <div class="container">
             <div class="heroContainer">
                 <div class="heroLeft">
-                    <h1 class="heroTitle1">Find Your Ideal Coffee Match with</h1>
-                    <h1 class="heroTitle1">BrewMaster's Recommendations</h1>
+                    <h1 class="heroTitle1">Temukan Kopi Idealmu dengan</h1>
+                    <h1 class="heroTitle1"><i>BrewMaster's Recommendations</i></h1>
 
-                    <h3 class="tagline">Personalized Coffee Selections Tailored Just for You</h3>
+                    <h3 class="tagline">Pilihan Kopi yang Dipersonalisasi Khusus untukmu</h3>
 
                     <br>
 
                     @php
                         if ($hasCafeId) {
-                            $display = "display: inline-block";
+                            $display = 'display: inline-block';
                         } else {
-                            $display = "display: none";
+                            $display = 'display: none';
                         }
                     @endphp
-                    <a href="/dashboard" class="button" style="{{ $display }}">Try It Now!</a>
+                    <a href="/dashboard" class="button" style="{{ $display }}">Coba Sekarang!</a>
 
                 </div>
                 <div class="heroRight">
@@ -64,7 +64,7 @@
     {{-- How It Works Section --}}
     <div class="how_it_works">
         <div class="container">
-            <h1 class="how_it_works_title" id="howItWorks">How This Site Works</h1><br>
+            <h1 class="how_it_works_title" id="howItWorks">Cara Kerja Website</h1><br>
 
             <div class="card-container">
                 <div class="thiscard">
@@ -75,7 +75,7 @@
                     </div>
 
                     <h2 class="cardTitle">
-                        Input Preference
+                        Masukkan Preferensi
                     </h2>
                 </div>
                 <div class="thiscard">
@@ -84,7 +84,7 @@
                             background="transparent" speed="1" loop autoplay></dotlottie-player>
                     </div>
 
-                    <h2 class="cardTitle">Choose 1 of 3 Menu</h2>
+                    <h2 class="cardTitle">Pilih 1 dari 3 Menu</h2>
 
                 </div>
                 <div class="thiscard">
@@ -93,12 +93,12 @@
                             background="transparent" speed="1" loop autoplay></dotlottie-player>
                     </div>
 
-                    <h2 class="cardTitle">Enjoy Your Coffee!</h2>
+                    <h2 class="cardTitle">Selamat Menikmati!</h2>
                 </div>
             </div>
 
             <div class="CTAButton">
-                <a href="/dashboard" class="button2">Try It Now!</a>
+                <a href="/dashboard" class="button2" style="{{ $display }}">Coba Sekarang!</a>
             </div>
         </div>
     </div>
@@ -106,15 +106,12 @@
     <div class="container">
         <div class="about">
             <div class="aboutLeft">
-                <h1 class="aboutTitle" id="about">About This Site</h1><br>
-                <p class="aboutText">At BrewMaster's, we're passionate about coffee and dedicated to enhancing your coffee
-                    experience through
-                    <strong>content-based filtering</strong>. By analyzing factors like flavor profiles, we personalize
-                    recommendations to match
-                    your unique tastes. Our platform offers <strong>personalized suggestions and interactive tools</strong>
-                    to
-                    elevate your
-                    coffee journey. Let's explore the world of coffee together. Cheers!
+                <h1 class="aboutTitle" id="about">Tentang Website Ini</h1><br>
+                <p class="aboutText">Di <i>BrewMaster's</i>, kami sangat bersemangat tentang kopi dan berdedikasi untuk
+                    meningkatkan pengalaman kopi Anda melalui <strong><i>Content-Based Filtering</i></strong>. Dengan
+                    menganalisis faktor-faktor seperti profil rasa, kami <strong>mempersonalisasi rekomendasi</strong> agar
+                    sesuai dengan selera unik Anda. Platform kami menawarkan saran yang dipersonalisasi dan alat interaktif
+                    untuk mengangkat perjalanan kopi Anda. Mari kita jelajahi dunia kopi bersama!
                 </p>
             </div>
 

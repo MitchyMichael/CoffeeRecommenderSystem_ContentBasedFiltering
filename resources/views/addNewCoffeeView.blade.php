@@ -25,54 +25,54 @@
         };
     </script>
 
-    <h1>Add New Coffee</h1>
-    <h1>Cafe ID: <span id="cafeIdDisplay"></span></h1>
+    <div class="container">
+        <div class="addCoffeeForm">
+            <br><br>
+            <h1>Tambah Menu Kopi</h1><br>
+            <form action="/submitNewCoffee" method="POST" enctype="multipart/form-data">
+                @csrf
+                <label for="coffeeName">Nama menu:</label> <input type="text" id="coffeeName" name="coffeeName" value="Menu Baru"><br>
 
-    <h2>Coffee Form</h2>
-    <form action="/submitNewCoffee" method="POST" enctype="multipart/form-data">
-        @csrf
-        <label for="coffeeName">Coffee Name:</label><br>
-        <input type="text" id="coffeeName" name="coffeeName"><br>
+                <label for="coffeeDescription">Deskripsi Menu:</label> <input type="text" id="coffeeDescription" name="coffeeDescription" value="Deskripsi Menu"><br>
 
-        <label for="coffeeDescription">Coffee Description:</label><br>
-        <input type="text" id="coffeeDescription" name="coffeeDescription"><br>
+                <label for="coffeePrice">Harga Menu:</label> <input type="number" id="coffeePrice" name="coffeePrice" value="20000">
 
-        <label for="coffeePrice">Coffee Price:</label><br>
-        <input type="number" id="coffeePrice" name="coffeePrice"><br>
+                <br>
 
-        <label for="coffeeIsBestSeller">Is Best Seller:</label><br>
-        <input type="checkbox" id="coffeeIsBestSeller" name="coffeeIsBestSeller" value="true"><br>
+                <input type="hidden" id="coffeeIsBestSeller" name="coffeeIsBestSeller" value="true"><br>
 
-        <label for="coffeePreferenceMood">Preference Mood (1-5):</label><br>
-        <input type="number" id="coffeePreferenceMood" name="coffeePreferenceMood" min="1" max="5"><br>
+                <label for="coffeePreferenceMood">Angka Preferensi Mood (1-5(Baik)):</label> <input type="number" id="coffeePreferenceMood" name="coffeePreferenceMood" min="1"
+                    max="5" value="0"><br>
 
-        <label for="coffeePreferenceActivity">Preference Activity (1-5):</label><br>
-        <input type="number" id="coffeePreferenceActivity" name="coffeePreferenceActivity" min="1"
-            max="5"><br>
+                <label for="coffeePreferenceActivity">Angka Preferensi Kegiatan (1(Bersantai) atau 5(Melakukan sesuatu)):</label> <input type="number" id="coffeePreferenceActivity" name="coffeePreferenceActivity" min="1"
+                    max="5" value="0"><br>
 
-        <label for="coffeeTemperature">Temperature (1 or 5):</label><br>
-        <input type="number" id="coffeeTemperature" name="coffeeTemperature" min="1" max="5"><br>
+                <label for="coffeeTemperature">Suhu Menu (1(Dingin) atau 5(Panas)):</label> <input type="number" id="coffeeTemperature" name="coffeeTemperature" min="1" max="5" value="0"><br>
 
-        <label for="coffeeSweetness">Sweetness (1-5):</label><br>
-        <input type="number" id="coffeeSweetness" name="coffeeSweetness" min="1" max="5"><br>
+                <label for="coffeeSweetness">Angka Tingkat Kemanisan (1-5(Sangat Manis)):</label> <input type="number" id="coffeeSweetness" name="coffeeSweetness" min="1" max="5" value="0"><br>
 
-        <label for="coffeeMilkness">Milkness (1 or 5):</label><br>
-        <input type="number" id="coffeeMilkness" name="coffeeMilkness" min="1" max="5"><br>
+                <label for="coffeeMilkness">Penggunaan Susu (1(Tanpa Susu) atau 5(Dengan Susu)):</label> <input type="number" id="coffeeMilkness" name="coffeeMilkness" min="1" max="5" value="0"><br>
 
-        <label for="coffeeCheapness">Cheapness (1-5):</label><br>
-        <input type="number" id="coffeeCheapness" name="coffeeCheapness" min="1" max="5"><br>
+                <label for="coffeeCheapness">Angka Tingkat Harga (1-5(Lebih Mahal)):</label> <input type="number" id="coffeeCheapness" name="coffeeCheapness" min="1" max="5" value="0"><br>
 
-        <label for="coffeeAcidityLevel">Acidity Level (1-5):</label><br>
-        <input type="number" id="coffeeAcidityLevel" name="coffeeAcidityLevel" min="1" max="5"><br>
+                <label for="coffeeAcidityLevel">Angka Tingkat Keasaman (1-5(Asam)):</label> <input type="number" id="coffeeAcidityLevel" name="coffeeAcidityLevel" min="1" max="5" value="0"><br>
 
-        <label for="coffeeStrengthLevel">Strength Level (1-5):</label><br>
-        <input type="number" id="coffeeStrengthLevel" name="coffeeStrengthLevel" min="1" max="5"><br>
+                <label for="coffeeStrengthLevel">Angka Tingkat Kekuatan (1-5(Kuat)):</label> <input type="number" id="coffeeStrengthLevel" name="coffeeStrengthLevel" min="1" max="5" value="0">
 
-        <label for="coffeePhoto">Coffee Photo:</label><br>
-        <input type="file" id="coffeePhoto" name="coffeePhoto" accept="image/*"><br>
+                <br><br>
 
-        <input type="hidden" id="cafeIdField" name="cafeIdField">
+                <label for="coffeePhoto">Foto Menu:</label><br>
+                <input type="file" id="coffeePhoto" name="coffeePhoto" accept="image/*">
 
-        <input type="submit" value="Submit">
-    </form>
+                <br>
+
+                <input type="hidden" id="cafeIdField" name="cafeIdField">
+
+                <br>
+
+                <input type="submit" value="Simpan" class="btn btn-primary">
+                <br><br><br>
+            </form>
+        </div>
+    </div>
 @endsection

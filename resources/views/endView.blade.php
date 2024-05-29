@@ -3,9 +3,9 @@
     <div class="container">
         <div class="thisContainer">
             <div class="endMain">
-                <h1>Thank You!</h1>
+                <h1>Terima Kasih!</h1>
                 <p class="recSubTitle">
-                    Please tell the cashier you ordered this menu!
+                    Beri tahu kasir kamu memesan menu ini!
                 </p>
 
                 <div class="endMenu">
@@ -26,7 +26,7 @@
                     <p><strong>Rp {{ $coffee->coffeePrice }}</strong></p>
 
                     <br>
-                    <a href="/" class="homeButton">Home</a>
+                    <a href="/" class="homeButton">Beranda</a>
                 </div>
             </div>
         </div>

@@ -94,4 +94,59 @@ class CafeController extends Controller
         Session::flush();
         return redirect('/');
     }
+
+    public function destroy($id)
+    {
+        $coffee = Coffee::findOrFail($id);
+        $coffee->delete();
+
+        return redirect()->back()->with('success', 'Coffee deleted successfully');
+    }
+
+    public function edit($id)
+    {
+        $coffee = Coffee::findOrFail($id);
+        return view('editCoffeeView', compact('coffee'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $newCoffee = Coffee::findOrFail($id);
+        $cafeId = $request->input('cafeId');
+
+        $newCoffee->cafeId = $cafeId;
+        $newCoffee->coffeeName = $request->input('coffeeName');
+        $newCoffee->coffeeDescription = $request->input('coffeeDescription');
+        $newCoffee->coffeePrice = $request->input('coffeePrice');
+
+        $isBestSeller = $request->input('coffeeIsBestSeller');
+
+        if ($isBestSeller == 'true') {
+            $newCoffee->coffeeIsBestSeller = true;
+        } else {
+            $newCoffee->coffeeIsBestSeller = false;
+        }
+
+        $newCoffee->coffeePreferenceMood = $request->input('coffeePreferenceMood');
+        $newCoffee->coffeePreferenceActivity = $request->input('coffeePreferenceActivity');
+        $newCoffee->coffeeTemperature = $request->input('coffeeTemperature');
+        $newCoffee->coffeeSweetness = $request->input('coffeeSweetness');
+        $newCoffee->coffeeMilkness = $request->input('coffeeMilkness');
+        $newCoffee->coffeeCheapness = $request->input('coffeeCheapness');
+        $newCoffee->coffeeAcidityLevel = $request->input('coffeeAcidityLevel');
+        $newCoffee->coffeeStrengthLevel = $request->input('coffeeStrengthLevel');
+
+        // Save image and path
+        if ($request->hasFile('coffeePhoto')) {
+            $image = $request->file('coffeePhoto');
+            $imageName = (string) (time() . '.' . $image->getClientOriginalExtension());
+            $image->storeAs('public/img', $imageName);
+
+            // Save to database
+            $newCoffee->coffeePhoto = "/storage/img/" . $imageName;
+        }
+
+        $newCoffee->save();
+        return redirect()->route('adminDashboard');
+    }
 }

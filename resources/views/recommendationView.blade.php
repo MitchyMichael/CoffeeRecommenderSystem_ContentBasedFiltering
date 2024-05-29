@@ -3,8 +3,8 @@
     {{-- 3 Main Recommendation --}}
     <div class="container">
         <div class="mainContentRec">
-            <h1>We recommend these coffee for you!</h1>
-            <h2 class="recSubTitle">Please select one menu.</h2>
+            <h1>Kami merekomendasikan kopi ini untukmu!</h1>
+            <h2 class="recSubTitle">Silahkan pilih satu menu.</h2>
             <br>
 
             @php
@@ -26,7 +26,7 @@
                                     coffee-sort-id="{{ $coffeeCount }}">
                                     @if ($coffeeCount == 1)
                                         <div class="recMenuFirst">
-                                            <p class="topRecTitle">Top Recommendation</p>
+                                            <p class="topRecTitle">Rekomendasi Teratas</p>
                                             <img src="{{ $coffee->coffeePhoto }}" class="recPhoto">
                                             <br> <br>
                                             <div class="recPhotoDesc">
@@ -58,7 +58,7 @@
 
             <div class="recContainerOthers">
                 <div class="buttonOthers">
-                    Select others
+                    Pilih Menu Lainnya
                 </div>
             </div>
         </div>
@@ -67,8 +67,8 @@
     {{-- Other Recommendation --}}
     <div class="container">
         <div class="mainContentRecOther" style="display: none">
-            <h1>Other coffee for you!</h1>
-            <h2 class="recSubTitle">Please select one menu.</h2>
+            <h1>Kopi lainnya untukmu!</h1>
+            <h2 class="recSubTitle">Silahkan pilih satu menu.</h2>
             <br>
 
             <div class="otherRecContainer">
@@ -83,7 +83,7 @@
                                 <div class="otherRecMenuFirst">
                                     <img src="{{ $coffee->coffeePhoto }}" class="otherRecPhoto"> <br><br>
                                     <div class="otherRecPhotoDesc">
-                                        <i>Top Recommendation</i><br>
+                                        <i>Rekomendasi Teratas</i><br>
                                         <strong>{{ $coffee->coffeeName }} </strong>
                                         <br>
                                         {{ $coffee->coffeeDescription }}
@@ -113,8 +113,8 @@
     <div class="item-description-popup" style="display: none;">
         <div class="description"></div>
         <div class="confirmButton">
-            <h3 class="cancelButton">Cancel</h3>
-            <h3 class="confirmButton2">Confirm</h3>
+            <h3 class="cancelButton">Batal</h3>
+            <h3 class="confirmButton2">Lanjutkan</h3>
         </div>
     </div>
 

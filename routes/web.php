@@ -79,3 +79,10 @@ Route::post('/submitNewCoffee', [CafeController::class, 'submitNewCoffee']);
 
 // Admin Log Out
 Route::post('/logout', [CafeController::class, 'logout']);
+
+Route::delete('/coffee/{id}', [CafeController::class, 'destroy'])->name('coffee.destroy');
+
+//Edit Coffee Menu View
+Route::get('/coffee/{id}/edit', [CafeController::class, 'edit'])->name('coffee.edit');
+
+Route::put('/coffee/{id}', [CafeController::class, 'update'])->name('coffee.update');

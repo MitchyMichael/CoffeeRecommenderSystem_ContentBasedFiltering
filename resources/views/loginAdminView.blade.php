@@ -2,10 +2,11 @@
 @section('main_content')
     @php
         use Illuminate\Support\Facades\Session;
+        use Illuminate\Support\Facades\Redirect;
 
         $hasCafeId = Session::has('cafeId');
         if ($hasCafeId) {
-            return redirect()->route('adminDashboard');
+            echo Redirect::to('adminDashboard')->send();
         }
     @endphp
     <div class="mainAdminLoginContainer">
@@ -24,7 +25,7 @@
 
                 <br>
                 <div class="form-group">
-                    <input type="submit" value="Login">
+                    <input class="btn btn-primary" type="submit" value="Login" style="background-color:#d88b43 !important; border-color: #d88b43;">
                 </div>
             </form>
         </div>

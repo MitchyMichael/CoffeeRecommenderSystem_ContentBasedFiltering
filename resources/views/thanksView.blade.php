@@ -3,9 +3,9 @@
 @section('main_content')
     <div class="container" id="thanksContainer">
         <div class="thanks">
-            <h1>Feedback</h1>
+            <h1>Umpan Balik</h1>
             <p class="recSubTitle">
-                Please submit your feedback!
+                Tolong berikan umpan balikmu!
             </p>
 
             <form id="feedbackForm" action={{ url('/save-like') }} method="POST">
@@ -13,7 +13,7 @@
                 <div class="thanksForm">
                     {{-- Pertanyaan 1 --}}
                     <fieldset class="thanksGroup">
-                        <legend class="thanksTitle">How easy is it to get around our website?</legend>
+                        <legend class="thanksTitle">Seberapa mudah kamu menjelajahi situs web ini?</legend>
                         <label for="pertanyaan1_jawaban1">
                             <input type="radio" id="pertanyaan1_jawaban1" name="pertanyaan1" value="1">
                             <span>
@@ -62,7 +62,7 @@
 
                     {{-- Pertanyaan 2 --}}
                     <fieldset class="thanksGroup">
-                        <legend class="thanksTitle">Is the coffee recommendation according to your preference?</legend>
+                        <legend class="thanksTitle">Apakah rekomendasi yang dihasilkan membantumu dalam menentukan kopi yang akan dipesan?</legend>
                         <label for="pertanyaan2_jawaban1">
                             <input type="radio" id="pertanyaan2_jawaban1" name="pertanyaan2" value="1">
                             <span>
@@ -111,7 +111,7 @@
 
                     {{-- Pertanyaan 3 --}}
                     <fieldset class="thanksGroup">
-                        <legend class="thanksTitle">Would you recommend our website to your friends?</legend>
+                        <legend class="thanksTitle">Apakah kamu akan merekomendasikan situs web ini kepada temanmu?</legend>
                         <label for="pertanyaan3_jawaban1">
                             <input type="radio" id="pertanyaan3_jawaban1" name="pertanyaan3" value="1">
                             <span>
@@ -159,7 +159,7 @@
                     </fieldset>
                 </div>
             </form>
-            <input class="formButton2" type="button" id="nextBtn" value="Submit" style="display: none">
+            <input class="formButton2" type="button" id="nextBtn" value="Simpan" style="display: none">
         </div>
     </div>
 
