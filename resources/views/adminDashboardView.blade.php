@@ -29,6 +29,9 @@
 
             <table class="d-flex justify-content-center">
                 <tbody>
+                    @if (count($coffees) == 0)
+                        <p style="margin-top: 150px">Tidak Ada Menu</p>
+                    @endif
                     @foreach ($coffees as $coffee)
                         <tr style="vertical-align: middle;">
                             <td><img src="{{ $coffee->coffeePhoto }}" style="max-width: 100px"></td>
@@ -39,10 +42,12 @@
                             <td style="width: 300px;">
                                 <a href="{{ route('coffee.edit', $coffee->id) }}" class="btn btn-success">Ubah</a>
 
-                                <form action="{{ route('coffee.destroy', $coffee->id) }}" method="POST" style="display:inline;">
+                                <form action="{{ route('coffee.destroy', $coffee->id) }}" method="POST"
+                                    style="display:inline;">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this coffee?')">Hapus</button>
+                                    <button type="submit" class="btn btn-danger"
+                                        onclick="return confirm('Are you sure you want to delete this coffee?')">Hapus</button>
                                 </form>
                             </td>
                         </tr>
