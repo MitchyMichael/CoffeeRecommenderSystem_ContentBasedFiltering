@@ -1,5 +1,4 @@
 @extends('layout.layout')
-
 @section('main_content')
     {{-- 3 Main Recommendation --}}
     <div class="container">

@@ -43,6 +43,8 @@ class PreferenceController extends Controller
         $sortRec = $result[0]; // All sorted recommendations
         $topRec = $result[1]; // Top 3 recommendations
 
+        // dd($sortRec, $topRec);
+
         // Go to next page
         return view('recommendationView', compact('topRec', 'sortRec', 'thisCustomerID'));
     }

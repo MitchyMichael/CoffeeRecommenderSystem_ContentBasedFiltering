@@ -1,18 +1,36 @@
 @extends('layout.layout')
 @section('main_content')
+    @php
+        use App\Models\Cafe;
+        use Illuminate\Support\Facades\Session;
+
+        $hasCafeId = Session::has('cafeId');
+        if ($hasCafeId) {
+            $cafeId = Session::get('cafeId');
+            $cafe = Cafe::find($cafeId);
+            $cafeName = $cafe->cafeName;
+
+            $webTitle = "BrewMaster's x $cafeName";
+            $adminRoute = "/adminDashboard";
+        } else {
+            $webTitle = "BrewMaster's";
+            $adminRoute = "/loginAdmin";
+        }
+    @endphp
+
     {{-- Top Section --}}
     <div class="header">
         {{-- Navigation Bar --}}
         <header class="navbar">
             <div class="container">
                 <div class="title-list">
-                    <h3 class="title">BrewMaster's</h3>
+                    <h3 class="title"> {{ $webTitle }} </h3>
                 </div>
                 <nav class="nav-list">
                     <ul>
                         <li><a href="#howItWorks">How It Works</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="/loginAdmin">Admin</a></li>
+                        <li><a href={{ $adminRoute }}>Admin</a></li>
                     </ul>
                 </nav>
             </div>

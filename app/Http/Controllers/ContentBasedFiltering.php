@@ -74,7 +74,7 @@ class ContentBasedFiltering extends Controller
             $top3Recommendations = array_slice($sortRecommendations, 0, 3);
             $top3CoffeeIds = array_column($top3Recommendations, 'coffee_id');
 
-            dd($coffeeIDs, $sortRecommendations, $notSortedRecommendation, $top3Recommendations, $sortedCoffeeIds, $top3CoffeeIds);
+            // dd($coffeeIDs, $sortRecommendations, $notSortedRecommendation, $top3Recommendations, $sortedCoffeeIds, $top3CoffeeIds);
 
             return array($sortedCoffeeIds, $top3CoffeeIds);
 

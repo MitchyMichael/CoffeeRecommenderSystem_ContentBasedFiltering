@@ -23,7 +23,7 @@
 
     <br>
     <a href="/addNewCoffee?cafeId={{ $cafeId }}">Add New Coffee</a><br>
-    <a href="/cafeLanding">Go to landing page for cafe</a><br>
+    <a href="/">Go to landing page for cafe</a><br>
     <form id="logout-form" method="POST" action="/logout">
         @csrf
         <button type="submit">Log out</button>
