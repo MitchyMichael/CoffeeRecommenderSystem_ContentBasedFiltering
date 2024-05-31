@@ -7,6 +7,15 @@
         }
 
         $formLink = '/preferences';
+
+        $randomMood = rand(1, 5);
+        $randomActivity = rand(1, 5);
+        $randomTemperature = rand(1, 5);
+        $randomSugar = rand(1, 5);
+        $randomMilk = rand(1, 5);
+        $randomAcid = rand(1, 5);
+        $randomStrength = rand(1, 5);
+        $randomPrice = rand(1, 5);
     @endphp
     <div class="container">
         <div class="inputForm">
@@ -33,19 +42,6 @@
                             </span>
                         </label>
 
-                        <label for="mood3">
-                            <input type="radio" id="mood3" name="preferenceMood" value="3">
-                            <span>
-                                <div class="inSpan">
-                                    <dotlottie-player
-                                        src="https://lottie.host/7f2c3da9-f531-4430-b3bf-3cb39d8e4268/WjCL0FLgaV.json"
-                                        background="transparent" speed="1" class="inputChoise" loop
-                                        autoplay></dotlottie-player>
-                                    <p>Biasa saja</p>
-                                </div>
-                            </span>
-                        </label>
-
                         <label for="mood5">
                             <input type="radio" id="mood5" name="preferenceMood" value="5">
                             <span>
@@ -55,6 +51,19 @@
                                         background="transparent" speed="1" loop autoplay
                                         class="inputChoise"></dotlottie-player>
                                     <p>Sangat baik</p>
+                                </div>
+                            </span>
+                        </label>
+
+                        <label for="mood3">
+                            <input type="radio" id="mood3" name="preferenceMood" value="{{ $randomMood }}">
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/7f2c3da9-f531-4430-b3bf-3cb39d8e4268/WjCL0FLgaV.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Tidak tahu</p>
                                 </div>
                             </span>
                         </label>
@@ -76,6 +85,7 @@
                                 </div>
                             </span>
                         </label>
+
                         <label for="working">
                             <input type="radio" id="working" name="preferenceActivity" value="5">
                             <span>
@@ -85,6 +95,20 @@
                                         background="transparent" speed="1" loop autoplay
                                         class="inputChoise"></dotlottie-player>
                                     <p>Melakukan sesuatu</p>
+                                </div>
+                            </span>
+                        </label>
+
+                        <label for="dontKnowActivity">
+                            <input type="radio" id="dontKnowActivity" name="preferenceActivity"
+                                value="{{ $randomActivity }}">
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/7f2c3da9-f531-4430-b3bf-3cb39d8e4268/WjCL0FLgaV.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Tidak Tahu</p>
                                 </div>
                             </span>
                         </label>
@@ -118,6 +142,20 @@
                                 </div>
                             </span>
                         </label>
+                        <label for="dontKnowTemperature">
+                            <input type="radio" id="dontKnowTemperature" name="preferenceCoffeeTemperature"
+                                value="{{ $randomTemperature }}">
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/7f2c3da9-f531-4430-b3bf-3cb39d8e4268/WjCL0FLgaV.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Tidak tahu</p>
+                                </div>
+                            </span>
+                        </label>
+
                     </fieldset>
                     <br>
 
@@ -165,11 +203,12 @@
                         </label>
 
                         <label for="sweetness5">
-                            <input type="radio" id="sweetness5" name="preferenceCoffeeSweetness" value="5">
+                            <input type="radio" id="sweetness5" name="preferenceCoffeeSweetness"
+                                value="{{ $randomSugar }}">
                             <span>
                                 <div class="inSpanSugar">
                                     <img src="/svg/sugar/extraSugar.svg">
-                                    <p>Banyak gula</p>
+                                    <p>Tidak tahu</p>
                                 </div>
                             </span>
                         </label>
@@ -197,6 +236,18 @@
                                 </div>
                             </span>
                         </label>
+                        <label for="dontKnowMilk">
+                            <input type="radio" id="dontKnowMilk" name="preferenceCoffeeMilkness" value="{{ $randomMilk }}">
+                            <span>
+                                <div class="inSpan">
+                                    <dotlottie-player
+                                        src="https://lottie.host/7f2c3da9-f531-4430-b3bf-3cb39d8e4268/WjCL0FLgaV.json"
+                                        background="transparent" speed="1" class="inputChoise" loop
+                                        autoplay></dotlottie-player>
+                                    <p>Tidak tahu</p>
+                                </div>
+                            </span>
+                        </label>
                     </fieldset>
                     <br>
 
@@ -212,21 +263,23 @@
                                 </div>
                             </span>
                         </label>
-                        <label for="acidity3">
-                            <input type="radio" id="acidity3" name="preferenceCoffeeAcidityLevel" value="3">
-                            <span>
-                                <div class="inSpanAcid">
-                                    <img src="/svg/acidity/normal.svg">
-                                    <p>Sedang</p>
-                                </div>
-                            </span>
-                        </label>
+
                         <label for="acidity5">
                             <input type="radio" id="acidity5" name="preferenceCoffeeAcidityLevel" value="5">
                             <span>
                                 <div class="inSpanAcid">
                                     <img src="/svg/acidity/acid.svg">
                                     <p>Asam</p>
+                                </div>
+                            </span>
+                        </label>
+
+                        <label for="acidity3">
+                            <input type="radio" id="acidity3" name="preferenceCoffeeAcidityLevel" value="{{ $randomAcid }}">
+                            <span>
+                                <div class="inSpanAcid">
+                                    <img src="/svg/acidity/normal.svg">
+                                    <p>Bebas</p>
                                 </div>
                             </span>
                         </label>
@@ -245,21 +298,23 @@
                                 </div>
                             </span>
                         </label>
-                        <label for="strength3">
-                            <input type="radio" id="strength3" name="preferenceCoffeeStrengthLevel" value="3">
-                            <span>
-                                <div class="inSpanAcid">
-                                    <img src="/svg/strength/normal.svg">
-                                    <p>Normal</p>
-                                </div>
-                            </span>
-                        </label>
+
                         <label for="strength5">
                             <input type="radio" id="strength5" name="preferenceCoffeeStrengthLevel" value="5">
                             <span>
                                 <div class="inSpanAcid">
                                     <img src="/svg/strength/strong.svg">
                                     <p>Kuat</p>
+                                </div>
+                            </span>
+                        </label>
+
+                        <label for="strength3">
+                            <input type="radio" id="strength3" name="preferenceCoffeeStrengthLevel" value="{{ $randomStrength }}">
+                            <span>
+                                <div class="inSpanAcid">
+                                    <img src="/svg/strength/normal.svg">
+                                    <p>Bebas</p>
                                 </div>
                             </span>
                         </label>
@@ -291,7 +346,7 @@
                         </label>
 
                         <label for="IDC">
-                            <input type="radio" id="IDC" name="preferenceCoffeePrice" value="3">
+                            <input type="radio" id="IDC" name="preferenceCoffeePrice" value="{{ $randomPrice }}">
                             <span>
                                 <div class="inSpanPrice">
                                     <img src="/svg/price/neutral.svg">
