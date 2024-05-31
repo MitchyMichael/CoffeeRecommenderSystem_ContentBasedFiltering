@@ -11,16 +11,16 @@
     @endphp
     <div class="mainAdminLoginContainer">
         <div class="login-container">
-            <h1>Admin Login</h1><br>
+            <h1>Admin Login</h1>
             <form action="/loginForAdmin" method="POST">
                 @csrf
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <input type="email" id="email" class="form-control"name="email" required>
                 </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                <div class="form-group row">
+                    <label for="password" class="col-sm-2 col-form-label">Password</label>
+                    <input type="password" class="form-control"id="password" name="password" required>
                 </div>
 
                 <br>
