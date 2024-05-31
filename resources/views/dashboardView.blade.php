@@ -193,7 +193,7 @@
                         </label>
 
                         <label for="sweetness4">
-                            <input type="radio" id="sweetness4" name="preferenceCoffeeSweetness" value="4">
+                            <input type="radio" id="sweetness4" name="preferenceCoffeeSweetness" value="5">
                             <span>
                                 <div class="inSpanSugar">
                                     <img src="/svg/sugar/moreSugar.svg">
